@@ -108,7 +108,7 @@ const settings = {
         error:
           "text-white bg-red-500 border border-transparent rounded shadow-sm hover:bg-red-600",
         success:
-          "text-white bg-green-500 border border-transparent rounded shadow-sm hover:bg-green-600",
+          "max-w-button text-white bg-green-500 border border-transparent rounded shadow-sm hover:bg-green-600",
         link: "text-blue-500 underline hover:text-blue-600",
       },
     },
@@ -132,7 +132,7 @@ const settings = {
     props: {
       fixedClasses: {
         wrapper:
-          "fixed mt-10 text-center inset-x-0 top-0 flex items-center w-2/4 p-4 border-l-4  rounded shadow-sm z-100 justify-center inset-x-0 md:w-2/5 mx-auto",
+          "fixed mt-10 text-center inset-x-0 top-12 flex items-center w-2/4 p-4 border-l-4  rounded shadow-sm z-100 justify-center inset-x-0 md:w-2/5 mx-auto",
         body: "flex-grow",
         close:
           "relative flex items-center justify-center ml-4 flex-shrink-0 w-6 h-6 transition duration-100 ease-in-out rounded  focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50",

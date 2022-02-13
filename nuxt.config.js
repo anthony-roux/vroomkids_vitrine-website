@@ -45,36 +45,36 @@ export default {
     // proxyHeaders: false,
     // credentials: false
   },
-  proxy: {
-    "/api/v1/": {
-      target: "http://localhost:80/api/v1",
-      pathRewrite: { "^/api/v1/": "" },
-    },
-  },
+  // proxy: {
+  //   "/api/v1/": {
+  //     target: "http://localhost:80/api/v1",
+  //     pathRewrite: { "^/api/v1/": "" },
+  //   },
+  // },
   // Nuxt Auth Plugin
-  auth: {
-    redirect: {
-      login: "/",
-    },
-    strategies: {
-      local: {
-        token: {
-          property: "accessToken",
-          required: true,
-          type: "bearer",
-        },
-        user: {
-          property: "false",
-          autoFetch: false,
-        },
-        endpoints: {
-          login: { url: "api/v1/auth/login", method: "post" },
-          user: { url: "api/v1/auth/me", method: "get" },
-          logout: false,
-        },
-      },
-    },
-  },
+  // auth: {
+  //   redirect: {
+  //     login: "/",
+  //   },
+  //   strategies: {
+  //     local: {
+  //       token: {
+  //         property: "accessToken",
+  //         required: true,
+  //         type: "bearer",
+  //       },
+  //       user: {
+  //         property: "false",
+  //         autoFetch: false,
+  //       },
+  //       endpoints: {
+  //         login: { url: "api/v1/auth/login", method: "post" },
+  //         user: { url: "api/v1/auth/me", method: "get" },
+  //         logout: false,
+  //       },
+  //     },
+  //   },
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

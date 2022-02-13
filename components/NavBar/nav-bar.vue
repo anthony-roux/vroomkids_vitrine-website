@@ -1,5 +1,7 @@
 <template>
-  <section class="sticky top-0 z-20 h-24 sm:h-32 flex items-center w-full bg-gray-100">
+  <section
+    class="sticky top-0 z-20 h-24 sm:h-32 flex items-center w-full bg-gray-100"
+  >
     <div class="container mx-auto px-6 flex items-center justify-between">
       <div class="flex items-center">
         <nav
@@ -14,10 +16,10 @@
             hidden
           "
         >
-          <a href="#" class="py-2 px-6 flex hover:text-black"> Item </a>
-          <a href="#" class="py-2 px-6 flex hover:text-black"> Item </a>
-          <a href="#" class="py-2 px-6 flex hover:text-black"> Item </a>
-          <a href="#" class="py-2 px-6 flex hover:text-black"> Item </a>
+          <a href="/" class="py-2 px-6 flex hover:text-black"> Accueil </a>
+          <nuxt-link to="/service" class="py-2 px-6 flex hover:text-black"> Notre service </nuxt-link>
+          <nuxt-link to="/price" class="py-2 px-6 flex hover:text-black"> Tarif </nuxt-link>
+          <nuxt-link to="/aboutUs" class="py-2 px-6 flex hover:text-black"> Qui sommes-nous ? </nuxt-link>
         </nav>
         <button class="lg:hidden flex flex-col ml-4">
           <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
@@ -31,14 +33,18 @@
           text-gray-800
           dark:text-white
           font-black
-          text-3xl
+          
           flex
           items-center
         "
       >
-        <span class="text-xl ml-3 mt-1">
-          VroomKids
-        </span>
+        <span class="text-xl ml-3 mt-1 mr-5"> VroomKids </span>
+        <t-button tagName="a" to="/driver" class="mr-5" variant=""
+          >Je suis un client</t-button
+        >
+        <t-button tagName="a" to="/client" variant=""
+          >Je suis un chauffeur</t-button
+        >
       </div>
     </div>
   </section>
