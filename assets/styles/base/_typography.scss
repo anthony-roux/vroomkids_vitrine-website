@@ -1,0 +1,39 @@
+/* 
+  Everything typography ! font sizes, common texts, links, headings...
+*/
+
+// put this class on the body if needed
+
+.antialiased{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// common heading styles
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  // we could use some tool like modular scale / vertical rythm ...
+  // sassline.com
+  // modularscale.com
+  margin-bottom: .6em;
+  margin-top: 0;
+}
+ // paragraphes and common definitions
+// helpers class should remain in the helpers file (/utilities/_helpers.scss)
+
+p{
+  margin: 0;
+  & + p {
+    margin-top: 1em;
+  }
+}
+
+a{
+  color: currentColor;
+}

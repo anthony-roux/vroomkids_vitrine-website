@@ -1,0 +1,15 @@
+/* purgecss start ignore */
+.t-border {
+  &:after {
+    @include abs-pseudo(0, 0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid;
+    border-image-slice: 1;
+    border-image-source: $gradient;
+    opacity: 0.8;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
+/* purgecss end ignore */

@@ -1,0 +1,16 @@
+.t-title {
+  @extend %title;
+
+  &--lg {
+    @extend %title--lg;
+  }
+}
+
+
+.t-text {
+  @extend %text;
+
+  &--xs {
+    @extend %text--xs;
+  }
+}

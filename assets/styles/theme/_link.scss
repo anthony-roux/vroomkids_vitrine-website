@@ -1,0 +1,50 @@
+.t-link {
+  position: relative;
+  cursor: pointer;
+  transition: opacity 400ms $ease-in-out-cubic;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transition: transform 600ms $ease-in-out-quint;
+    transform: scaleX(0) translateZ(0);
+  }
+
+  &:before {
+    left: 0;
+    transform-origin: right;
+  }
+
+  &--gradient,
+  &.t-text-gradient {
+    &:before {
+      background: $gradient;
+    }
+  }
+  @media (hover: hover) {
+    &:hover {
+      &::before {
+        transform: scaleX(1) translateZ(0);
+        transform-origin: left;
+      }
+    }
+  }
+
+  &.is-selected:not(.is-disabled), {
+    &::before {
+      transform: scaleX(1) translateZ(0);
+    }
+    &:before {
+      transform-origin: left;
+    }
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+}
