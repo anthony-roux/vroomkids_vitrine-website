@@ -35,6 +35,9 @@ This is a Nuxt JS + Tailwind CSS boilerplate code with preconfigured libraries a
 - Built-in awesome content loader using [vue-content-loader](https://www.npmjs.com/package/vue-content-loader)  
 - Integrated [@babel/eslint-parser, prettier](https://www.npmjs.com/package/@babel/eslint-parser) for codes' rules & styles checking and formatting
 - Integrated [vuex-map-fields](https://www.npmjs.com/package/vuex-map-fields) for form data binding 
+- https://www.npmjs.com/package/nuxt-lazysizes
+- https://www.npmjs.com/package/nuxt-svg-loader
+
 
 ## Setup Guide
 
@@ -43,6 +46,9 @@ This is a Nuxt JS + Tailwind CSS boilerplate code with preconfigured libraries a
 
 ###  Installation
 ```bash
+
+$ nvm list
+$ nvm use v16.14.0
 $ git clone https://github.com/anthony-roux/vroomkids_vitrine-website
 $ cd vroomkids_vitrine-website
 $ yarn install
