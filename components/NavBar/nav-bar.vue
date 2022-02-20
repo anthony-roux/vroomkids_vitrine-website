@@ -39,10 +39,10 @@
         "
       >
         <span class="text-xl ml-3 mt-1 mr-5"> VroomKids </span>
-        <t-button tagName="a" to="/driver" class="mr-5" variant=""
+        <t-button tagName="a" to="/client" class="mr-5" variant=""
           >Je suis un client</t-button
         >
-        <t-button tagName="a" to="/client" variant=""
+        <t-button tagName="a" to="/driver" variant=""
           >Je suis un chauffeur</t-button
         >
       </div>
