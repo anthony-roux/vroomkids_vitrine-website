@@ -1,4 +1,8 @@
 export default {
+  target: "server",
+  ssr: true,
+  telemetry: false,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "VroomKids",
@@ -21,6 +25,10 @@ export default {
     start_url: "/",
   },
 
+  babel: {
+    babelrc: true,
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css"],
 
@@ -31,10 +39,32 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "nuxt-purgecss",
+    "@nuxtjs/style-resources",
+    'nuxt-lazysizes'
   ],
-
+  pageTransition: "fade",
+  lazySizes: {
+    plugins: {
+      unveilhooks: true
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios", "@nuxtjs/auth-next", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/auth-next",
+    "@nuxt/image",
+    "nuxt-svg-loader",
+  ],
+  // Purge module configuration: https://purgecss.com/guides/nuxt.html
+  purgeCSS: {
+    enabled: false,
+  },
+  styleResources: {
+    scss: [
+      './assets/styles/_all_settings.scss'
+    ]
+  },
   // Nuxt Axios
   axios: {
     proxy:
@@ -42,39 +72,7 @@ export default {
         ? false
         : process.env.NODE_ENV !== "staging",
     baseURL: process.env.BASE_URL || "http://localhost:80",
-    // proxyHeaders: false,
-    // credentials: false
   },
-  // proxy: {
-  //   "/api/v1/": {
-  //     target: "http://localhost:80/api/v1",
-  //     pathRewrite: { "^/api/v1/": "" },
-  //   },
-  // },
-  // Nuxt Auth Plugin
-  // auth: {
-  //   redirect: {
-  //     login: "/",
-  //   },
-  //   strategies: {
-  //     local: {
-  //       token: {
-  //         property: "accessToken",
-  //         required: true,
-  //         type: "bearer",
-  //       },
-  //       user: {
-  //         property: "false",
-  //         autoFetch: false,
-  //       },
-  //       endpoints: {
-  //         login: { url: "api/v1/auth/login", method: "post" },
-  //         user: { url: "api/v1/auth/me", method: "get" },
-  //         logout: false,
-  //       },
-  //     },
-  //   },
-  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
