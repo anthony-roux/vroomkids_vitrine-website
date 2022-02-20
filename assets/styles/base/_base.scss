@@ -19,23 +19,22 @@
 // Body reset
 $min_width: 1440px;
 $max_width: 4320px;
-$min_font: 10px;
+$min_font: 11px;
 $max_font: 16px;
 
 html {
-  font-size: 10px;
+  font-size: 11px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  background-color: $blackRed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
   @include mq($from: $bp-landTablet, $until: desktop) {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   @include mq($from: desktop, $until: 1280px) {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   //@include mq($from: 1440px) {
@@ -47,14 +46,6 @@ body {
   font-family: $sans-serif;
   color: $white;
 }
-
-//::-moz-selection {
-//    background: rgba($grey, .1);
-//}
-//
-//::selection {
-//    background: rgba($grey, .1);
-//}
 
 code {
   padding: 1em;

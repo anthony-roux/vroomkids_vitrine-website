@@ -1,7 +1,6 @@
 /* purgecss start ignore */
 .t-border {
   &:after {
-    @include abs-pseudo(0, 0, 0, 0, 0);
     height: 100%;
     width: 100%;
     border: 1.5px solid;

@@ -16,10 +16,10 @@
             hidden
           "
         >
-          <a href="/" class="py-2 px-6 flex hover:text-black"> Accueil </a>
-          <nuxt-link to="/service" class="py-2 px-6 flex hover:text-black"> Notre service </nuxt-link>
-          <nuxt-link to="/price" class="py-2 px-6 flex hover:text-black"> Tarif </nuxt-link>
-          <nuxt-link to="/aboutUs" class="py-2 px-6 flex hover:text-black"> Qui sommes-nous ? </nuxt-link>
+          <a href="/" class="t-link py-1 mx-6 flex hover:text-black"> Accueil </a>
+          <nuxt-link to="/service" class="t-link py-1 mx-6 flex hover:text-black"> Notre service </nuxt-link>
+          <nuxt-link to="/price" class="t-link py-1 mx-6 flex hover:text-black"> Tarif </nuxt-link>
+          <nuxt-link to="/aboutUs" class="t-link py-1 mx-6 flex hover:text-black"> Qui sommes-nous ? </nuxt-link>
         </nav>
         <button class="lg:hidden flex flex-col ml-4">
           <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>

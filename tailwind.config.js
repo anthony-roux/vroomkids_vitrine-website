@@ -2,10 +2,6 @@ module.exports = {
   important: true,
   // Active dark mode on class basis
   darkMode: "class",
-  i18n: {
-    locales: ["en-US"],
-    defaultLocale: "en-US",
-  },
   purge: {
     content: [
       "./pages/**/*.tsx",

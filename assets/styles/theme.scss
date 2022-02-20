@@ -21,8 +21,7 @@
 'settings/fonts';
 
 // Utilities
-@import 'utilities/colors',
-'utilities/boxes';
+@import 'utilities/colors';
 
 // Base
 @import 'base/base',
@@ -41,7 +40,7 @@
 // Plugins
 @import 'plugins/lazyload';
 // Components
-@import 'components/icons',
+@import 'components/icons';
 
 
 // Layouts

@@ -25,12 +25,15 @@ export default {
     start_url: "/",
   },
 
+  publicRuntimeConfig: {
+    assetsPath: process.env.NODE_ASSETS_PATH,
+  },
   babel: {
     babelrc: true,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/main.css"],
+  css: ["~/assets/styles/theme.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: "~/plugins/tailwind-components.js" }],
@@ -41,13 +44,13 @@ export default {
     "@nuxtjs/tailwindcss",
     "nuxt-purgecss",
     "@nuxtjs/style-resources",
-    'nuxt-lazysizes'
+    "nuxt-lazysizes",
   ],
   pageTransition: "fade",
   lazySizes: {
     plugins: {
-      unveilhooks: true
-    }
+      unveilhooks: true,
+    },
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -61,9 +64,7 @@ export default {
     enabled: false,
   },
   styleResources: {
-    scss: [
-      './assets/styles/_all_settings.scss'
-    ]
+    scss: ["./assets/styles/_all_settings.scss"],
   },
   // Nuxt Axios
   axios: {
