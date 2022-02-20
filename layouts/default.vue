@@ -5,20 +5,15 @@
       font-sans
       bg-white
       relative
-      h-screen
+      h-screen box-sha
       overflow-auto overflow-y-scroll
     "
   >
-    <NavBar></NavBar>
+    <c-nav-bar />
     <nuxt></nuxt>
-    
   </main>
 </template>
 
 <script>
-import NavBar from "../components/NavBar/nav-bar";
-
-export default {
-  components: { NavBar },
-};
+export default {};
 </script>

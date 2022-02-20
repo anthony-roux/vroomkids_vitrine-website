@@ -45,6 +45,9 @@ This is a Nuxt JS + Tailwind CSS boilerplate code with preconfigured libraries a
 
 
 ###  Installation
+
+For a confortable use during the coding, please install the Tailwind CSS IntelliSense plugin on VSC
+
 ```bash
 
 $ nvm list

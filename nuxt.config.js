@@ -36,7 +36,20 @@ export default {
   css: ["~/assets/styles/theme.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "~/plugins/tailwind-components.js" }],
+  plugins: [
+    { src: "~/plugins/tailwind-components.js" },
+    "~/plugins/components",
+  ],
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: [
+    "~/components",
+    { path: "~/components/Base/", prefix: "Base" },
+    { path: "~/components/Common/", prefix: "Common" },
+    { path: "~/components/Content/", prefix: "Content" },
+    { path: "~/components/Strates/", prefix: "Strates" },
+    { path: "~/components/Core/", prefix: "Core" },
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [

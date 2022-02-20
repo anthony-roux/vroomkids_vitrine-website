@@ -16,10 +16,6 @@ module.exports = {
   },
   theme: {
     extend: {
-      // fontFamily: {
-      //   title: ["Montserrat", "sans-serif"],
-      //   body: ["Roboto"],
-      // },
       fontSize: {
         "3xs": [
           "8px",

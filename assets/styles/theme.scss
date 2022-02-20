@@ -10,41 +10,27 @@
 	https://github.com/moklick/frontend-stuff
 */
 
-@import 'settings/variables';
+@import "settings/variables";
 
 // Settings
-@import 'settings/normalize',
-'settings/reset',
-'settings/easings',
-'settings/mixins',
-'settings/placeholders',
-'settings/fonts';
+@import "settings/normalize", "settings/reset", "settings/easings",
+  "settings/mixins", "settings/placeholders", "settings/fonts";
 
 // Utilities
-@import 'utilities/colors';
+@import "utilities/colors";
 
 // Base
-@import 'base/base',
-'base/typography';
-
+@import "base/base", "base/typography";
 
 // Theme
-@import 'theme/animations',
-'theme/typography',
-'theme/link',
-'theme/text-gradient',
-'theme/text-hover',
-'theme/border',
-'theme/transition';
+@import "theme/animations", "theme/typography", "theme/link",
+  "theme/text-gradient", "theme/text-hover", "theme/border", "theme/transition";
 
 // Plugins
-@import 'plugins/lazyload';
+@import "plugins/lazyload", "plugins/layout-transitions";
 // Components
-@import 'components/icons';
-
+@import "components/icons";
 
 // Layouts
 
-
 // Pages
-
