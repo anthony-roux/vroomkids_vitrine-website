@@ -21,19 +21,22 @@ h6, .h6{
   // we could use some tool like modular scale / vertical rythm ...
   // sassline.com
   // modularscale.com
-  margin-bottom: .8em;
-  margin-top: 0;
+  // margin-bottom: .8em;
+  // margin-top: 0;
+  font-family: $serif;
 }
  // paragraphes and common definitions
 // helpers class should remain in the helpers file (/utilities/_helpers.scss)
 
 p{
+  font-family: $sans-serif;
   margin: 0;
   & + p {
     margin-top: 0.8em;
   }
 }
 
-a{
+a, div, span{
+  font-family: $sans-serif;
   color: currentColor;
 }

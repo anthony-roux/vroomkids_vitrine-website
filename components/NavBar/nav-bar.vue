@@ -38,7 +38,7 @@
           items-center
         "
       >
-        <span class="text-xl ml-3 mt-1 mr-5"> VroomKids </span>
+        <h3 class="text-xl ml-3 mt-1 mr-5"> VroomKids </h3>
         <t-button tagName="a" to="/client" class="mr-5" variant=""
           >Je suis un client</t-button
         >
