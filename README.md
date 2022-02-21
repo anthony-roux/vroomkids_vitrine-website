@@ -37,6 +37,7 @@ This is a Nuxt JS + Tailwind CSS boilerplate code with preconfigured libraries a
 - Integrated [vuex-map-fields](https://www.npmjs.com/package/vuex-map-fields) for form data binding 
 - https://www.npmjs.com/package/nuxt-lazysizes
 - https://www.npmjs.com/package/nuxt-svg-loader
+- https://nuxtjs.org/docs/configuration-glossary/configuration-components/
 
 
 ## Setup Guide
@@ -75,3 +76,7 @@ $ yarn generate
 Comming Soon!
 
 
+### Nice to have in the pocket 
+
+Tailwind CSS Cheat Sheet: 
+https://nerdcave.com/tailwind-cheat-sheet

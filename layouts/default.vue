@@ -5,12 +5,15 @@
       font-sans
       bg-white
       relative
-      h-screen box-sha
+      h-screen
+      box-sha
       overflow-auto overflow-y-scroll
     "
   >
     <c-nav-bar />
-    <nuxt></nuxt>
+    <transition name="fade">
+      <nuxt></nuxt>
+    </transition>
   </main>
 </template>
 
