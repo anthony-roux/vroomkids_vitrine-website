@@ -37,6 +37,7 @@ header,
 nav,
 section {
   display: block;
+  
 }
 
 /**
@@ -44,10 +45,10 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+// h1 {
+//   font-size: 2em;
+//   margin: 0.8em 0;
+// }
 
 /* Grouping content
    ========================================================================== */
@@ -78,7 +79,7 @@ figure {
 
 hr {
   box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
+  height: 1px; /* 1 */
   overflow: visible; /* 2 */
 }
 

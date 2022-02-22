@@ -1,0 +1,55 @@
+.btn {
+  @extend %button;
+  position: relative;
+  overflow: hidden;
+  @extend %subhead;
+  text-transform: uppercase;
+  padding: 1.2rem 2rem;
+  white-space: nowrap;
+  transition: color 600ms $ease-in-out-quint;
+  color: $white;
+
+  &:after,
+  &:before {
+    @include abs-pseudo(0, 0, 0, 0);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &:after {
+    top: -1px;
+    height: calc(100% + 1px);
+    background-color: rgb(0, 18, 92);
+    border: 1px solid rgb(0, 18, 92);
+    transition: transform 300ms $ease-in-out-quint;
+    transform: scaleY(0) translateZ(0);
+    transform-origin: bottom;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    @media (hover: hover) {
+      color: $white;
+
+      &:after {
+        transform: scaleY(1) translateZ(0);
+        transform-origin: top;
+      }
+    }
+  }
+
+  &--primary {
+    border: solid 1px rgb(0, 18, 92);
+    color: rgb(0, 18, 92);
+    background-color: $white;
+  }
+
+  &--secondary {
+    color: $white;
+    background-color: $black;
+  }
+}
