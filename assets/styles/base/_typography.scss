@@ -23,13 +23,13 @@ h6, .h6{
   // modularscale.com
   // margin-bottom: .8em;
   // margin-top: 0;
-  font-family: $serif;
+  font-family: $nunito;
 }
  // paragraphes and common definitions
 // helpers class should remain in the helpers file (/utilities/_helpers.scss)
 
 p{
-  font-family: $sans-serif;
+  font-family: $poppins;
   margin: 0;
   & + p {
     margin-top: 0.8em;
@@ -37,6 +37,6 @@ p{
 }
 
 a, div, span{
-  font-family: $sans-serif;
+  font-family: $poppins;
   color: currentColor;
 }

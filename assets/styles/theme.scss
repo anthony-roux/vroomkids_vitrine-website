@@ -24,7 +24,8 @@
 
 // Theme
 @import "theme/animations", "theme/typography", "theme/link",
-  "theme/text-gradient", "theme/text-hover", "theme/border", "theme/transition", "theme/button";
+  "theme/text-gradient", "theme/text-hover", "theme/border", "theme/transition",
+  "theme/button";
 
 // Plugins
 @import "plugins/lazyload", "plugins/layout-transitions";

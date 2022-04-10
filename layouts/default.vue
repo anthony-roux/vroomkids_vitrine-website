@@ -1,5 +1,5 @@
 <template>
-  <main
+  <main id="main"
     class="
       dark:bg-gray-800
       font-sans
@@ -10,9 +10,10 @@
       overflow-auto overflow-y-scroll
     "
   >
+    <c-svg-icons />
     <c-nav-bar />
     <transition name="fade">
-      <nuxt></nuxt>
+      <nuxt class="page-content" />
     </transition>
   </main>
 </template>

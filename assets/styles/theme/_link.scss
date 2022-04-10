@@ -22,7 +22,7 @@
   &--gradient,
   &.t-text-gradient {
     &:before {
-      background: $gradient;
+      background: $gradient-green;
     }
   }
   @media (hover: hover) {

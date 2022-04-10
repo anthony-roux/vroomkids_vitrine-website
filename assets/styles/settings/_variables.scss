@@ -32,8 +32,8 @@ $screen-md: $bp-desktop;
 $screen-lg: $bp-wide;
 
 // fonts
-$sans-serif: "arboria", Helvetica, Arial, sans-serif;
-$serif: "superior-title", Helvetica, Arial, sans-serif;
+$nunito: nunito, sans-serif;
+$poppins: poppins, sans-serif;
 
 $bold: 700;
 $regular: 400;
@@ -60,23 +60,28 @@ $spacings: (
 );
 
 // gradient
-$gradient: linear-gradient(90deg, #051676 0%, #037aba 100%);
+$gradient-green: linear-gradient(90deg, #20D8D2 0%, #8CECC7 100%);
+$gradient-green2: linear-gradient(0deg, #20D8D2 0%, #8CECC7 100%);
 $gradientStop1: #D6B07F;
 $gradientStop2: #82624F;
 
 //Colors
-$blackRed: #110302;
 $black: #000000;
 $white: #ffffff;
-$gold: #D6B07F;
 $blue: #00aeef;
-$brown: #82624F;
-$orange: #FFAA3F;
-$red: #ff0033;
+$green1: #20D8D2;
+$green2: #8CECC7;
+$blue: #00aeef;
+$error: #FF4B4B;
+$success: #47FD59;
+
 $colors: (
 "black": $black,
 "white": $white,
-"gold": $gold,
-"red": $red,
+"green1": $green1,
+"green2": $green2,
+"success": $success,
+"error": $error,
+"blue": $blue,
 )
 

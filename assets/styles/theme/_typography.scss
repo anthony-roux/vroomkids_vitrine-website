@@ -10,7 +10,4 @@
 .t-text {
   @extend %text;
 
-  &--caps {
-    @extend %text--caps;
-  }
 }

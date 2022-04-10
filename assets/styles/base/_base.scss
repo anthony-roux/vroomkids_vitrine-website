@@ -23,29 +23,22 @@ $min_font: 12px;
 $max_font: 16px;
 
 html {
-  // font-size: 12px;
+  font-size: 10px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
-
-  // @include mq($from: $bp-landTablet, $until: desktop) {
-  //   font-size: 9px;
-  // }
-
-  // @include mq($from: desktop, $until: 1280px) {
-  //   font-size: 10px;
-  // }
-
-  // @include mq($from: 1440px) {
+  // @include mq($from: wide) {
+  //   @include fluid-type($min_width, $max_width, $min_font, $max_font);
   // }
 }
 
 body {
-  font-family: $sans-serif !important;
+  font-family: $poppins !important;
   color: $black;
+  @extend %text;
+
 }
 
 code {

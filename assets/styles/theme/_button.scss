@@ -8,6 +8,7 @@
   white-space: nowrap;
   transition: color 600ms $ease-in-out-quint;
   color: $white;
+  border-radius: 4px;
 
   &:after,
   &:before {
@@ -17,13 +18,14 @@
   }
 
   &:after {
-    top: -1px;
-    height: calc(100% + 1px);
-    background-color: rgb(0, 18, 92);
-    border: 1px solid rgb(0, 18, 92);
+    right: -1px;
+    width: calc(100% + 1px);
+    background: $gradient-green2;
+    background-image: $gradient-green2;
+    border: 1px solid $gradient-green2;
     transition: transform 300ms $ease-in-out-quint;
     transform: scaleY(0) translateZ(0);
-    transform-origin: bottom;
+    transform-origin: left;
   }
 
   span {
@@ -37,19 +39,54 @@
 
       &:after {
         transform: scaleY(1) translateZ(0);
-        transform-origin: top;
+        transform-origin: right;
       }
     }
   }
 
-  &--primary {
-    border: solid 1px rgb(0, 18, 92);
-    color: rgb(0, 18, 92);
-    background-color: $white;
-  }
-
   &--secondary {
     color: $white;
-    background-color: $black;
+    background-color: $green1 !important;
+    background: $green1 !important;
+    background-image: $green1 !important;
+
+    &:after {
+      right: -1px;
+      width: calc(100% + 1px);
+      background: $green2;
+      background-image: $green2;
+      border: 1px solid $green2;
+      transition: transform 300ms $ease-in-out-quint;
+      transform: scaleY(0) translateZ(0);
+      transform-origin: left;
+    }
+  }
+
+  &--tertiary {
+    color: $green1;
+    background-color: transparent !important;
+    background: transparent !important;
+    background-image: transparent !important;
+
+    &:before {
+      height: 100%;
+      width: 100%;
+      border: 2px solid;
+      border-image-slice: 1;
+      border-image-source: $gradient-green;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    &:after {
+      right: -1px;
+      width: calc(100% + 1px);
+      background: $gradient-green;
+      background-image: $gradient-green;
+      border: 1px solid $gradient-green;
+      transition: transform 300ms $ease-in-out-quint;
+      transform: scaleY(0) translateZ(0);
+      transform-origin: left;
+    }
   }
 }

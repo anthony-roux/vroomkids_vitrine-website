@@ -15,45 +15,43 @@ module.exports = {
     // These options are passed through directly to PurgeCSS
   },
   theme: {
+    fontFamily: {
+      nunito: ["nunito", "sans-serif"],
+      poppins: ["poppins", "sans-serif"],
+    },
     extend: {
       fontSize: {
-        "3xs": [
-          "8px",
-          {
-            lineHeight: "12px",
-          },
-        ],
         "2xs": [
           "10px",
           {
             lineHeight: "16px",
           },
         ],
-        "xs": [
+        xs: [
           "12px",
           {
             lineHeight: "16px",
           },
         ],
-        "s": [
+        "sm": [
           "14px",
           {
-            lineHeight: "24px",
+            lineHeight: "20px",
           },
         ],
-        "m": [
+        "md": [
           "16px",
           {
-            lineHeight: "24px",
+            lineHeight: "20px",
           },
         ],
-        "l": [
+        lg: [
           "18px",
           {
             lineHeight: "24px",
           },
         ],
-        "xl": [
+        xl: [
           "24px",
           {
             lineHeight: "32px",
@@ -72,62 +70,42 @@ module.exports = {
           },
         ],
         "4xl": [
-          "48px",
+          "56px",
           {
-            lineHeight: "56px",
+            lineHeight: "68px",
           },
         ],
       },
       colors: {
-        blue: {
-          lighter: "#F2FAFD",
-          light: "#D4F4FE",
-          DEFAULT: "#107ACA",
-          dark: "#0362AF",
-          darker: "#001367",
-          hover: "#024C9B",
+        primary: {
+          vert1: "#20D8D2",
+          vert2: "#8CECC7",
+        },
+        black: {
+          light: "#545454",
+          DEFAULT: "#2C2C2C",
         },
         grey: {
           lighter: "#EEF2F7",
           light: "#C4CDD6",
-          DEFAULT: "#61788E",
-          dark: "#2B4660",
+          DEFAULT: "#848484",
+          dark: "#939393",
           darker: "#0D2339",
         },
         green: {
-          lighter: "#F4FEF4",
-          light: "#C0F9C9",
-          DEFAULT: "#0EA45F",
-          dark: "#01834A",
-          darker: "#014421",
+          lighter: "#47fd5930",
+          light: "#47fd5980",
+          DEFAULT: "#47FD59",
         },
         red: {
-          lighter: "#FFF2F3",
-          light: "#FFDADD",
-          DEFAULT: "#E2515A",
-          dark: "#C5353E",
-          darker: "#69030A",
+          lighter: "#ff4b4b30",
+          light: "#ff4b4b80",
+          DEFAULT: "#FF4B4B",
         },
-        orange: {
-          lighter: "#FFF6F2",
-          light: "#FFE8DD",
-          DEFAULT: "#F2662F",
-          dark: "#B74B1F",
-          darker: "#3E1603",
-        },
-        pink: {
-          lighter: "#FFE7E9",
-          light: "#FFC4C8",
-          DEFAULT: "#EA6870",
-          dark: "#EA6870",
-          darker: "#AE2831",
-        },
-        lavender: {
-          lighter: "#FCECFD",
-          light: "#F6CDF1",
-          DEFAULT: "#AE439B",
-          dark: "#8D2C7A",
-          darker: "#3C052D",
+        yellow: {
+          lighter: "#FBF7D830",
+          light: "#FBF7D880",
+          DEFAULT: "#FFE455",
         },
         teal: {
           lighter: "#F0FDFD",
@@ -136,58 +114,42 @@ module.exports = {
           dark: "#069792",
           darker: "#034441",
         },
-        mandarin: {
-          lighter: "#FDFCF1",
-          light: "#FBF2B8",
-          DEFAULT: "#EEAA3C",
-          dark: "#B77E29",
-          darker: "#482B04",
-        },
-        yellow: {
-          light: "#FBF7D8",
-          DEFAULT: "#FADB4B",
-          dark: "#F6C844",
-        },
-        black: "#222222",
-        neutral150: "#0D2339",
         white: "#ffffff",
         transparent: "transparent",
       },
       backgroundImage: ["hover", "focus"],
-      borderRadius: {
-        none: "0",
-        sm: "4px",
-        DEFAULT: "8px",
-        md: "12px",
-        lg: "16px",
+      spacing: {
+        sm: "8px",
+        md: "20px",
+        lg: "24px",
+        xl: "60px",
+        "2xl": "100px",
+      },
+      container: {
+        center: true,
       },
       width: {
-        'icon': "24px",
-        "240": "240px",
-        "800": "800px",
-        "1080": "1080px",
-        "1120": "1120px",
-        'fit': 'fit-content'
+        icon: "24px",
+        large: "1080px",
+        xlarge: "1224px",
+      },
+      borderRadius: {
+        none: "0",
+        sm: "3px",
+        DEFAULT: "6px",
+        md: "8px",
       },
       height: {
-        'fit': 'fit-content'
+        fit: "fit-content",
       },
       maxWidth: {
         "icon-small": "16px",
         icon: "24px",
-        button: "272px",
-        illu: "600px",
+        illu: "440px",
         "illu-xl": "800px",
         container: "1120px",
       },
-      minWidth: {
-        "0": "0",
-        "1/4": "25%",
-        "1/2": "50%",
-        "3/4": "75%",
-        full: "100%",
-        "240": "240px",
-      },
+      minWidth: {},
       screens: {
         sm: "640px",
         // => @media (min-width: 640px) { ... }
@@ -198,15 +160,12 @@ module.exports = {
         lg: "1024px",
         // => @media (min-width: 1024px) { ... }
 
-        "1080": "1080px",
-        "1120": "1120px",
+        xl: "1080px",
+        "2xl": "1120px",
         // => @media (min-width: 1024px) { ... }
 
-        xl: "1280px",
+        "3xl": "1280px",
         // => @media (min-width: 1280px) { ... }
-
-        "2xl": "1536px",
-        // => @media (min-width: 1536px) { ... }
       },
     },
     boxShadow: {
@@ -228,6 +187,7 @@ module.exports = {
     },
     linearGradientColors: {
       // defaults to {}
+      vroom: ["#20D8D2", "#8CECC7"],
       "blue-to-turquoise": ["#03BDDF", "#0596DE"],
       "blue-light-hover": ["#019dba", "#11689e"],
       "gradient-primary": ["#60EDE5", "#107ACA"],
@@ -264,7 +224,7 @@ module.exports = {
       zIndex: ["hover", "active"],
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-gradients")],
   future: {
     purgeLayersByDefault: true,
   },
