@@ -1,51 +1,49 @@
 <template>
-  <header
-    class="sticky top-0 z-20 flex items-center w-full bg-gray-100"
-  >
-    <div class="container mx-auto px-6 py-6 flex items-center justify-between">
-      <div class="flex items-center">
+  <header class="sticky top-0 z-20 flex items-center w-full">
+    <div class="container flex items-center justify-between px-6 py-6 mx-auto">
+      <div class="flex items-center justify-between w-full">
+        <img
+          :src="require(`../../static/img/logo-vroom.png`)"
+          alt=""
+          class="z-20 my-6 max-w-[9.7rem]"
+        />
         <nav
-          class="
-            font-sen
-            text-gray-800
-            dark:text-white
-            uppercase
-            text-lg
-            lg:flex
-            items-center
-            hidden
-          "
+          class="items-center hidden text-lg text-white uppercase font-sen dark:text-white lg:flex"
         >
-          <nuxt-link to="/" class="t-link py-1 mx-6 flex hover:text-black"> Accueil </nuxt-link>
-          <nuxt-link to="/service" class="t-link py-1 mx-6 flex hover:text-black"> Notre service </nuxt-link>
-          <nuxt-link to="/price" class="t-link py-1 mx-6 flex hover:text-black"> Tarif </nuxt-link>
-          <nuxt-link to="/aboutUs" class="t-link py-1 mx-6 flex hover:text-black"> Qui sommes-nous ? </nuxt-link>
+          <nuxt-link
+            to="/"
+            class="flex py-1 mx-6 text-white t-link hover:text-black"
+          >
+            Accueil
+          </nuxt-link>
+          <nuxt-link
+            to="/service"
+            class="flex py-1 mx-6 text-white t-link hover:text-black"
+          >
+            Notre service
+          </nuxt-link>
+          <nuxt-link
+            to="/price"
+            class="flex py-1 mx-6 text-white t-link hover:text-black"
+          >
+            Tarif
+          </nuxt-link>
+          <nuxt-link
+            to="/aboutUs"
+            class="flex py-1 mx-6 text-white t-link hover:text-black"
+          >
+            Qui sommes-nous ?
+          </nuxt-link>
         </nav>
-        <button class="lg:hidden flex flex-col ml-4">
-          <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-          <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-          <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
+        <button class="flex flex-col ml-4 lg:hidden">
+          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
+          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
+          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
         </button>
       </div>
       <div
-        class="
-          uppercase
-          text-gray-800
-          dark:text-white
-          font-black
-          flex
-          flex-wrap
-          items-center
-        "
-      >
-        <h3 class="text-xl ml-3 mt-1 mr-5 font-black"> VroomKids </h3>
-        <t-button tagName="a" to="/client" class="mr-5" variant=""
-          >Je suis un client</t-button
-        >
-        <t-button tagName="a" to="/driver" variant=""
-          >Je suis un chauffeur</t-button
-        >
-      </div>
+        class="flex flex-wrap items-center font-black text-gray-800 uppercase dark:text-white"
+      ></div>
     </div>
   </header>
 </template>

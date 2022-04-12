@@ -1,6 +1,8 @@
 <template class="page">
-  <div id="page-home" class="container mx-auto p-6 ">
-    <h3 class="t-title text-center dark:text-white">
+
+  <div id="page-home" class="container p-6 mx-auto ">
+
+    <h3 class="text-center t-title dark:text-white">
       Homepage
     </h3>
   </div>
@@ -16,3 +18,5 @@ export default {
   methods: {},
 };
 </script>
+
+<style></style>
