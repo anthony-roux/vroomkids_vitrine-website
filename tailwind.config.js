@@ -1,5 +1,7 @@
 module.exports = {
   important: true,
+  mode: 'jit',  // update this line
+
   // Active dark mode on class basis
   darkMode: "class",
   purge: {
@@ -22,57 +24,87 @@ module.exports = {
     extend: {
       fontSize: {
         "2xs": [
-          "10px",
+          "0.9rem",
           {
-            lineHeight: "16px",
+            lineHeight: "1.2rem",
           },
         ],
         xs: [
-          "12px",
+          "1.2rem",
           {
-            lineHeight: "16px",
+            lineHeight: "1.6rem",
           },
         ],
         "sm": [
-          "14px",
+          "1.4rem",
           {
-            lineHeight: "20px",
+            lineHeight: "2rem",
           },
         ],
         "md": [
-          "16px",
+          "1.6rem",
           {
-            lineHeight: "20px",
+            lineHeight: "2rem",
           },
         ],
         lg: [
-          "18px",
+          "1.8rem",
           {
-            lineHeight: "24px",
+            lineHeight: "2.4rem",
           },
         ],
         xl: [
-          "24px",
+          "2.4rem",
           {
-            lineHeight: "32px",
+            lineHeight: "3.2rem",
           },
         ],
         "2xl": [
-          "32px",
+          "3.2rem",
           {
-            lineHeight: "40px",
+            lineHeight: "4rem",
           },
         ],
         "3xl": [
-          "40px",
+          "4rem",
           {
-            lineHeight: "56px",
+            lineHeight: "5.6rem",
           },
         ],
         "4xl": [
-          "56px",
+          "4.8rem",
           {
-            lineHeight: "68px",
+            lineHeight: "6.2rem",
+          },
+        ],
+        "5xl": [
+          "5.6rem",
+          {
+            lineHeight: "6.8rem",
+          },
+        ],
+        "6xl": [
+          "6.4rem",
+          {
+            lineHeight: "7.6rem",
+          },
+        ],
+        "7xl": [
+          "6.4rem",
+          {
+            lineHeight: "7.6rem",
+          },
+        ],
+        "8xl": [
+          "6.4rem",
+          {
+            lineHeight: "7.6rem",
+          },
+        ],
+        "9xl": [
+          "6.4rem",
+          {
+            lineHeight: "7.6rem",
           },
         ],
       },
