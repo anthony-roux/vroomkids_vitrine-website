@@ -66,8 +66,9 @@ $gradientStop1: #D6B07F;
 $gradientStop2: #82624F;
 
 //Colors
-$black: #000000;
+$black: #2C2C2C;
 $white: #ffffff;
+$grey: #848484;
 $blue: #00aeef;
 $green1: #20D8D2;
 $green2: #8CECC7;
@@ -78,6 +79,7 @@ $success: #47FD59;
 $colors: (
 "black": $black,
 "white": $white,
+"grey": $white,
 "green1": $green1,
 "green2": $green2,
 "success": $success,
