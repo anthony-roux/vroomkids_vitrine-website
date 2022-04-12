@@ -33,6 +33,21 @@ const settings = {
   //     {propToOverride2}: {newDefaultValue2}
   //   }
   // }
+  "t-button": {
+    component: TButton,
+    props: {
+      fixedClasses:
+        "btn",
+      classes:
+        "btn",
+      variants: {
+        secondary:
+          "btn btn--secondary",
+        tertiary:
+          "btn btn--tertiary",
+      },
+    },
+  },
   "t-input": {
     component: TInput,
     props: {
@@ -92,24 +107,6 @@ const settings = {
           modal: "bg-white border border-red-100 shadow-lg",
           footer: "bg-red-50",
         },
-      },
-    },
-  },
-  "t-button": {
-    component: TButton,
-    props: {
-      fixedClasses:
-        "block px-6 py-4 transition duration-100 ease-in-out focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed",
-      classes:
-        "text-white bg-blue border border-transparent shadow-sm rounded hover:bg-blue-700",
-      variants: {
-        secondary:
-          "text-gray-800 bg-white border border-gray-400 hover:text-gray-600 shadow-blue-small ",
-        error:
-          "text-white bg-red-500 border border-transparent rounded shadow-sm hover:bg-red-600",
-        success:
-          "max-w-button text-white bg-green-500 border border-transparent rounded shadow-sm hover:bg-green-600",
-        link: "text-blue-500 underline hover:text-blue-600",
       },
     },
   },
