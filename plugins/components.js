@@ -24,9 +24,9 @@ Vue.component("c-svg-icons", SvgIcons);
 
 // STRATES
 
-// import StrateHero from '~/components/Strates/StrateHero.vue';
+import StrateHeader from '~/components/Strates/StrateHeader.vue';
 
-// Vue.component('strate_hero', StrateHero);
+Vue.component('strate-header', StrateHeader);
 
 // COMPONENTS
 
