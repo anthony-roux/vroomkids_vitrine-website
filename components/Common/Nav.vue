@@ -8,29 +8,29 @@
           class="z-20 my-6 max-w-[9.7rem]"
         />
         <nav
-          class="items-center hidden text-lg text-white uppercase font-sen dark:text-white lg:flex"
+          class="items-center hidden text-lg font-sen dark:text-white lg:flex"
         >
           <nuxt-link
             to="/"
-            class="flex py-1 mx-6 text-white t-link hover:text-black"
+            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
           >
             Accueil
           </nuxt-link>
           <nuxt-link
             to="/service"
-            class="flex py-1 mx-6 text-white t-link hover:text-black"
+            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
           >
             Notre service
           </nuxt-link>
           <nuxt-link
             to="/price"
-            class="flex py-1 mx-6 text-white t-link hover:text-black"
+            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
           >
             Tarif
           </nuxt-link>
           <nuxt-link
             to="/aboutUs"
-            class="flex py-1 mx-6 text-white t-link hover:text-black"
+            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
           >
             Qui sommes-nous ?
           </nuxt-link>
@@ -50,5 +50,28 @@
 <script>
 export default {
   name: "NavBar",
+
+  data() {
+    return {
+      isBlack: false,
+    };
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+body {
+  nav {
+    a {
+      color: $white;
+    }
+  }
+  &:not(.homepage) {
+    nav {
+      a {
+        color: $black;
+      }
+    }
+  }
+}
+</style>

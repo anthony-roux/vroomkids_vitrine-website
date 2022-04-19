@@ -1,5 +1,5 @@
 <template>
-  <div id="page-about-us" class="aboutUs flex relative items-center container mx-auto p-6">
+  <div id="page-about-us" class="container relative flex items-center p-6 mx-auto aboutUs">
     <t-alert show variant="success" class="top-80"> Page Qui sommes-nous ? </t-alert>
   </div>
 </template>
@@ -8,6 +8,13 @@
 export default {
   data() {
     return {};
+  },
+    head() {
+    return {
+      bodyAttrs: {
+        class: "aboutUs",
+      },
+    };
   },
   methods: {},
 };

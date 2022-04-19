@@ -40,6 +40,7 @@ export default {
     { src: "~/plugins/tailwind-components.js" },
     "~/plugins/components",
     "~/plugins/axios.js",
+    "~/plugins/global.js",
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

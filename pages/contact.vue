@@ -1,5 +1,5 @@
 <template>
-  <div id="page-contact" class="flex relative items-center container mx-auto p-6">
+  <div id="page-contact" class="container relative flex items-center p-6 mx-auto">
     <t-alert show variant="success" class="top-80"> Page contact </t-alert>
   </div>
 </template>
@@ -8,6 +8,13 @@
 export default {
   data() {
     return {};
+  },
+    head() {
+    return {
+      bodyAttrs: {
+        class: "contact",
+      },
+    };
   },
   methods: {},
 };

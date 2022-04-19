@@ -4,7 +4,7 @@
       <p class="text-lg pt-sm px-lg">TYPOGRAPHY</p>
       <hr />
       <h1 class="text-5xl font-bold">text-5xl 56px</h1>
-      <h2 class="text-4xl font-semibold ">text-4xl 48px</h2>
+      <h2 class="text-4xl font-semibold">text-4xl 48px</h2>
       <h2 class="text-3xl font-semibold">text-3xl 40px</h2>
       <p class="text-2xl font-semibold">text-2xl 32px</p>
       <p class="text-xl">text-xl 24px</p>
@@ -38,6 +38,11 @@
         <t-button tagName="a" href="https://www.google.fr/" variant="tertiary"
           ><span>tertiary button</span></t-button
         >
+        <div class="p-6 bg-gradient-r-gradient-pink">
+          <t-button tagName="a" href="https://www.google.fr/" variant="fourth"
+            ><span>fourth button</span></t-button
+          >
+        </div>
       </div>
     </section>
 
@@ -54,7 +59,7 @@
         <nuxt-img
           alt="Logo Vroom"
           src="static/img/logo-vroom.png"
-          class="object-contain mx-auto my-6 "
+          class="object-contain mx-auto my-6"
         />
         <img :src="require(`static/img/logo-vroom.png`)" alt="" class="my-6" />
         <img :src="require(`static/img/hero.png`)" alt="hero" class="" />
@@ -73,6 +78,21 @@
   </div>
 </template>
 <script>
-export default {};
+
+
+export default {
+  
+  name: "styleguide",
+
+  data() {
+    return {
+    };
+  },
+  methods: {
+    aMethod() {
+      return this.$global.style ;
+    },
+  },
+};
 </script>
 <style lang=""></style>

@@ -139,6 +139,10 @@ module.exports = {
           light: "#FBF7D880",
           DEFAULT: "#FFE455",
         },
+        pink: {
+          light: "#D3A2EA",
+          DEFAULT: "#A820D8",
+        },
         teal: {
           lighter: "#F0FDFD",
           light: "#BDF8F4",
@@ -159,11 +163,13 @@ module.exports = {
       },
       container: {
         center: true,
+        padding: '1.5rem',
+
       },
       width: {
         icon: "24px",
         large: "1080px",
-        xlarge: "1224px",
+        xlarge: "1240px",
       },
       borderRadius: {
         none: "0",
@@ -176,10 +182,10 @@ module.exports = {
       },
       maxWidth: {
         "icon-small": "16px",
-        icon: "24px",
-        illu: "440px",
+        "icon": "24px",
+        "illu": "440px",
         "illu-xl": "800px",
-        container: "1120px",
+        "container": "1240px",
       },
       minWidth: {},
       screens: {
@@ -223,6 +229,8 @@ module.exports = {
       "blue-to-turquoise": ["#03BDDF", "#0596DE"],
       "blue-light-hover": ["#019dba", "#11689e"],
       "gradient-primary": ["#60EDE5", "#107ACA"],
+      "gradient-pink": ["#A820D8", "#D3A2EA"],
+      
       // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
     },
     repeatingLinearGradientDirections: (theme) =>

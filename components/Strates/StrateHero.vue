@@ -1,6 +1,6 @@
 <template>
   <section class="w-full h-[90vh] hero relative">
-    <c-nav-bar class="" />
+    
     <div class="container grid grid-cols-1 gap-12 pt-52 lg:grid-cols-4">
       <h1 class="mx-auto text-5xl font-bold text-white lg:col-span-3">
         Le service chauffeur et accompagnateur de votre
@@ -9,7 +9,7 @@
 
       <div class="flex items-end justify-start ">
         <t-button tagName="a" to="/client" class="mb-5" variant=""
-          ><span>Commander</span></t-button
+          ><span class="text-xl">Commander</span></t-button
         >
       </div>
 
@@ -24,13 +24,16 @@
 </template>
 <script>
 export default {
-  name: "StrateHeader",
+  name: "StrateHero",
 };
 </script>
 
 <style lang="scss">
 .hero {
+  margin-top: -9.6rem;
   background-image: url("../../static/img/hero.png");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

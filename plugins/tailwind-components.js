@@ -45,6 +45,8 @@ const settings = {
           "btn btn--secondary",
         tertiary:
           "btn btn--tertiary",
+        fourth:
+          "btn btn--fourth",
       },
     },
   },
