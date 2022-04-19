@@ -12,25 +12,25 @@
         >
           <nuxt-link
             to="/"
-            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
+            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
           >
             Accueil
           </nuxt-link>
           <nuxt-link
             to="/service"
-            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
+            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
           >
             Notre service
           </nuxt-link>
           <nuxt-link
             to="/price"
-            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
+            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
           >
             Tarif
           </nuxt-link>
           <nuxt-link
             to="/aboutUs"
-            class="flex py-1 mx-6pm ru de t-link hover:text-primary-vert1"
+            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
           >
             Qui sommes-nous ?
           </nuxt-link>
