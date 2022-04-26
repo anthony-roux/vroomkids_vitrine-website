@@ -25,7 +25,7 @@ lg: $bp-landTablet,
 xl: $bp-desktop,
   //xs:  	$bp-mobile,
 );
-// Bootstrap
+
 // $screen-xs: ;
 $screen-sm: $bp-tablet;
 $screen-md: $bp-desktop;
@@ -73,6 +73,7 @@ $blue: #00aeef;
 $green1: #20D8D2;
 $green2: #8CECC7;
 $blue: #00aeef;
+$pink: #A820D8;
 $error: #FF4B4B;
 $success: #47FD59;
 
@@ -82,6 +83,7 @@ $colors: (
 "grey": $white,
 "green1": $green1,
 "green2": $green2,
+"pink": $pink,
 "success": $success,
 "error": $error,
 "blue": $blue,
