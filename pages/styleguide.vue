@@ -58,11 +58,10 @@
         />
         <nuxt-img
           alt="Logo Vroom"
-          src="static/img/logo-vroom.png"
+          src="static/img/logo-vroom-blanc-w2000.png"
           class="object-contain mx-auto my-6"
         />
-        <img :src="require(`static/img/logo-vroom.png`)" alt="" class="my-6" />
-        <img :src="require(`static/img/hero.png`)" alt="hero" class="" />
+        <img :src="require(`static/img/photography/child+bus_hero-homepage.png`)" alt="" class="my-6" />
         <img :src="require(`static/img/giphy.gif`)" alt="" class="my-6" />
       </div>
     </section>
@@ -72,7 +71,7 @@
 
       <div class="flex max-w-md space-x-7">
         <base-use-svg id="light-off" color="yellow" size="lg" />
-        <base-use-svg id="vroom" color="yellow" size="lg" />
+        <base-use-svg id="vroom" class="vroom" color="black" typeColor="black" />
       </div>
     </section>
   </div>
