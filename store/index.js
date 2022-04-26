@@ -1,18 +1,20 @@
-export const getters = {
-  isAuthenticated(state) {
-    return state.auth.loggedIn;
-  },
-  loggedInUser(state) {
-    return state.auth.user;
-  },
+import Vuex from "vuex";
+
+import global from "./global";
+
+const storeApp = () => {
+  return new Vuex.Store({
+    actions: {
+      async nuxtServerInit({ dispatch, commit }, context) {
+        await commit("global/setConfig"); // load config js
+
+      },
+    },
+    namespaced: true,
+    modules: {
+      global,
+    },
+  });
 };
-export const mutations = {
-  UPDATE_LOGGED_USER(state, user) {
-    if (user.id === state.auth.user.id) {
-      state.auth.user.name = user.name;
-      state.auth.user.username = user.username;
-      state.auth.user.email = user.email;
-    }
-  },
-};
-export const strict = process.env.NODE_ENV !== "production";
+
+export default storeApp;
