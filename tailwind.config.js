@@ -118,7 +118,7 @@ module.exports = {
           DEFAULT: "#2C2C2C",
         },
         grey: {
-          lighter: "#EEF2F7",
+          lighter: "#F6F6F6",
           light: "#C4CDD6",
           DEFAULT: "#848484",
           dark: "#939393",
@@ -164,7 +164,6 @@ module.exports = {
       container: {
         center: true,
         padding: '1.5rem',
-
       },
       width: {
         icon: "24px",
