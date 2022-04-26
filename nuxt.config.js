@@ -38,6 +38,10 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~/plugins/tailwind-components.js" },
+    { src: "~/plugins/eventHub.js", mode: "client" },
+    { src: "~/plugins/html/observer.js", mode: "client" },
+    { src: "~/plugins/html/device.js", mode: "client" },
+    { src: "~/plugins/html/fixScroll.js", mode: "client" },
     "~/plugins/components",
     "~/plugins/axios.js",
     "~/plugins/global.js",
