@@ -1,77 +1,98 @@
 <template>
-  <header class="sticky top-0 z-20 flex items-center w-full">
-    <div class="container flex items-center justify-between px-6 py-6 mx-auto">
-      <div class="flex items-center justify-between w-full">
-        <img
-          :src="require(`../../static/img/logo-vroom.png`)"
-          alt=""
-          class="z-20 my-6 max-w-[9.7rem]"
-        />
-        <nav
-          class="items-center hidden text-lg font-sen dark:text-white lg:flex"
+  <div class="flex flex-col h-full justify-evenly lg:flex-row">
+    <ul class="flex flex-col items-start lg:items-center l-nav lg:flex-row">
+      <li
+        v-if="screen === 'mobile' || screen === 'tablet'"
+        class="flex l-nav__item lg:hidden"
+      >
+        <nuxt-link
+          to="/"
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          >Accueil
+        </nuxt-link>
+      </li>
+      <li class="lg:mr-6 l-nav__item">
+        <nuxt-link
+          to="/service"
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
         >
-          <nuxt-link
-            to="/"
-            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
-          >
-            Accueil
-          </nuxt-link>
-          <nuxt-link
-            to="/service"
-            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
-          >
-            Notre service
-          </nuxt-link>
-          <nuxt-link
-            to="/price"
-            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
-          >
-            Tarif
-          </nuxt-link>
-          <nuxt-link
-            to="/aboutUs"
-            class="flex py-1 mx-6 t-link hover:text-primary-vert1"
-          >
-            Qui sommes-nous ?
-          </nuxt-link>
-        </nav>
-        <button class="flex flex-col ml-4 lg:hidden">
-          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
-          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
-          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
-        </button>
-      </div>
-      <div
-        class="flex flex-wrap items-center font-black text-gray-800 uppercase dark:text-white"
-      ></div>
+          Notre service
+        </nuxt-link>
+      </li>
+      <li class="lg:mr-6 l-nav__item">
+        <nuxt-link
+          to="/price"
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          >Tarifs
+        </nuxt-link>
+      </li>
+      <li class="lg:mr-6 l-nav__item">
+        <nuxt-link
+          to="/contact"
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          >Contact
+        </nuxt-link>
+      </li>
+    </ul>
+    <div
+      class="justify-center transition-colors c-header__container l-nav__item"
+    >
+      <t-button
+        tagName="a"
+        to="/"
+        class="w-full mb-5 lg:w-auto lg:mb-0"
+        :variant="this.isSidebar ? 'fourth' : 'fourth' "
+        @click.native="openTruc"
+        ><span class="text-lg">Devenir chauffeur</span></t-button
+      >
     </div>
-  </header>
+  </div>
 </template>
 <script>
-export default {
-  name: "NavBar",
+import { mapGetters } from "vuex";
 
-  data() {
+export default {
+  name: "Nav",
+  props: {
+    isSidebar: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
+  data: function () {
     return {
-      isBlack: false,
     };
+  },
+  computed: {
+    ...mapGetters({
+      header: "global/getGlobal",
+      screen: "global/getScreen",
+    }),
+  },
+  mounted() {
+
+  },
+  methods: {
+
+    unbindEvents() {
+      this.$eventHub.$off("sidebar:close");
+    },
+    openMenu() {
+      this.$eventHub.$emit("sidebar:open", "menu");
+      this.isMenuOpen = true;
+    },
+    openTruc() {
+      this.$eventHub.$emit("sidebar:open", "truc");
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped>
-body {
-  nav {
-    a {
-      color: $white;
-    }
-  }
-  &:not(.homepage) {
-    nav {
-      a {
-        color: $black;
-      }
-    }
-  }
+<style scoped lang="scss">
+$transition: opacity 450ms $ease-in-out-quad;
+
+.l-nav__item {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 }
 </style>

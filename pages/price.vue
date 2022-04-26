@@ -1,8 +1,15 @@
 <template>
-  <div
-    id="page-price"
-    class="container relative flex items-center p-6 mx-auto"
-  ></div>
+  <section id="page-price" class="">
+    <strate-hero
+      title="Ici c'est la page price"
+      subtitle="et ça le subtitle"
+      ctaLabel="CTA label"
+      backgroundUrl="/img/photography/child+bus_hero-homepage_v2.png"
+    />
+    <div class="container p-6 mx-auto">
+      <h3 class="text-center t-title dark:text-white">Price</h3>
+    </div>
+  </section>
 </template>
 
 <script>

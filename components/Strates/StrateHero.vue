@@ -1,38 +1,73 @@
 <template>
-  <section class="w-full h-[90vh] hero relative">
-    
-    <div class="container grid grid-cols-1 gap-12 pt-52 lg:grid-cols-4">
-      <h1 class="mx-auto text-5xl font-bold text-white lg:col-span-3">
-        Le service chauffeur et accompagnateur de votre
-        <span class="text-primary-vert1">enfant</span>
-      </h1>
-
-      <div class="flex items-end justify-start ">
-        <t-button tagName="a" to="/client" class="mb-5" variant=""
-          ><span class="text-xl">Commander</span></t-button
+  <section
+    class="
+      strate-hero
+      w-full
+      h-auto
+      lg:h-[90vh]
+      relative
+      mt-[-9.5rem]
+      lg:mt-[-13.9rem]
+    "
+    :style="{ backgroundImage: `url(${backgroundUrl})` }"
+  >
+    <div class="container py-24 pt-60 lg:py-44 lg:pt-96 ">
+      <div class="w-10/12 lg:w-3/4">
+        <h1
+          class="mx-auto text-3xl font-black text-white uppercase strate-hero__title lg:text-5xl"
         >
+          {{ title }}
+          <br /><span class="text-pink">{{ subtitle }}</span>
+        </h1>
+        <div class="flex items-end justify-start strate-hero__cta-wrapper">
+          <t-button tagName="a" to="/client" class="mt-10" variant="fourth"
+            ><span class="text-lg">{{ ctaLabel }}</span></t-button
+          >
+        </div>
       </div>
-
-      <!-- <t-button tagName="a" to="/client" class="mr-5" variant=""
-        ><span>Je suis un client</span></t-button
-      >
-      <t-button tagName="a" to="/driver" variant=""
-        ><span>Je suis un chauffeur</span></t-button
-      > -->
     </div>
   </section>
 </template>
 <script>
 export default {
   name: "StrateHero",
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+    backgroundUrl: {
+      type: String,
+      required: true,
+      default: "/img/photography/child+bus_hero-homepage_v2.png",
+    },
+    title: {
+      type: String,
+      required: true,
+      default: "Duis esse est adipisicing elit veniam",
+    },
+    subtitle: {
+      type: String,
+      required: true,
+      default: "amet ipsum dolore.",
+    },
+    ctaLabel: {
+      type: String,
+      required: true,
+      default: "En savoir plus.",
+    },
+  },
+  data: function () {
+    return {
+      isOpen: false,
+    };
+  },
 };
 </script>
 
 <style lang="scss">
-.hero {
-  margin-top: -9.6rem;
-  background-image: url("../../static/img/hero.png");
-  background-position: center;
+.strate-hero {
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }

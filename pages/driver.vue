@@ -1,7 +1,15 @@
 <template>
-  <div id="page-driver" class="container relative flex items-center p-6 mx-auto">
-    <t-alert show variant="success" class="top-80"> Page Chauffeur </t-alert>
-  </div>
+  <section id="page-driver" class="">
+    <strate-hero
+      title="Ici c'est la page Chauffeur"
+      subtitle="et ça le subtitle"
+      ctaLabel="CTA label"
+      backgroundUrl="/img/photography/child+bus_hero-homepage_v2.png"
+    />
+    <div class="container p-6 mx-auto">
+      <h3 class="text-center t-title dark:text-white">Driver</h3>
+    </div>
+  </section>
 </template>
 
 <script>
