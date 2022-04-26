@@ -39,7 +39,7 @@
     >
       <t-button
         tagName="a"
-        to="/"
+        to="/driver"
         class="w-full mb-5 lg:w-auto lg:mb-0"
         :variant="this.isSidebar ? 'fourth' : 'fourth' "
         @click.native="openTruc"

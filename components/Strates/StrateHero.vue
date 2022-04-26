@@ -34,26 +34,26 @@ export default {
   props: {
     id: {
       type: String,
-      required: true,
+      required: false,
     },
     backgroundUrl: {
       type: String,
-      required: true,
+      required: false,
       default: "/img/photography/child+bus_hero-homepage_v2.png",
     },
     title: {
       type: String,
-      required: true,
+      required: false,
       default: "Duis esse est adipisicing elit veniam",
     },
     subtitle: {
       type: String,
-      required: true,
+      required: false,
       default: "amet ipsum dolore.",
     },
     ctaLabel: {
       type: String,
-      required: true,
+      required: false,
       default: "En savoir plus.",
     },
   },

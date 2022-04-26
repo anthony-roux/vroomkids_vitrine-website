@@ -24,7 +24,6 @@ export default {
     return {
       currentSlug: "home",
       page: this.$route.name,
-      isHome: "global/getIsHome",
     };
   },
   head() {
