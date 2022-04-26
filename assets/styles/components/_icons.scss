@@ -45,6 +45,10 @@ svg.c-icon.white.c-icon--xl > use
     width: 58px;
     height: 58px;
   }
+  &--logo{
+    width: 9.7rem;
+    height: 3.5rem;
+  }
 
   &:not(.c-icon--multicolor){
     stroke: currentColor;
