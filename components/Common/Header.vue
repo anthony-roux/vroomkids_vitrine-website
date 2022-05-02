@@ -120,6 +120,29 @@ $transition: opacity 450ms $ease-in-out-quad;
     transition: opacity 600ms $ease-in-out-quad;
   }
 
+  .btn--secondary-white {
+    color: $white !important;
+    border: 2px solid $white;
+
+    span {
+      color: $white;
+    }
+
+    &:after {
+      background: $white;
+      border: 2px solid $white;
+    }
+
+    &:hover {
+      color: $pink !important;
+      border: 2px solid $white;
+
+      span {
+        color: $pink;
+      }
+    }
+  }
+
   &.is-fixed {
     backdrop-filter: blur(10px);
     opacity: 0.99;
@@ -141,24 +164,26 @@ $transition: opacity 450ms $ease-in-out-quad;
         transition: opacity 600ms $ease-in-out-quad;
 
         &:hover {
-          color: $green1 !important;
+          color: $pink !important;
         }
       }
 
-      .btn--fourth {
-        color: $green1 !important;
-        border: 1px solid $green1;
+      .btn--secondary-white {
+        color: $pink !important;
+        border: 2px solid $pink;
+
         span {
-          color: $green1;
+          color: $pink;
         }
+
         &:after {
-          background: $green2;
-          border: 1px solid $green2;
+          background: $pink;
+          border: 2px solid $pink;
         }
 
         &:hover {
-          color: $green2 !important;
-          border: 1px solid $green2;
+          color: $white !important;
+          border: 2px solid $pink;
 
           span {
             color: $white;

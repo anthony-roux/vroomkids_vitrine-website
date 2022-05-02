@@ -20,7 +20,7 @@
           <br /><span class="text-pink">{{ subtitle }}</span>
         </h1>
         <div class="flex items-end justify-start strate-hero__cta-wrapper">
-          <t-button tagName="a" to="/client" class="mt-10" variant="fourth"
+          <t-button tagName="a" to="/client" class="mt-10" variant="secondaryWhite"
             ><span class="text-lg">{{ ctaLabel }}</span></t-button
           >
         </div>
@@ -39,7 +39,7 @@ export default {
     backgroundUrl: {
       type: String,
       required: false,
-      default: "/img/photography/child+bus_hero-homepage_v2.png",
+      default: "/img/photography/child+bus_homepage_green2pink.png",
     },
     title: {
       type: String,

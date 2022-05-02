@@ -41,7 +41,7 @@
         tagName="a"
         to="/driver"
         class="w-full mb-5 lg:w-auto lg:mb-0"
-        :variant="this.isSidebar ? 'fourth' : 'fourth' "
+        :variant="this.isSidebar ? 'secondaryWhite' : 'secondaryWhite' "
         @click.native="openTruc"
         ><span class="text-lg">Devenir chauffeur</span></t-button
       >
