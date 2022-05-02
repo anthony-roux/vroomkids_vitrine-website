@@ -1,6 +1,6 @@
 module.exports = {
   important: true,
-  mode: 'jit',  // update this line
+  mode: "jit", // update this line
 
   // Active dark mode on class basis
   darkMode: "class",
@@ -35,13 +35,13 @@ module.exports = {
             lineHeight: "1.6rem",
           },
         ],
-        "sm": [
+        sm: [
           "1.4rem",
           {
             lineHeight: "2rem",
           },
         ],
-        "md": [
+        md: [
           "1.6rem",
           {
             lineHeight: "2rem",
@@ -115,7 +115,8 @@ module.exports = {
         },
         black: {
           light: "#545454",
-          DEFAULT: "#2C2C2C",
+          default: "#333333",
+          dark: "#2C2C2C",
         },
         grey: {
           lighter: "#EEF2F7",
@@ -163,8 +164,7 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: '1.5rem',
-
+        padding: "1.5rem",
       },
       width: {
         icon: "24px",
@@ -182,10 +182,10 @@ module.exports = {
       },
       maxWidth: {
         "icon-small": "16px",
-        "icon": "24px",
-        "illu": "440px",
+        icon: "24px",
+        illu: "440px",
         "illu-xl": "800px",
-        "container": "1240px",
+        container: "1240px",
       },
       minWidth: {},
       screens: {
@@ -230,7 +230,7 @@ module.exports = {
       "blue-light-hover": ["#019dba", "#11689e"],
       "gradient-primary": ["#60EDE5", "#107ACA"],
       "gradient-pink": ["#A820D8", "#D3A2EA"],
-      
+
       // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
     },
     repeatingLinearGradientDirections: (theme) =>

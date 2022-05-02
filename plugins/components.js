@@ -17,16 +17,18 @@ Vue.component("base-use-svg", UseSvg);
 
 // COMMON (layout, Header, footer etc..)
 import NavBar from "~/components/Common/Nav.vue";
+import Footer from "~/components/Common/Footer.vue";
 import SvgIcons from "~/components/Common/SvgIcons.vue";
 
 Vue.component("c-nav-bar", NavBar);
+Vue.component("c-footer", Footer);
 Vue.component("c-svg-icons", SvgIcons);
 
 // STRATES
 
-import StrateHero from '~/components/Strates/StrateHero.vue';
+import StrateHero from "~/components/Strates/StrateHero.vue";
 
-Vue.component('strate-hero', StrateHero);
+Vue.component("strate-hero", StrateHero);
 
 // COMPONENTS
 
