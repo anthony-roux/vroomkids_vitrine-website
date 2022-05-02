@@ -26,22 +26,28 @@
             <ul role="list" class="mt-4 space-y-4">
               <li>
                 <a href="#" class="text-md font-normal text-white">
-                  Marketing
+                  Qui sommes-nous ?
                 </a>
+              </li>
+              <nuxt-link
+                to="/price"
+                class="
+                  c-footer__links
+                  transition-colors
+                  lg:text-md
+                  t-link
+                  text-md
+                  font-normal
+                  text-white
+                "
+                >test
+              </nuxt-link>
+              <li>
+                <a href="#" class="text-md font-normal text-white"> Tarifs </a>
               </li>
               <li>
                 <a href="#" class="text-md font-normal text-white">
-                  Analytics
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-md font-normal text-white">
-                  Commerce
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-md font-normal text-white">
-                  Insights
+                  Contactez-nous
                 </a>
               </li>
             </ul>
@@ -52,19 +58,13 @@
             </h3>
             <ul role="list" class="mt-4 space-y-4">
               <li>
-                <a href="#" class="text-md font-normal text-white"> Pricing </a>
-              </li>
-              <li>
                 <a href="#" class="text-md font-normal text-white">
-                  Documentation
+                  Devenir chauffeur
                 </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white"> Guides </a>
-              </li>
-              <li>
                 <a href="#" class="text-md font-normal text-white">
-                  API Status
+                  Plateforme Vroomer
                 </a>
               </li>
             </ul>
@@ -74,7 +74,7 @@
               Vroom
             </h3>
             <div class="c-footer__socials-icons py-10">
-              <div class="flex sm:justify-center lg:justify-start">
+              <div class="flex lg:justify-start">
                 <a href="" class="pr-8 lg:pr-12">
                   <base-use-svg id="facebook" s size="lg" />
                 </a>
