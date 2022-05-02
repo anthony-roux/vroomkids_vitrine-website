@@ -1,10 +1,9 @@
 <template>
   <section id="page-about-us" class="">
     <strate-hero
-      title="Ici c'est la page about us"
-      subtitle="et ça le subtitle"
-      ctaLabel="CTA label"
-      backgroundUrl="/img/photography/child+bus_hero-homepage_v2.png"
+      title="Qui sommes-nous ?"
+      ctaLabel=""
+      backgroundUrl="/img/photography/hero_others.png"
     />
     <div class="container p-6 mx-auto">
       <h3 class="text-center t-title dark:text-white">Qui sommes nous ?</h3>
