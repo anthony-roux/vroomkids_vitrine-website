@@ -41,14 +41,12 @@ const settings = {
       classes:
         "btn",
       variants: {
-        secondary:
-          "btn btn--secondary",
+        secondaryWhite:
+          "btn btn--secondary-white",
+        secondaryPink:
+          "btn btn--secondary-pink",
         tertiary:
           "btn btn--tertiary",
-        fourth:
-          "btn btn--fourth",
-        fifth:
-          "btn btn--fifth",
       },
     },
   },
