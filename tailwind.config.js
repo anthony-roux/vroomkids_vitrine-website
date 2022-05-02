@@ -115,7 +115,8 @@ module.exports = {
         },
         black: {
           light: "#545454",
-          DEFAULT: "#2C2C2C",
+          DEFAULT: "#333333",
+          dark: "#2C2C2C",
         },
         grey: {
           lighter: "#F6F6F6",
@@ -229,6 +230,7 @@ module.exports = {
       "blue-light-hover": ["#019dba", "#11689e"],
       "gradient-primary": ["#60EDE5", "#107ACA"],
       "gradient-pink": ["#A820D8", "#D3A2EA"],
+      "gradient-green2pink": ["#25DAD2", "#B21DCB"],
       
       // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
     },
