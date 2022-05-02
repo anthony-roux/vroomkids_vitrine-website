@@ -27,20 +27,20 @@
               <li>
                 <a
                   href="#"
-                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                  class="inline-flex font-normal text-white t-link t-link--secondary text-md"
                 >
                   Qui sommes-nous ?
                 </a>
               </li>
               <nuxt-link
                 to="/price"
-                class="inline-flex font-normal text-white transition-colors  t-link t-link--secondary c-footer__links lg:text-md text-md"
+                class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                 >Nos tarifs
               </nuxt-link>
               <li>
                 <a
                   href="#"
-                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                  class="inline-flex font-normal text-white t-link t-link--secondary text-md"
                 >
                   Nous contacter
                 </a>
@@ -55,7 +55,7 @@
               <li>
                 <a
                   href="#"
-                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                  class="inline-flex font-normal text-white t-link t-link--secondary text-md"
                 >
                   Devenir chauffeur
                 </a>
@@ -63,7 +63,7 @@
               <li>
                 <a
                   href="#"
-                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                  class="inline-flex font-normal text-white t-link t-link--secondary text-md"
                 >
                   Plateforme Vroomer
                 </a>
@@ -100,12 +100,12 @@
                 method="post"
                 name="revue-form"
                 target="_blank"
-                class="flex w-full max-w-lg p-1 mt-4 bg-white rounded"
+                class="flex w-full p-1 mt-4 bg-white rounded"
               >
                 <div class="flex-1 min-w-0">
                   <input
                     type="email"
-                    class="block h-full px-5 py-3 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded select-none  c-footer__input focus: placeholder-grey-light text-md focus:border-transparent focus:ring-0"
+                    class="block h-full px-5 py-3 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded select-none c-footer__input focus: placeholder-grey-light text-md focus:border-transparent focus:ring-0"
                     placeholder="E-mail"
                   />
                 </div>
