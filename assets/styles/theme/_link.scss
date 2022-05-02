@@ -27,7 +27,6 @@
     align-items: center;
     transition: transform 600ms $ease-in-out-quint;
 
-
     &::before {
       content: "";
       position: absolute;
@@ -49,6 +48,45 @@
       width: 15px;
       height: 12px;
       transition: transform 600ms $ease-in-out-quint;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        &::before {
+          transform: scaleX(1) translateZ(0);
+          transform-origin: left;
+        }
+      }
+
+      &:hover {
+        &::after {
+          transform: translateX(0.4rem);
+          transition: transform 600ms $ease-in-out-quint;
+        }
+      }
+    }
+  }
+
+  &--secondary {
+    color: $pink;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: transform 600ms $ease-in-out-quint;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: $green1;
+      transition: transform 600ms $ease-in-out-quint;
+      transform: scaleX(0) translateZ(0);
+      left: 0;
+      transform-origin: right;
     }
 
     @media (hover: hover) {

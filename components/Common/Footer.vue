@@ -1,5 +1,5 @@
 <template>
-  <footer class="c-footer bg-black py-8 sm:py-12">
+  <footer class="py-8 bg-black c-footer sm:py-12">
     <div class="container mb-24">
       <div class="pt-5">
         <div class="space-y-8 lg:col-span-1">
@@ -11,7 +11,7 @@
               size="logo-xl"
             />
           </a>
-          <p class="w-1/2 mt-2 text-md text-white">
+          <p class="w-1/2 mt-2 text-white text-md">
             Le service chauffeur et accompagnateur
             <br />
             <span>de votre enfant.</span>
@@ -20,106 +20,91 @@
         <br />
         <div class="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
-            <h3 class="text-2xl font-black text-primary-vert1 uppercase">
+            <h3 class="text-2xl font-black uppercase text-primary-vert1">
               Informations
             </h3>
             <ul role="list" class="mt-4 space-y-4">
               <li>
-                <a href="#" class="text-md font-normal text-white">
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
                   Marketing
                 </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white">
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
                   Analytics
                 </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white">
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
                   Commerce
                 </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white">
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
                   Insights
                 </a>
               </li>
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
-            <h3 class="text-2xl font-black text-primary-vert1 uppercase">
+            <h3 class="text-2xl font-black uppercase text-primary-vert1">
               Chauffeurs
             </h3>
             <ul role="list" class="mt-4 space-y-4">
               <li>
-                <a href="#" class="text-md font-normal text-white"> Pricing </a>
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary"> Pricing </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white">
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
                   Documentation
                 </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white"> Guides </a>
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary"> Guides </a>
               </li>
               <li>
-                <a href="#" class="text-md font-normal text-white">
+                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
                   API Status
                 </a>
               </li>
             </ul>
           </div>
           <div class="mt-8 lg:justify-end lg:mt-0">
-            <h3 class="text-2xl font-black text-primary-vert1 uppercase">
+            <h3 class="text-2xl font-black uppercase text-primary-vert1">
               Vroom
             </h3>
-            <div class="c-footer__socials-icons py-10">
+            <div class="py-10 c-footer__socials-icons">
               <div class="flex sm:justify-center lg:justify-start">
-                <a href="" class="pr-8 lg:pr-12">
-                  <base-use-svg id="facebook" s size="lg" />
+                <a href="" class="mr-8 lg:mr-12 c-footer__socials-icons-link">
+                  <base-use-svg id="facebook" color="white" size="lg" />
                 </a>
-                <a href="" class="pr-8 lg:pr-12">
-                  <base-use-svg id="instagram" size="lg" />
+                <a href="" class="mr-8 lg:mr-12 c-footer__socials-icons-link">
+                  <base-use-svg id="instagram" color="white" size="lg" />
                 </a>
-                <a href="" class="pr-8 lg:pr-12">
-                  <base-use-svg id="twitter" size="lg" />
+                <a href="" class="mr-8 lg:mr-12 c-footer__socials-icons-link">
+                  <base-use-svg id="twitter" color="white" size="lg" />
                 </a>
               </div>
             </div>
             <div>
-              <p href="#" class="text-md font-semibold text-white">
+              <p href="#" class="font-semibold text-white text-md">
                 S’abonner à notre newsletter
               </p>
             </div>
             <div
-              class="inline-flex items-center gap-2 list-none lg:ml-auto w-full"
+              class="inline-flex items-center w-full gap-2 list-none lg:ml-auto"
             >
               <form
                 action=""
                 method="post"
                 name="revue-form"
                 target="_blank"
-                class="p-1 mt-4 bg-white rounded max-w-lg flex w-full"
+                class="flex w-full max-w-lg p-1 mt-4 bg-white rounded"
               >
                 <div class="flex-1 min-w-0">
                   <input
                     type="email"
-                    class="
-                      block
-                      px-5
-                      py-3
-                      placeholder-grey-light
-                      italic
-                      text-md
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      bg-transparent
-                      border border-transparent
-                      rounded
-                      h-full
-                    "
+                    class="block h-full px-5 py-3 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded select-none c-footer__input focus: placeholder-grey-light text-md focus:border-transparent focus:ring-0"
                     placeholder="E-mail"
                   />
                 </div>
@@ -128,7 +113,7 @@
                     type="submit"
                     value="Subscribe"
                     name="member"
-                    class="text-sm font-semibold px-5 my-1 py-3 text-white"
+                    class="px-5 py-3 my-1 text-sm font-semibold text-white"
                     variant=""
                   >
                     <span>s'abonner</span>
@@ -140,12 +125,12 @@
         </div>
       </div>
     </div>
-    <div class="bg-primary-vert1 py-2">
+    <div class="py-2 bg-primary-vert1">
       <div class="flex justify-between px-40">
-        <div class="text-white text-xs my-4">
+        <div class="my-4 text-xs text-white">
           © Copyright Vroom 2022. Made with love by HETIC.
         </div>
-        <div class="text-white text-xs my-4">Mentions légales</div>
+        <div class="my-4 text-xs text-white">Mentions légales</div>
       </div>
     </div>
   </footer>
@@ -161,15 +146,31 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .c-footer {
+
+  &__input {
+    outline-color: transparent;
+    &:focus {
+      outline-color: transparent;
+    }
+  }
+
+  
+  &__socials-icons-link {
+    border-bottom: solid 2px $green1;
+  }
   &__socials-icons {
     @media (hover: hover) {
-      fill: $white !important;
-      &:hover {
-        use {
-          transition: 250ms $linear;
-          fill: red !important;
+      svg {
+        fill: $white !important;
+        cursor: pointer;
+
+        &:hover {
+          use {
+            transition: 250ms $linear;
+            fill: $green1;
+          }
         }
       }
     }
