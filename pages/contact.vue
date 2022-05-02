@@ -1,11 +1,21 @@
 <template>
-  <div id="page-contact" class="container relative flex items-center p-6 mx-auto">
-    <t-alert show variant="success" class="top-80"> Page contact </t-alert>
-  </div>
+  <section id="page-contact" class="">
+    <strate-hero
+      title="Ici c'est la page Contact"
+      subtitle="et ça le subtitle"
+      ctaLabel="CTA label"
+      backgroundUrl="/img/photography/child+bus_hero-homepage_v2.png"
+    />
+    <div class="container p-6 mx-auto">
+      <h3 class="text-center t-title dark:text-white">Contact</h3>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
+    name: "Contact",
+
   data() {
     return {};
   },

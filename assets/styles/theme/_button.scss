@@ -2,13 +2,13 @@
   @extend %button;
   position: relative;
   overflow: hidden;
-  // @extend %subhead;
-  // text-transform: uppercase;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2.4rem;
   white-space: nowrap;
-  transition: color 600ms $ease-in-out-quint;
+  transition: color 150ms $ease-in-out-quint;
   color: $white;
   border-radius: 4px;
+  background: $gradient-green2pink;
+  background-image: $gradient-green2pink;
 
   &:after,
   &:before {
@@ -20,9 +20,9 @@
   &:after {
     right: -1px;
     width: calc(100% + 1px);
-    background: $gradient-green2;
-    background-image: $gradient-green2;
-    border: 1px solid $gradient-green2;
+    background: $gradient-green2pink-inverse;
+    background-image: $gradient-green2pink-inverse;
+    border: 1px solid $gradient-green2pink-inverse;
     transition: transform 300ms $ease-in-out-quint;
     transform: scaleY(0) translateZ(0);
     transform-origin: left;
@@ -44,21 +44,48 @@
     }
   }
 
-  &--secondary {
-    color: $white;
-    background-color: $green1 !important;
-    background: $green1 !important;
-    background-image: $green1 !important;
 
+
+  &--secondary-white {
+    color: $white;
+    background: transparent;
+    border: 2px solid $white;
+    span {
+      color: $white;
+    }
     &:after {
-      right: -1px;
-      width: calc(100% + 1px);
-      background: $green2;
-      background-image: $green2;
-      border: 1px solid $green2;
-      transition: transform 300ms $ease-in-out-quint;
-      transform: scaleY(0) translateZ(0);
-      transform-origin: left;
+      background: $pink;
+      border: 2px solid $pink;
+    }
+
+    &:hover {
+      color: $pink !important;
+      border: 2px solid $pink;
+
+      span {
+        color: $white;
+      }
+    }
+  }
+  &--secondary-pink {
+    color: $pink;
+    background: transparent;
+    border: 2px solid $pink;
+    span {
+      color: $pink;
+    }
+    &:after {
+      background: $pink;
+      border: 2px solid $pink;
+    }
+
+    &:hover {
+      color: $pink !important;
+      border: 2px solid $pink;
+
+      span {
+        color: $white;
+      }
     }
   }
 
@@ -73,7 +100,8 @@
       width: 100%;
       border: 2px solid;
       border-image-slice: 1;
-      border-image-source: $gradient-green;
+      // border-image-source: $green1;
+      border: 1px solid $green1;
       z-index: 2;
       pointer-events: none;
     }
@@ -81,35 +109,7 @@
     &:after {
       right: -1px;
       width: calc(100% + 1px);
-      background: $gradient-green;
-      background-image: $gradient-green;
-      border: 1px solid $gradient-green;
-      transition: transform 300ms $ease-in-out-quint;
-      transform: scaleY(0) translateZ(0);
-      transform-origin: left;
-    }
-  }
-
-  &--fourth {
-    color: $white;
-    background-color: transparent !important;
-    background: transparent !important;
-    background-image: transparent !important;
-
-    &:before {
-      height: 100%;
-      width: 100%;
-      border: 2px solid;
-      border-image-slice: 1;
-      border-image-source: $white;
-      z-index: 2;
-      pointer-events: none;
-    }
-
-    &:after {
-      right: -1px;
-      width: calc(100% + 1px);
-      background: $gradient-green;
+      background: none;
       background-image: $gradient-green;
       border: 1px solid $gradient-green;
       transition: transform 300ms $ease-in-out-quint;

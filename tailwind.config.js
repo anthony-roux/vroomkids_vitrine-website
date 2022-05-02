@@ -115,11 +115,11 @@ module.exports = {
         },
         black: {
           light: "#545454",
-          default: "#333333",
+          DEFAULT: "#333333",
           dark: "#2C2C2C",
         },
         grey: {
-          lighter: "#EEF2F7",
+          lighter: "#F6F6F6",
           light: "#C4CDD6",
           DEFAULT: "#848484",
           dark: "#939393",
@@ -164,7 +164,7 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: "1.5rem",
+        padding: '1.5rem',
       },
       width: {
         icon: "24px",
@@ -230,8 +230,8 @@ module.exports = {
       "blue-light-hover": ["#019dba", "#11689e"],
       "gradient-primary": ["#60EDE5", "#107ACA"],
       "gradient-pink": ["#A820D8", "#D3A2EA"],
-
-      // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
+      "gradient-green2pink": ["#25DAD2", "#B21DCB"],
+            // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
     },
     repeatingLinearGradientDirections: (theme) =>
       theme("linearGradientDirections"), // defaults to this value

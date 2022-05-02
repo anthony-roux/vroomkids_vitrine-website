@@ -1395,7 +1395,7 @@
     "ufo" "^0.7.7"
     "upath" "^2.0.1"
 
-"@nuxt/loading-screen@^2.0.3":
+"@nuxt/loading-screen@^2.0.3", "@nuxt/loading-screen@^2.0.4":
   "integrity" "sha512-xpEDAoRu75tLUYCkUJCIvJkWJSuwr8pqomvQ+fkXpSrkxZ/9OzlBFjAbVdOAWTMj4aV/LVQso4vcEdircKeFIQ=="
   "resolved" "https://registry.npmjs.org/@nuxt/loading-screen/-/loading-screen-2.0.4.tgz"
   "version" "2.0.4"
@@ -6550,6 +6550,11 @@
     "has" "^1.0.3"
     "side-channel" "^1.0.4"
 
+"intersection-observer-admin@^0.3.2":
+  "integrity" "sha512-kJEcF9iVRuI4thXiJd28UzFDgvFHBNUgwkKA4F0bPMmRdzc+1Eq7/J13n2gSgfZ5tsVxb+wJOV7k3DXcsc7D6Q=="
+  "resolved" "https://registry.npmjs.org/intersection-observer-admin/-/intersection-observer-admin-0.3.2.tgz"
+  "version" "0.3.2"
+
 "invariant@^2.2.2":
   "integrity" "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA=="
   "resolved" "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
@@ -8883,6 +8888,11 @@
   "integrity" "sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc="
   "resolved" "https://registry.npmjs.org/os-browserify/-/os-browserify-0.3.0.tgz"
   "version" "0.3.0"
+
+"os-homedir@^2.0.0":
+  "integrity" "sha512-saRNz0DSC5C/I++gFIaJTXoFJMRwiP5zHar5vV3xQ2TkgEw6hDCcU5F272JjUylpiVgBrZNQHnfjkLabTfb92Q=="
+  "resolved" "https://registry.npmjs.org/os-homedir/-/os-homedir-2.0.0.tgz"
+  "version" "2.0.0"
 
 "os-tmpdir@~1.0.2":
   "integrity" "sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ="
@@ -12337,7 +12347,7 @@
   dependencies:
     "unique-slug" "^2.0.0"
 
-"unique-slug@^2.0.0":
+"unique-slug@^2.0.0", "unique-slug@^2.0.2":
   "integrity" "sha512-zoWr9ObaxALD3DOPfjPSqxt4fnZiWblxHIgeWqW8x7UqDzEtHEQLzji2cuJYQFCU6KmoJikOYAZlrTHHebjx2w=="
   "resolved" "https://registry.npmjs.org/unique-slug/-/unique-slug-2.0.2.tgz"
   "version" "2.0.2"
