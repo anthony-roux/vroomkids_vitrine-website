@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-8 bg-black c-footer sm:py-12">
+  <footer class="pt-24 bg-black c-footer">
     <div class="container mb-24">
       <div class="pt-5">
         <div class="space-y-8 lg:col-span-1">
@@ -18,63 +18,64 @@
           </p>
         </div>
         <br />
-        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-          <div>
+        <div class="mt-10 lg:grid lg:grid-cols-3 lg:gap-8">
+          <div class="mt-12 lg:mt-0">
             <h3 class="text-2xl font-black uppercase text-primary-vert1">
               Informations
             </h3>
-            <ul role="list" class="mt-4 space-y-4">
+            <ul role="list" class="mt-10 space-y-4">
               <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
-                  Marketing
+                <a
+                  href="#"
+                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                >
+                  Qui sommes-nous ?
                 </a>
               </li>
+              <nuxt-link
+                to="/price"
+                class="inline-flex font-normal text-white transition-colors  t-link t-link--secondary c-footer__links lg:text-md text-md"
+                >Nos tarifs
+              </nuxt-link>
               <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
-                  Analytics
-                </a>
-              </li>
-              <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
-                  Commerce
-                </a>
-              </li>
-              <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
-                  Insights
+                <a
+                  href="#"
+                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                >
+                  Nous contacter
                 </a>
               </li>
             </ul>
           </div>
-          <div class="mt-12 md:mt-0">
+          <div class="mt-12 lg:mt-0">
             <h3 class="text-2xl font-black uppercase text-primary-vert1">
               Chauffeurs
             </h3>
-            <ul role="list" class="mt-4 space-y-4">
+            <ul role="list" class="mt-10 space-y-4">
               <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary"> Pricing </a>
-              </li>
-              <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
-                  Documentation
+                <a
+                  href="#"
+                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                >
+                  Devenir chauffeur
                 </a>
               </li>
               <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary"> Guides </a>
-              </li>
-              <li>
-                <a href="#" class="inline-flex font-normal text-white text-md t-link t-link--secondary">
-                  API Status
+                <a
+                  href="#"
+                  class="inline-flex font-normal text-white  t-link t-link--secondary text-md"
+                >
+                  Plateforme Vroomer
                 </a>
               </li>
             </ul>
           </div>
-          <div class="mt-8 lg:justify-end lg:mt-0">
+          <div class="mt-12 lg:justify-end lg:mt-0">
             <h3 class="text-2xl font-black uppercase text-primary-vert1">
               Vroom
             </h3>
             <div class="py-10 c-footer__socials-icons">
-              <div class="flex sm:justify-center lg:justify-start">
+              <div class="flex lg:justify-start">
                 <a href="" class="mr-8 lg:mr-12 c-footer__socials-icons-link">
                   <base-use-svg id="facebook" color="white" size="lg" />
                 </a>
@@ -104,7 +105,7 @@
                 <div class="flex-1 min-w-0">
                   <input
                     type="email"
-                    class="block h-full px-5 py-3 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded select-none c-footer__input focus: placeholder-grey-light text-md focus:border-transparent focus:ring-0"
+                    class="block h-full px-5 py-3 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded select-none  c-footer__input focus: placeholder-grey-light text-md focus:border-transparent focus:ring-0"
                     placeholder="E-mail"
                   />
                 </div>
@@ -126,7 +127,7 @@
       </div>
     </div>
     <div class="py-2 bg-primary-vert1">
-      <div class="flex justify-between px-40">
+      <div class="container justify-between lg:flex">
         <div class="my-4 text-xs text-white">
           © Copyright Vroom 2022. Made with love by HETIC.
         </div>
@@ -148,17 +149,9 @@ export default {
 
 <style lang="scss">
 .c-footer {
-
-  &__input {
-    outline-color: transparent;
-    &:focus {
-      outline-color: transparent;
-    }
-  }
-
-  
   &__socials-icons-link {
     border-bottom: solid 2px $green1;
+    padding-bottom: 0.4rem;
   }
   &__socials-icons {
     @media (hover: hover) {

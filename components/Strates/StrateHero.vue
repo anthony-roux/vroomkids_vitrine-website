@@ -4,7 +4,7 @@
       strate-hero
       w-full
       h-auto
-      lg:h-[90vh]
+      lg:h-[80vh]
       relative
       mt-[-9.5rem]
       lg:mt-[-13.9rem]
@@ -17,7 +17,7 @@
           class="mx-auto text-3xl font-black text-white uppercase strate-hero__title lg:text-5xl"
         >
           {{ title }}
-          <br /><span class="text-pink">{{ subtitle }}</span>
+          <br /><span class="">{{ subtitle }}</span>
         </h1>
         <div class="flex items-end justify-start strate-hero__cta-wrapper">
           <t-button tagName="a" to="/client" class="mt-10" variant="secondaryWhite"
