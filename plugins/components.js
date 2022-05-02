@@ -16,21 +16,24 @@ Vue.component("base-use-svg", UseSvg);
 // Vue.component('core-exemple', Exemple);
 
 // COMMON (layout, Header, footer etc..)
+
 import Header from "~/components/Common/Header.vue";
 import Nav from "~/components/Common/Nav.vue";
 import Sidebar from "~/components/Common/Sidebar.vue";
+import Footer from "~/components/Common/Footer.vue";
 import SvgIcons from "~/components/Common/SvgIcons.vue";
 
 Vue.component("c-header", Header);
 Vue.component("c-sidebar", Sidebar);
 Vue.component("c-nav-menu", Nav);
+Vue.component("c-footer", Footer);
 Vue.component("c-svg-icons", SvgIcons);
 
 // STRATES
 
-import StrateHero from '~/components/Strates/StrateHero.vue';
+import StrateHero from "~/components/Strates/StrateHero.vue";
 
-Vue.component('strate-hero', StrateHero);
+Vue.component("strate-hero", StrateHero);
 
 // COMPONENTS
 

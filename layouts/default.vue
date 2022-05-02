@@ -5,6 +5,7 @@
     <transition name="fade">
       <nuxt class="page-content" />
     </transition>
+    <c-footer />
     <c-sidebar id="menu">
       <c-nav-menu :is-sidebar="true" />
     </c-sidebar>
