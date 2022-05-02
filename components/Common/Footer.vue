@@ -1,23 +1,15 @@
 <template>
-  <footer class="bg-black-default py-8 sm:py-12">
+  <footer class="c-footer bg-black py-8 sm:py-12">
     <div class="container mb-24">
       <div class="pt-5">
-        <div class="space-y-8 xl:col-span-1">
-          <a
-            href="/"
-            class="
-              text-lg
-              font-bold
-              tracking-tighter
-              text-primary-vert1
-              transition
-              duration-500
-              ease-in-out
-              transform
-              lg:pr-8
-            "
-          >
-            logo
+        <div class="space-y-8 lg:col-span-1">
+          <a href="/">
+            <base-use-svg
+              id="vroom"
+              class="vroom"
+              color="green1"
+              size="logo-xl"
+            />
           </a>
           <p class="w-1/2 mt-2 text-md text-white">
             Le service chauffeur et accompagnateur
@@ -26,7 +18,7 @@
           </p>
         </div>
         <br />
-        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
             <h3 class="text-2xl font-black text-primary-vert1 uppercase">
               Informations
@@ -77,58 +69,20 @@
               </li>
             </ul>
           </div>
-          <div class="mt-8 lg:justify-end xl:mt-0">
+          <div class="mt-8 lg:justify-end lg:mt-0">
             <h3 class="text-2xl font-black text-primary-vert1 uppercase">
               Vroom
             </h3>
-            <div class="p-5">
-              <div class="flex sm:justify-center xl:justify-start">
-                <a
-                  href=""
-                  class="
-                    w-8
-                    h-8
-                    border border-2 border-gray-400
-                    rounded-full
-                    text-center
-                    py-1
-                    text-gray-600
-                    hover:text-white hover:bg-blue-600 hover:border-blue-600
-                  "
-                >
-                  <i class="fab fa-facebook"></i>
+            <div class="c-footer__socials-icons py-10">
+              <div class="flex sm:justify-center lg:justify-start">
+                <a href="" class="pr-8 lg:pr-12">
+                  <base-use-svg id="facebook" s size="lg" />
                 </a>
-                <a
-                  href=""
-                  class="
-                    w-8
-                    h-8
-                    border border-2 border-gray-400
-                    rounded-full
-                    text-center
-                    py-1
-                    ml-2
-                    text-gray-600
-                    hover:text-white hover:bg-blue-400 hover:border-blue-400
-                  "
-                >
-                  <i class="fab fa-twitter"></i>
+                <a href="" class="pr-8 lg:pr-12">
+                  <base-use-svg id="instagram" size="lg" />
                 </a>
-                <a
-                  href=""
-                  class="
-                    w-8
-                    h-8
-                    border border-2 border-gray-400
-                    rounded-full
-                    text-center
-                    py-1
-                    ml-2
-                    text-gray-600
-                    hover:text-white hover:bg-red-600 hover:border-red-600
-                  "
-                >
-                  <i class="fab fa-google-plus-g"></i>
+                <a href="" class="pr-8 lg:pr-12">
+                  <base-use-svg id="twitter" size="lg" />
                 </a>
               </div>
             </div>
@@ -164,6 +118,7 @@
                       bg-transparent
                       border border-transparent
                       rounded
+                      h-full
                     "
                     placeholder="E-mail"
                   />
@@ -174,19 +129,14 @@
                     value="Subscribe"
                     name="member"
                     class="text-sm font-semibold px-5 my-1 py-3 text-white"
+                    variant=""
                   >
-                    S’abonner
+                    <span>s'abonner</span>
                   </t-button>
                 </div>
               </form>
             </div>
           </div>
-          <!-- <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
-            <div class="md:grid md:grid-cols-2 md:gap-8"></div>
-            <div class="hidden lg:justify-end md:grid md:grid-cols-1">
-              <div class="w-full mt-12 md:mt-0"></div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -212,16 +162,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body {
-  nav {
-    a {
-      color: $white;
-    }
-  }
-  &:not(.homepage) {
-    nav {
-      a {
-        color: $black;
+.c-footer {
+  &__socials-icons {
+    @media (hover: hover) {
+      fill: $white !important;
+      &:hover {
+        use {
+          transition: 250ms $linear;
+          fill: red !important;
+        }
       }
     }
   }
