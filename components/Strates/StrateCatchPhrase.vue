@@ -1,33 +1,57 @@
 <template>
   <section
-    class="strate-catchphrase"
+    class="strate-catchphrase flex relative py-24 md:min-h-[47.5rem]"
     :style="{ background: `${backgroundColor}` }"
   >
-    <div class="container py-24 pt-60 lg:py-44 lg:pt-96">
-      <div class="w-10/12 lg:w-3/4">
-        <h1
-          class="
-            mx-auto
-            text-3xl
-            font-black
-            text-white
-            uppercase
-            strate-hero__title
-            lg:text-5xl
-          "
-        >
-          {{ text }}
-          <br /><span class="text-pink">{{ textHighlight }}</span>
-        </h1>
-        <div class="flex items-end justify-start strate-hero__cta-wrapper">
-          <t-button
-            tagName="a"
-            to="/client"
-            class="mt-10"
-            variant="secondaryWhite"
-            ><span class="text-lg">ghggk</span></t-button
+    <div class="container grid grid-cols-5 gap-x-8 items-center">
+      <div
+        :class="isInversed != false ? 'order-2' : 'order-1'"
+        class="col-span-3"
+      >
+        <div class="flex flex-col items-center">
+          <h1
+            class="
+              mx-auto
+              text-3xl
+              font-black
+              text-white
+              uppercase
+              strate-hero__title
+              lg:text-6xl
+              text-center
+            "
           >
+            {{ text }}
+            <br /><span class="text-primary-vert1">{{ textHighlight }}</span>
+          </h1>
+          <br />
+          <br />
+          <h2
+            class="
+              pt-2
+              mx-auto
+              text-sm
+              font-black
+              text-white
+              uppercase
+              strate-hero__title
+              lg:text-md
+              text-center
+            "
+          >
+            {{ subtitle }}
+          </h2>
         </div>
+      </div>
+      <div
+        :class="isInversed != false ? 'order-1' : 'order-2'"
+        class="col-span-2 absolute right-20 bottom-0"
+      >
+        <img
+          alt="Femme rose"
+          :src="imageUrl"
+          class="lg:max-w-[80rem] md:max-w-[40rem] max-w-[20rem]"
+        />
       </div>
     </div>
   </section>
@@ -39,38 +63,36 @@ export default {
     backgroundColor: {
       type: String,
       required: false,
-      default: "#E0A5EA",
+      default: "#A6EFED",
     },
     imageUrl: {
       type: String,
       required: false,
-      default: "/img/photography/child+bus_homepage_green2pink.png",
+      default: "/img/photography/femme_rose.png",
     },
     text: {
       type: String,
       required: false,
-      default: "Duis esse est adipisicing elit veniam",
+      default: "faites comme marie pensez vous aussi à",
     },
     textHighlight: {
       type: String,
       required: false,
-      default: "amet ipsum dolore.",
+      default: "votre planète",
     },
     subtitle: {
       type: String,
       required: false,
-      default: "amet ipsum dolore.",
+      default: "vroom est un acteur eco-responsable",
     },
-    isInverse: {
+    isInversed: {
       type: Boolean,
       required: false,
       default: false,
     },
   },
   data: function () {
-    return {
-      isOpen: false,
-    };
+    return {};
   },
 };
 </script>
