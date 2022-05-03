@@ -96,15 +96,15 @@ module.exports = {
           },
         ],
         "8xl": [
-          "6.4rem",
+          "12rem",
           {
-            lineHeight: "7.6rem",
+            lineHeight: "12rem",
           },
         ],
         "9xl": [
-          "6.4rem",
+          "15rem",
           {
-            lineHeight: "7.6rem",
+            lineHeight: "15rem",
           },
         ],
       },

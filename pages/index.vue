@@ -5,7 +5,7 @@
     <!----------/ start main /---------->
     <div class="container p-6 mx-auto">
       <strate-big-title text="Confier son enfant en toute sécurité !" />
-      <base-big-letter text="whaaaow" />
+      <base-big-letter text="whaaow" />
     </div>
     <!----------/ end main /---------->
   </div>
