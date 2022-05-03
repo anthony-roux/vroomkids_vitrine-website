@@ -44,7 +44,7 @@ module.exports = {
         md: [
           "1.6rem",
           {
-            lineHeight: "2rem",
+            lineHeight: "2.2rem",
           },
         ],
         lg: [

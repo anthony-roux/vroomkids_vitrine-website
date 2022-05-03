@@ -3,8 +3,10 @@
     <strate-hero-home />
 
     <!----------/ start main /---------->
-    <div class="container p-6 mx-auto">
+    <div class="container p-6 mx-auto ">
       <strate-big-title text="Confier son enfant en toute sécurité !" />
+      <strate-advantages :isInversed="false" />
+      <strate-advantages :isInversed="true"  />
       <base-big-letter text="whaaow" />
     </div>
     <!----------/ end main /---------->
