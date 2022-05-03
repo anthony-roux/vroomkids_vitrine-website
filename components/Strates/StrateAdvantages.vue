@@ -6,7 +6,7 @@
     <div class="container grid items-start justify-center grid-cols-12 gap-10">
       <div
         class="col-span-12 lg:col-span-6 strate-advantages__content"
-        :class="isInversed != false ? 'order-2' : 'order-1'"
+        :class="isInversed != false ? 'lg:order-2' : 'lg:order-1'"
       >
         <p
           class="mx-auto text-xl font-bold md:text-3xl strate-advantages__title"
@@ -17,12 +17,12 @@
         <a
           :href="ctaUrl"
           class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color"
-          >I am a link</a
+          >{{ctaLabel}}</a
         >
       </div>
       <div
         class="col-span-12 lg:col-span-6 strate-advantages__image"
-        :class="isInversed != false ? 'order-1' : 'order-2'"
+        :class="isInversed != false ? 'lg:order-1' : 'lg:order-2'"
       >
         <img alt="Logo Vroom" :src="imageUrl" class="relative rounded" />
       </div>
@@ -91,43 +91,37 @@ export default {
       bottom: -25%;
       right: -50vw;
       z-index: 0;
-      opacity: 0.2;
+      opacity: 0.15;
       border-radius: 0.6rem;
 
       @include mq($from: desktop) {
-        width: 70rem;
+        width: 60rem;
         height: 39rem;
-        bottom: 35%;
-        right: -80%;
+        bottom: 15%;
+        right: -60%;
       }
     }
   }
 
   &.isInversed {
     .strate-advantages__image {
-      position: relative;
-      img {
-        z-index: 1;
-      }
       &:before {
-        content: "";
-        max-width: 70vw;
-        max-height: 40vh;
-        width: 67rem;
-        height: 24rem;
-        background: $pink;
-        position: absolute;
-        bottom: -25%;
-        left: -50vw;
-        z-index: 0;
-        opacity: 0.2;
-        border-radius: 0.6rem;
+        max-width: 40vw;
+        max-height: 30vh;
+        width: 50rem;
+        height: 44rem;
+        background: $green1;
+        bottom: -35%;
+        left: -15vw;
 
-        @include mq($from: desktop) {
-          width: 70rem;
+        @include mq($from: tablet) {
           height: 39rem;
-          bottom: 35%;
-          left: -80%;
+          bottom: -15%;
+          left: -60%;
+        }
+        
+        @include mq($from: desktop) {
+          left: -40%;
         }
       }
     }

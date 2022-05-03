@@ -1,5 +1,5 @@
 <template>
-  <main id="main" class="relative overflow-hidden bg-white dark:bg-gray-800">
+  <main id="main" class="relative bg-white dark:bg-gray-800">
     <c-svg-icons />
     <c-header />
     <transition name="fade">

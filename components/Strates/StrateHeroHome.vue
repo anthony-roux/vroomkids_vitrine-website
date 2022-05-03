@@ -19,7 +19,7 @@
           class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title lg:text-5xl"
         >
           {{ title }}
-          <br /><span class="">{{ subtitle }}</span>
+          <br /><span v-if="subtitle" class="">{{ subtitle }}</span>
         </h1>
         <div
           class="flex flex-col items-start justify-start mt-16 md:flex-row strate-hero-home__cta-wrapper"
