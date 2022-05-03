@@ -4,6 +4,7 @@
     <div class="container p-6 mx-auto">
       <h3 class="text-center t-title dark:text-white">Homepage</h3>
     </div>
+    <strate-catchphrase />
   </div>
 </template>
 

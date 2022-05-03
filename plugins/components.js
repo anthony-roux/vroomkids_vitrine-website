@@ -32,8 +32,10 @@ Vue.component("c-svg-icons", SvgIcons);
 // STRATES
 
 import StrateHero from "~/components/Strates/StrateHero.vue";
+import StrateCatchPhrase from "~/components/Strates/StrateCatchPhrase.vue";
 
 Vue.component("strate-hero", StrateHero);
+Vue.component("strate-catchphrase", StrateCatchPhrase);
 
 // COMPONENTS
 
