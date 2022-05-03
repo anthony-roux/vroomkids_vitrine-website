@@ -164,7 +164,7 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: '1.5rem',
+        padding: "1.5rem",
       },
       width: {
         icon: "24px",
@@ -212,6 +212,21 @@ module.exports = {
       greyDarkerMedium: "0px 0px 16px rgba(34, 67, 88, 0.1)",
       none: "none",
     },
+    animation: {
+      text: "text 5s ease infinite",
+    },
+    keyframes: {
+      text: {
+        "0%, 100%": {
+          "background-size": "300% 300%",
+          "background-position": "top center",
+        },
+        "50%": {
+          "background-size": "300% 300%",
+          "background-position": "bottom center",
+        },
+      },
+    },
     linearGradientDirections: {
       // defaults to these values
       t: "to top",
@@ -231,7 +246,7 @@ module.exports = {
       "gradient-primary": ["#60EDE5", "#107ACA"],
       "gradient-pink": ["#A820D8", "#D3A2EA"],
       "gradient-green2pink": ["#25DAD2", "#B21DCB"],
-            // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
+      // 'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
     },
     repeatingLinearGradientDirections: (theme) =>
       theme("linearGradientDirections"), // defaults to this value

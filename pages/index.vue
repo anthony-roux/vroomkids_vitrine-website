@@ -1,10 +1,14 @@
 <template class="home">
   <div id="page-home" class="">
-    <strate-hero />
+    <strate-hero-home />
+
+    <!----------/ start main /---------->
     <div class="container p-6 mx-auto">
-      <h3 class="text-center t-title dark:text-white">Homepage</h3>
+      <strate-big-title text="Confier son enfant en toute sécurité !" />
+      <base-big-letter text="whaaaow" />
+      <strate-catchphrase />
     </div>
-    <strate-catchphrase />
+    <!----------/ end main /---------->
   </div>
 </template>
 

@@ -6,8 +6,10 @@ import Vue from "vue";
 
 // Base
 import UseSvg from "~/components/Base/UseSvg.vue";
+import BigLetter from "~/components/Base/BigLetter.vue";
 
 Vue.component("base-use-svg", UseSvg);
+Vue.component("base-big-letter", BigLetter);
 
 // CORE
 
@@ -31,11 +33,15 @@ Vue.component("c-svg-icons", SvgIcons);
 
 // STRATES
 
+import StrateHeroHome from "~/components/Strates/StrateHeroHome.vue";
 import StrateHero from "~/components/Strates/StrateHero.vue";
 import StrateCatchPhrase from "~/components/Strates/StrateCatchPhrase.vue";
+import StrateBigTitle from "~/components/Strates/StrateBigTitle.vue";
 
+Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
 Vue.component("strate-catchphrase", StrateCatchPhrase);
+Vue.component("strate-big-title", StrateBigTitle);
 
 // COMPONENTS
 

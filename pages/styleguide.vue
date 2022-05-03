@@ -91,6 +91,17 @@
           />
         </div>
       </section>
+      <section class="my-14">
+        <span class="text-2xl">ICON</span>
+        <hr />
+        
+        <div class="grid items-center grid-cols-3 justify-items-center space-x-7">
+            <base-big-letter text="1" />
+            <base-big-letter text="2" />
+            <base-big-letter text="3" />
+        </div>
+          <base-big-letter text="whaaaow" />
+      </section>
     </div>
   </div>
 </template>
