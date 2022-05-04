@@ -20,9 +20,4 @@ export default {
 </script>
 
 <style lang="scss">
-.base-big-letter {
-  &__item {
-    
-  }
-}
 </style>

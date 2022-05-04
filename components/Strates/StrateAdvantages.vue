@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative my-32 strate-advantages"
+    class="relative my-32 md:my-60 strate-advantages"
     :class="isInversed != false ? 'isInversed' : ''"
   >
     <div class="container grid items-start justify-center grid-cols-12 gap-10">
@@ -17,7 +17,7 @@
         <a
           :href="ctaUrl"
           class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color"
-          >{{ctaLabel}}</a
+          >{{ ctaLabel }}</a
         >
       </div>
       <div
@@ -82,23 +82,21 @@ export default {
     }
     &:before {
       content: "";
-      max-width: 70vw;
-      max-height: 40vh;
       width: 67rem;
-      height: 24rem;
+      max-width: 70vw;
+      height: calc(100% + 5rem);
       background: $pink;
       position: absolute;
-      bottom: -25%;
-      right: -50vw;
+      bottom: 0;
+      right: -50%;
+      transform: translateY(2.5rem);
       z-index: 0;
       opacity: 0.15;
       border-radius: 0.6rem;
 
       @include mq($from: desktop) {
-        width: 60rem;
-        height: 39rem;
-        bottom: 15%;
-        right: -60%;
+        height: calc(100% + 10rem);
+        transform: translateY(5rem);
       }
     }
   }
@@ -106,23 +104,8 @@ export default {
   &.isInversed {
     .strate-advantages__image {
       &:before {
-        max-width: 40vw;
-        max-height: 30vh;
-        width: 50rem;
-        height: 44rem;
         background: $green1;
-        bottom: -35%;
-        left: -15vw;
-
-        @include mq($from: tablet) {
-          height: 39rem;
-          bottom: -15%;
-          left: -60%;
-        }
-        
-        @include mq($from: desktop) {
-          left: -40%;
-        }
+        left: -50%;
       }
     }
   }

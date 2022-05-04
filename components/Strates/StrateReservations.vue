@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full my-20 strate-reservations">
+  <section class="w-full my-32 md:my-60 strate-reservations">
     <div class="container mx-auto">
       <p
         class="mx-auto mb-16 text-3xl font-bold text-center lg:mb-32 strate-big-title__text md:text-5xl"
