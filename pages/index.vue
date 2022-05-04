@@ -25,7 +25,12 @@
           :isInversed="true"
         />
         <strate-big-title text="Comment réserver ?" />
-        <strate-reservations></strate-reservations>
+        <strate-reservations>
+          <base-big-letter text="1" />
+          <!-- <base-big-letter text="2" />
+          <base-big-letter text="3" />
+          <base-big-letter text="4" /> -->
+        </strate-reservations>
         <base-big-letter text="whaaow" />
       </div>
     </div>

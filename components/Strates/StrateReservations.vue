@@ -14,24 +14,29 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="flex justify-center text-sm p-6 bg-gray-100">
+          <slot />
           <p>
             Précisez simplement vos coordonnées personnelles ainsi que les
             informations relatives à votre trajet dans le formulaire.
           </p>
         </div>
         <div class="flex justify-center text-sm p-6 bg-gray-100">
+          <slot />
+
           <p>
             Vous recevrez un email avec la proposition de prix ainsi qu’un
             récapitulatif de votre demande. Vous acceptez la course.
           </p>
         </div>
         <div class="flex justify-center text-sm p-6 bg-gray-100">
+          <slot />
           <p>
             Nous sélectionnons le chauffeur et le véhicule le plus adapté à vos
             besoins et à celui de l’enfant. Les courses peuvent commencer.
           </p>
         </div>
         <div class="flex justify-center text-sm p-6 bg-gray-100">
+          <slot />
           <p>
             Le chauffeur vient chercher le(s) enfant(s) et les accompagne
             jusqu’à la prise en charge par un adulte.
