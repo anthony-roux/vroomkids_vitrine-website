@@ -24,8 +24,12 @@
           ctaUrl="#"
           :isInversed="true"
         />
-        <strate-big-title text="Comment réserver ?" />
-        <strate-reservations></strate-reservations>
+        <strate-reservations title="Comment réserver ?">
+          <template v-slot:text1><base-big-letter text="1" /></template>
+          <template v-slot:text2><base-big-letter text="2" /></template>
+          <template v-slot:text3><base-big-letter text="3" /></template>
+          <template v-slot:text4><base-big-letter text="4" /></template>
+        </strate-reservations>
         <base-big-letter text="whaaow" />
       </div>
     </div>

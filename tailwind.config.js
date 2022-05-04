@@ -213,7 +213,7 @@ module.exports = {
       none: "none",
     },
     animation: {
-      text: "text 5s ease infinite",
+      text: "text 10s ease infinite",
     },
     keyframes: {
       text: {

@@ -1,38 +1,51 @@
 <template>
-  <section
-    class="
-      strate-hero
-      w-full
-      h-[50vh]
-      relative
-      mt-[-9.5rem]
-      lg:mt-[-11rem]
-      pt-[9.5rem]
-      lg:pt-44
-    "
-  >
+  <section class="w-full my-20 strate-reservations">
     <div class="container mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="flex justify-center text-sm p-6 bg-gray-100">
-          <p>
+      
+      <strate-big-title :text="title" />
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="relative flex justify-center w-3/4 py-12 mx-auto mt-24 text-sm lg:mt-0"
+        >
+          <div class="absolute top-[-6rem]">
+            <slot name="text1"></slot>
+          </div>
+          <p class="text-center">
             Précisez simplement vos coordonnées personnelles ainsi que les
             informations relatives à votre trajet dans le formulaire.
           </p>
         </div>
-        <div class="flex justify-center text-sm p-6 bg-gray-100">
-          <p>
+        <div
+          class="relative flex justify-center w-3/4 py-12 mx-auto mt-24 text-sm lg:mt-0"
+        >
+          <div class="absolute top-[-6rem]">
+            <slot name="text2"></slot>
+          </div>
+
+          <p class="text-center">
             Vous recevrez un email avec la proposition de prix ainsi qu’un
             récapitulatif de votre demande. Vous acceptez la course.
           </p>
         </div>
-        <div class="flex justify-center text-sm p-6 bg-gray-100">
-          <p>
+        <div
+          class="relative flex justify-center w-3/4 py-12 mx-auto mt-24 text-sm lg:mt-0"
+        >
+          <div class="absolute top-[-6rem]">
+            <slot name="text3"></slot>
+          </div>
+          <p class="text-center">
             Nous sélectionnons le chauffeur et le véhicule le plus adapté à vos
             besoins et à celui de l’enfant. Les courses peuvent commencer.
           </p>
         </div>
-        <div class="flex justify-center text-sm p-6 bg-gray-100">
-          <p>
+        <div
+          class="relative flex justify-center w-3/4 py-12 mx-auto mt-24 text-sm lg:mt-0"
+        >
+          <div class="absolute top-[-6rem]">
+            <slot name="text4"></slot>
+          </div>
+          <p class="text-center">
             Le chauffeur vient chercher le(s) enfant(s) et les accompagne
             jusqu’à la prise en charge par un adulte.
           </p>
@@ -58,9 +71,12 @@ export default {
 </script>
 
 <style lang="scss">
-.strate-hero {
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+.strate-reservations {
+  .base-big-letter__item {
+    @include mq($until: tablet) {
+      font-size: 15rem !important;
+      line-height: 15rem !important;
+    }
+  }
 }
 </style>

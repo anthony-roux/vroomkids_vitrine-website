@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center base-big-letter">
-    <span class="text-5xl font-black text-center text-transparent break-all base-big-letter__item md:text-8xl lg:text-9xl bg-clip-text bg-gradient-to-b from-primary-vert1 to-pink animate-text opacity-20">{{
+    <span class="text-5xl font-black text-center text-transparent break-all base-big-letter__item md:text-8xl lg:text-9xl bg-clip-text bg-gradient-to-b from-primary-vert1 to-pink animate-text opacity-10">{{
       text
     }}</span>
   </div>
