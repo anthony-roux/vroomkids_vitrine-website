@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full my-20 strate-big-title "
+    class="w-full mt-10 lg:mt-20 strate-big-title "
   >
     <div class="container flex items-center justify-center lg:w-3/4">
       <h1

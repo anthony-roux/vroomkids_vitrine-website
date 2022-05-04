@@ -8,7 +8,7 @@
     <!----------/ start main /---------->
     <div class="overflow-hidden">
       <div class="container p-6 mx-auto">
-        <strate-big-title text="Confier son enfant en toute sécurité !" />
+        <strate-big-title text="Confiez votre enfant en toute sécurité !" />
         <strate-advantages
           title="Un accompagnement indispensable"
           text="Vromm vous assure un service complet et entièrement sécurisé, nous choisissons rigoureusement nos chauffeurs et vous assure un accompagnement en toute confiance lors des trajets de vos enfants."
