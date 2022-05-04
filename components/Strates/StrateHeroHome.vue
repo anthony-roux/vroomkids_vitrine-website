@@ -14,15 +14,15 @@
     :style="{ backgroundImage: `url(${backgroundUrl})` }"
   >
     <div class="container flex items-center justify-start h-full">
-      <div class="py-16 lg:w-3/4">
-        <h1
+      <div class="py-12 lg:w-3/4">
+        <h2
           class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title lg:text-5xl"
         >
           {{ title }}
           <br /><span v-if="subtitle" class="">{{ subtitle }}</span>
-        </h1>
+        </h2>
         <div
-          class="flex flex-col items-start justify-start mt-16 md:flex-row strate-hero-home__cta-wrapper"
+          class="flex flex-col items-start justify-start mt-10 md:flex-row strate-hero-home__cta-wrapper"
         >
           <t-button
             v-if="ctaLabel === true"
