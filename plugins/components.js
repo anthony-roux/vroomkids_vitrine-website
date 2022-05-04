@@ -37,11 +37,13 @@ import StrateHeroHome from "~/components/Strates/StrateHeroHome.vue";
 import StrateHero from "~/components/Strates/StrateHero.vue";
 import StrateBigTitle from "~/components/Strates/StrateBigTitle.vue";
 import StrateAdvantages from "~/components/Strates/StrateAdvantages.vue";
+import StrateReservations from "~/components/Strates/StrateReservations.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
 Vue.component("strate-big-title", StrateBigTitle);
 Vue.component("strate-advantages", StrateAdvantages);
+Vue.component("strate-reservations", StrateReservations);
 
 // COMPONENTS
 

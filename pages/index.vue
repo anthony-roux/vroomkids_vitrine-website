@@ -24,6 +24,8 @@
           ctaUrl="#"
           :isInversed="true"
         />
+        <strate-big-title text="Comment réserver ?" />
+        <strate-reservations></strate-reservations>
         <base-big-letter text="whaaow" />
       </div>
     </div>
