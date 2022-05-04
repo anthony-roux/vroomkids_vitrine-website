@@ -68,7 +68,7 @@ module.exports = {
         "3xl": [
           "4rem",
           {
-            lineHeight: "5.6rem",
+            lineHeight: "4.8rem",
           },
         ],
         "4xl": [
