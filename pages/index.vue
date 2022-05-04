@@ -7,7 +7,7 @@
 
     <!----------/ start main /---------->
     <div class="overflow-hidden">
-      <div class="container p-6 mx-auto">
+      <div class="mx-auto">
         <strate-big-title text="Confiez votre enfant en toute sécurité !" />
         <strate-advantages
           title="Un accompagnement indispensable"
@@ -30,6 +30,7 @@
           <template v-slot:text3><base-big-letter text="3" /></template>
           <template v-slot:text4><base-big-letter text="4" /></template>
         </strate-reservations>
+        <strate-garantee />
         <base-big-letter text="whaaow" />
       </div>
     </div>
