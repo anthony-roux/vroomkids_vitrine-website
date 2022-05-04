@@ -1,9 +1,11 @@
 <template>
   <section class="w-full my-20 strate-reservations">
     <div class="container mx-auto">
-      
-      <strate-big-title :text="title" />
-
+      <p
+        class="mx-auto mb-16 text-3xl font-bold text-center lg:mb-32 strate-big-title__text md:text-5xl"
+      >
+        {{ title }}
+      </p>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
         <div
           class="relative flex justify-center w-3/4 py-12 mx-auto mt-24 text-sm lg:mt-0"

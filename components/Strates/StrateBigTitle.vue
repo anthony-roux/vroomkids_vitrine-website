@@ -3,11 +3,11 @@
     class="w-full my-20 strate-big-title "
   >
     <div class="container flex items-center justify-center lg:w-3/4">
-      <h1
+      <p
         class="mx-auto text-3xl font-bold text-center strate-big-title__text md:text-5xl" :style="{ color: `${color}` }"
       >
         {{ text }}
-      </h1>
+      </p>
     </div>
   </section>
 </template>
