@@ -1,66 +1,52 @@
 <template>
   <section
-    class="strate-catchphrase flex md:min-h-[47.5rem] my-32"
+    class="
+      strate-catchphrase
+      flex
+      md:min-h-[47.5rem]
+      mt-32
+      overflow-hidden
+      lg:overflow-visible
+    "
     :style="{ background: `${backgroundColor}` }"
   >
     <div class="container relative grid items-center grid-cols-12 gap-x-8">
       <div
-        :class="isInversed != false ? 'order-2' : 'order-1'"
-        class="col-span-12 pt-12 lg:col-span-8 z-10"
+        :class="isInversed != false ? 'order-2' : 'order-1 w-4/5'"
+        class="z-10 col-span-12 py-16 md:py-20 lg:col-span-8 lg:w-full"
       >
         <div class="flex flex-col items-center">
           <p
-            class="
-              mx-auto
-              text-3xl
-              font-black
-              text-center text-white
-              uppercase
-              strate-hero__title
-              lg:text-6xl
-            "
+            class="mx-auto text-2xl font-black text-left text-white uppercase  lg:text-center strate-hero__title md:text-6xl"
+            :class="isInversed != false ? 'lg:text-center' : 'md:text-center'"
           >
             {{ text }}
             <br /><span class="text-primary-vert1">{{ textHighlight }}</span>
           </p>
           <p
-            class="
-              pt-2
-              mx-auto
-              text-sm
-              font-black
-              text-center text-white
-              uppercase
-              strate-hero__title
-              lg:text-md
-            "
+            class="pt-2 mx-auto text-sm font-black text-center text-white uppercase  strate-hero__title lg:text-md"
+            v-if="subtitle"
           >
             {{ subtitle }}
           </p>
         </div>
       </div>
       <div
-        class="col-span-12 lg:col-span-4"
-        :class="isInversed != false ? 'order-1' : 'order-2'"
+        class="col-span-12"
+        :class="
+          isInversed != false
+            ? 'order-1 lg:col-span-4 left-0 lg:flex hidden'
+            : 'order-2 md:col-span-4 absolute right-[-15rem] lg:right-0 max-w-[35rem] md:max-w-[60rem]  bottom-[-15rem] md:bottom-[-10rem] lg:bottom-0'
+        "
       >
         <div
           :class="
             isInversed != false
-              ? 'left-0 absolute lg:flex hidden'
-              : ' absolute right-0'
+              ? 'absolute left-0 lg:flex hidden  bottom-[-15rem] md:bottom-[-10rem] lg:bottom-0'
+              : ''
           "
-          class="bottom-0"
         >
-          <img
-            alt="Femme rose"
-            :src="imageUrl"
-            class="
-              lg:max-w-[75rem]
-              md:max-w-[28rem]
-              max-w-[18rem]
-              object-none object-left
-            "
-          />
+          <img alt="Femme rose" :src="imageUrl" />
         </div>
       </div>
     </div>
