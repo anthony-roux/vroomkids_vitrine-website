@@ -119,7 +119,7 @@ module.exports = {
           dark: "#2C2C2C",
         },
         grey: {
-          lighter: "#F6F6F6",
+          lighter: "#FAFAFA",
           light: "#C4CDD6",
           DEFAULT: "#848484",
           dark: "#939393",
@@ -210,6 +210,7 @@ module.exports = {
       blueSmall: "0px 2px 4px rgba(5, 150, 222, 0.2)",
       blueMedium: "0px 4px 8px rgba(5, 150, 222, 0.2)",
       greyDarkerMedium: "0px 0px 16px rgba(34, 67, 88, 0.1)",
+      greyDarkerLight: "0px 1px 7px rgba(0, 0, 0, 0.08)",
       none: "none",
     },
     animation: {
