@@ -8,7 +8,7 @@
     <!----------/ start main /---------->
     <div class="overflow-hidden">
       <div class="mx-auto">
-        <strate-big-title text="Confiez votre enfant en toute sécurité !" />
+        <strate-big-title text="Confiez votre enfant en toute sécurité !" class="md:-mb-20" />
         <strate-advantages
           title="Un accompagnement indispensable"
           text="Vromm vous assure un service complet et entièrement sécurisé, nous choisissons rigoureusement nos chauffeurs et vous assure un accompagnement en toute confiance lors des trajets de vos enfants."
@@ -30,29 +30,30 @@
           <template v-slot:text3><base-big-letter text="3" /></template>
           <template v-slot:text4><base-big-letter text="4" /></template>
         </strate-reservations>
+        <strate-catchphrase
+          backgroundColor="#E0A5EA"
+          imageUrl="/img/photography/man_1.png"
+          text="vroom s'engage pour une mobilité plus juste avec la commission la plus basse du marché, "
+          textHighlight="seulement 15%."
+          subtitle=""
+          :isInversed="true"
+        />
         <strate-garantee />
-        <base-big-letter text="whaaow" />
         <client-only>
-          <core-slider />
+          <strate-testimonials>
+
+          </strate-testimonials>
         </client-only>
+        <strate-catchphrase
+          backgroundColor="#A6EFED"
+          imageUrl="/img/photography/femme_rose.png"
+          text="faites comme marie pensez vous aussi à"
+          textHighlight="votre planète"
+          subtitle="vroom est un acteur eco-responsable"
+          :isInversed="false"
+        />
       </div>
     </div>
-    <strate-catchphrase
-      backgroundColor="#E0A5EA"
-      imageUrl="/img/photography/man_1.png"
-      text="vroom s'engage pour une mobilité avec la commission la plus basse du marché, seulement 15%."
-      textHighlight="plus juste"
-      subtitle=""
-      :isInversed="true"
-    />
-    <strate-catchphrase
-      backgroundColor="#A6EFED"
-      imageUrl="/img/photography/femme_rose.png"
-      text="faites comme marie pensez vous aussi à"
-      textHighlight="votre planète"
-      subtitle="vroom est un acteur eco-responsable"
-      :isInversed="false"
-    />
 
     <!----------/ end main /---------->
   </div>

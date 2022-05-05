@@ -8,9 +8,11 @@ import Vue from "vue";
 // Base
 import UseSvg from "~/components/Base/UseSvg.vue";
 import BigLetter from "~/components/Base/BigLetter.vue";
+import Testimonial from "~/components/Base/Testimonial.vue";
 
 Vue.component("base-use-svg", UseSvg);
 Vue.component("base-big-letter", BigLetter);
+Vue.component("base-testimonial", Testimonial);
 
 // CORE
 
@@ -41,6 +43,7 @@ import StrateBigTitle from "~/components/Strates/StrateBigTitle.vue";
 import StrateAdvantages from "~/components/Strates/StrateAdvantages.vue";
 import StrateReservations from "~/components/Strates/StrateReservations.vue";
 import StrateGarantee from "~/components/Strates/StrateGarantee.vue";
+import StrateTestimonials from "~/components/Strates/StrateTestimonials.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
@@ -49,6 +52,7 @@ Vue.component("strate-big-title", StrateBigTitle);
 Vue.component("strate-advantages", StrateAdvantages);
 Vue.component("strate-reservations", StrateReservations);
 Vue.component("strate-garantee", StrateGarantee);
+Vue.component("strate-testimonials", StrateTestimonials);
 
 // COMPONENTS
 
