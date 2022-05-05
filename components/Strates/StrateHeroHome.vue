@@ -4,6 +4,7 @@
       strate-hero-home
       w-full
       h-auto
+      md:h-[60vh]
       lg:h-[80vh]
       relative
       mt-[-9.5rem]
@@ -16,7 +17,7 @@
     <div class="container flex items-center justify-start h-full">
       <div class="py-12 lg:w-3/4">
         <h2
-          class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title lg:text-5xl"
+          class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title md:text-5xl"
         >
           {{ title }}
           <br /><span v-if="subtitle" class="">{{ subtitle }}</span>
