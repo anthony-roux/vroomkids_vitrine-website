@@ -32,6 +32,9 @@
         </strate-reservations>
         <strate-garantee />
         <base-big-letter text="whaaow" />
+        <client-only>
+          <core-slider />
+        </client-only>
       </div>
     </div>
     <!----------/ end main /---------->

@@ -1,7 +1,8 @@
 import Vue from "vue";
 
-// import Page from '~/components/ContentType/Page.vue';
 
+
+// import Page from '~/components/ContentType/Page.vue';
 // Vue.component('page', Page);
 
 // Base
@@ -13,9 +14,9 @@ Vue.component("base-big-letter", BigLetter);
 
 // CORE
 
-// import Exemple from '~/components/Core/exemple';
+import Slider from '~/components/Core/Slider.vue';
 
-// Vue.component('core-exemple', Exemple);
+Vue.component('core-slider', Slider);
 
 // COMMON (layout, Header, footer etc..)
 

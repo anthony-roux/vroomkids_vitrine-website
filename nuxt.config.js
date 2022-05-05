@@ -2,6 +2,7 @@ export default {
   target: "server",
   ssr: true,
   telemetry: false,
+  mode: "universal",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -42,6 +43,7 @@ export default {
     { src: "~/plugins/html/observer.js", mode: "client" },
     { src: "~/plugins/html/device.js", mode: "client" },
     { src: "~/plugins/html/fixScroll.js", mode: "client" },
+    { src: "~/plugins/vue-carousel.js", mode: "client" },
     "~/plugins/components",
     "~/plugins/axios.js",
     "~/plugins/global.js",
