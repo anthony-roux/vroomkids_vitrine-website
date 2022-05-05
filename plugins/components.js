@@ -1,7 +1,8 @@
 import Vue from "vue";
 
-// import Page from '~/components/ContentType/Page.vue';
 
+
+// import Page from '~/components/ContentType/Page.vue';
 // Vue.component('page', Page);
 
 // Base
@@ -13,9 +14,9 @@ Vue.component("base-big-letter", BigLetter);
 
 // CORE
 
-// import Exemple from '~/components/Core/exemple';
+import Slider from '~/components/Core/Slider.vue';
 
-// Vue.component('core-exemple', Exemple);
+Vue.component('core-slider', Slider);
 
 // COMMON (layout, Header, footer etc..)
 
@@ -37,11 +38,17 @@ import StrateHeroHome from "~/components/Strates/StrateHeroHome.vue";
 import StrateHero from "~/components/Strates/StrateHero.vue";
 import StrateCatchPhrase from "~/components/Strates/StrateCatchPhrase.vue";
 import StrateBigTitle from "~/components/Strates/StrateBigTitle.vue";
+import StrateAdvantages from "~/components/Strates/StrateAdvantages.vue";
+import StrateReservations from "~/components/Strates/StrateReservations.vue";
+import StrateGarantee from "~/components/Strates/StrateGarantee.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
 Vue.component("strate-catchphrase", StrateCatchPhrase);
 Vue.component("strate-big-title", StrateBigTitle);
+Vue.component("strate-advantages", StrateAdvantages);
+Vue.component("strate-reservations", StrateReservations);
+Vue.component("strate-garantee", StrateGarantee);
 
 // COMPONENTS
 

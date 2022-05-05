@@ -44,7 +44,7 @@ module.exports = {
         md: [
           "1.6rem",
           {
-            lineHeight: "2rem",
+            lineHeight: "2.2rem",
           },
         ],
         lg: [
@@ -68,7 +68,7 @@ module.exports = {
         "3xl": [
           "4rem",
           {
-            lineHeight: "5.6rem",
+            lineHeight: "4.8rem",
           },
         ],
         "4xl": [
@@ -96,15 +96,15 @@ module.exports = {
           },
         ],
         "8xl": [
-          "6.4rem",
+          "12rem",
           {
-            lineHeight: "7.6rem",
+            lineHeight: "12rem",
           },
         ],
         "9xl": [
-          "6.4rem",
+          "15rem",
           {
-            lineHeight: "7.6rem",
+            lineHeight: "15rem",
           },
         ],
       },
@@ -213,7 +213,7 @@ module.exports = {
       none: "none",
     },
     animation: {
-      text: "text 5s ease infinite",
+      text: "text 10s ease infinite",
     },
     keyframes: {
       text: {

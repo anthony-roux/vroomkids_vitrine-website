@@ -29,7 +29,7 @@
 
         <div class="flex flex-wrap items-center justify-between ctas my-14">
           <div class="">
-            <a href="" class="my-4 text-lg t-link--color">I am a link</a>
+            <a href="" class="mt-8 mb-4 text-md md:text-lg t-link--color">I am a link</a>
           </div>
           <t-button tagName="a" href="https://www.google.fr/" variant=""
             ><span>primary button</span></t-button
