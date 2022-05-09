@@ -1,5 +1,5 @@
 <template>
-  <div class="grid h-full grid-cols-12 gap-8 p-8 mx-10 rounded-md shadow-greyDarkerLight base-testimonial bg-grey-lighter">
+  <div class="grid h-full grid-cols-12 gap-8 p-8 mx-10 rounded-md shadow-greyDarkerLight base-testimonial bg-grey-lighter max-w-[60rem]">
     <div class="col-span-2">
       <img alt="photo d'un humain" :src="imageUrl" class="mx-auto" />
     </div>

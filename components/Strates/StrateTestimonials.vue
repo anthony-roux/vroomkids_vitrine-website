@@ -1,13 +1,15 @@
 <template>
   <section class="strate-testimonials">
-    <base-big-letter text="whaaow" />
+    <base-big-letter text="whaaow" class="z-[0]" />
 
-    <div class="container flex flex-col items-center justify-center h-full">
-      <p
-        class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl"
-      >
-        Ils sont ravis !
-      </p>
+    <div class="flex flex-col items-center justify-center h-full 6xl:container ">
+      <div class="container">
+        <p
+          class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl z-[3]"
+        >
+          Ils sont ravis !
+        </p>
+      </div>
 
       <carousel
         :autoplay="true"
@@ -16,6 +18,7 @@
           [320, 1],
           [768, 2],
           [1024, 2],
+          [1440, 3],
         ]"
         :loop="true"
         :autoplayTimeout="9000"
