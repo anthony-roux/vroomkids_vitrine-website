@@ -204,6 +204,11 @@ module.exports = {
 
         "3xl": "1280px",
         // => @media (min-width: 1280px) { ... }
+        "4xl": "1440px",
+        // => @media (min-width: 1280px) { ... }
+        "5xl": "1536px",
+        "6xl": "1780px",
+        // => @media (min-width: 1280px) { ... }
       },
     },
     boxShadow: {
