@@ -52,6 +52,7 @@
           subtitle="vroom est un acteur eco-responsable"
           :isInversed="false"
         />
+        <strate-cities />
       </div>
     </div>
 

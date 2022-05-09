@@ -44,6 +44,7 @@ import StrateAdvantages from "~/components/Strates/StrateAdvantages.vue";
 import StrateReservations from "~/components/Strates/StrateReservations.vue";
 import StrateGarantee from "~/components/Strates/StrateGarantee.vue";
 import StrateTestimonials from "~/components/Strates/StrateTestimonials.vue";
+import StrateCities from "~/components/Strates/StrateCities.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
@@ -53,6 +54,7 @@ Vue.component("strate-advantages", StrateAdvantages);
 Vue.component("strate-reservations", StrateReservations);
 Vue.component("strate-garantee", StrateGarantee);
 Vue.component("strate-testimonials", StrateTestimonials);
+Vue.component("strate-cities", StrateCities);
 
 // COMPONENTS
 
