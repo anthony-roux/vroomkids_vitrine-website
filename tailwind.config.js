@@ -165,6 +165,10 @@ module.exports = {
       container: {
         center: true,
         padding: "1.5rem",
+        maxWidth: {
+          md: "700px",
+          lg: "1280px",
+        },
       },
       width: {
         icon: "24px",
@@ -185,7 +189,9 @@ module.exports = {
         icon: "24px",
         illu: "440px",
         "illu-xl": "800px",
-        container: "1240px",
+        "container-xl": "1440px",
+        "container-2xl": "1536px",
+        "container-3xl": "1780px",
       },
       minWidth: {},
       screens: {
@@ -203,11 +209,6 @@ module.exports = {
         // => @media (min-width: 1024px) { ... }
 
         "3xl": "1280px",
-        // => @media (min-width: 1280px) { ... }
-        "4xl": "1440px",
-        // => @media (min-width: 1280px) { ... }
-        "5xl": "1536px",
-        "6xl": "1780px",
         // => @media (min-width: 1280px) { ... }
       },
     },
