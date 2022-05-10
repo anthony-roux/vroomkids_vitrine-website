@@ -1,33 +1,42 @@
 <template>
-  <section class="relative strate-cities">
-    <div class="container grid items-center justify-center h-full grid-cols-12">
-      <div class="col-span-12 lg:col-span-7 strate-cities__image"></div>
-      <div class="col-span-12 strate-cities__content lg:col-span-5">
+  <section class="relative my-32 strate-cities md:my-60">
+    <div
+      class="container grid items-center justify-center h-full grid-cols-12 mx-auto lg:gap-14 lg:max-w-container-xl"
+    >
+      <div class="order-2 col-span-12 lg:order-1 lg:col-span-7 strate-cities__image">
+        <img
+          alt="iphone with app"
+          :src="require(`static/img/illustrations/camion+map_entier.png`)"
+          class="mx-auto"
+        />
+      </div>
+      <div class="order-1 col-span-12 lg:order-2 strate-cities__content lg:col-span-4">
         <p class="mx-auto text-xl font-bold strate-cities__title md:text-3xl">
           {{ title }}
         </p>
-        <p class="mx-auto text-md strate-cities__paragraph">
-          Sit magna incididunt et irure minim consequat. Est do fugiat velit
-          anim et non irure in veniam aliqua laboris. Eiusmod sint proident
-          dolore dolor labore dolor sunt ullamco enim excepteur.
+        <p class="mx-auto my-6 text-md strate-cities__paragraph">
+          Nous nous développons petit à petit dans toute la france, pour plus de
+          précisions rendez-vous sur notre page dédiée et vérifiez votre
+          éligibilité à notre service.
         </p>
-        <div class="">
+        <div class="my-10">
           <ul
-            class="relative strate-cities__list"
+            class="relative grid grid-cols-3 gap-4 strate-cities__list"
             :class="{ isCollapse: isCollapse }"
           >
-            <li>Paris, 75</li>
-            <li>Montreuil, 93</li>
-            <li>Marseille, 75</li>
-            <li>Nice, 75</li>
-            <li>Nîmes, 30</li>
-            <li>Bordeaux, 75</li>
+            <li class="font-bold text-pink">Paris</li>
+            <li class="font-bold text-pink">Lyon</li>
+            <li class="font-bold text-pink">Nice</li>
+            <li class="font-bold text-pink">Montpellier</li>
+            <li class="font-bold text-pink">Calais</li>
+            <li class="font-bold text-pink">Nantes</li>
+            <li class="font-bold text-pink">Ajaccio</li>
           </ul>
-          <a
+          <!-- <a
             @click="isCollapse = !isCollapse"
             class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color"
             >{{ isCollapse ? "Voir moins" : "Voir plus" }}</a
-          >
+          > -->
         </div>
       </div>
     </div>
@@ -45,7 +54,7 @@ export default {
     title: {
       type: String,
       required: false,
-      default: "Duis esse est adipisicing elit veniam",
+      default: "Dans quelles villes est disponible Vroom ?",
     },
     ctaLabel: {
       type: String,
@@ -69,33 +78,44 @@ export default {
 <style lang="scss">
 .strate-cities {
   &__list {
-    height: 8rem;
-    overflow: hidden;
-    transition: 600ms ease;
+    // height: 8rem;
+    // overflow: hidden;
+    // transition: 600ms ease;
 
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50%;
-      background: linear-gradient(
-        0deg,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-    }
-
-    &.isCollapse {
-      transition: 600ms ease;
-      height: auto;
-
-      &:after {
-        height: 0;
-        transition: 600ms ease;
+    li {
+      position: relative;
+      margin-left: 1.5rem;
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6' cy='6' r='5' stroke='%23B21DCB' stroke-width='2'/%3E%3Ccircle cx='6' cy='6' r='2' fill='%23B21DCB'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        left: -15px;
+        top: 0.1rem;
       }
     }
+
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 50%;
+    //   background: linear-gradient(
+    //     0deg,
+    //     #ffffff 0%,
+    //     rgba(255, 255, 255, 0) 100%
+    //   );
+    // }
+
+    // &.isCollapse {
+    //   transition: 600ms ease;
+    //   height: auto;
+
+    //   &:after {
+    //     height: 0;
+    //     transition: 600ms ease;
+    //   }
+    // }
   }
 }
 </style>
