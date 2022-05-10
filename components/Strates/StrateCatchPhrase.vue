@@ -5,6 +5,7 @@
       flex
       md:min-h-[47.5rem]
       mt-32
+      md:mt-60
       overflow-hidden
       lg:overflow-visible
     "
@@ -17,14 +18,14 @@
       >
         <div class="flex flex-col items-center">
           <p
-            class="mx-auto text-2xl font-black text-left text-white uppercase  lg:text-center strate-hero__title md:text-6xl"
+            class="mx-auto text-2xl font-black text-left text-white uppercase lg:text-center strate-hero__title md:text-6xl"
             :class="isInversed != false ? 'lg:text-center' : 'md:text-center'"
           >
             {{ text }}
-            <br /><span class="text-primary-vert1">{{ textHighlight }}</span>
+            <br /><span :style="{ color: `${colorHighlight}` }">{{ textHighlight }}</span>
           </p>
           <p
-            class="pt-2 mx-auto text-sm font-black text-center text-white uppercase  strate-hero__title lg:text-md"
+            class="pt-2 mx-auto text-sm font-black text-center text-white uppercase strate-hero__title lg:text-md"
             v-if="subtitle"
           >
             {{ subtitle }}
@@ -75,6 +76,11 @@ export default {
       type: String,
       required: false,
       default: "votre planète",
+    },
+    colorHighlight: {
+      type: String,
+      required: false,
+      default: "#D176E0",
     },
     subtitle: {
       type: String,
