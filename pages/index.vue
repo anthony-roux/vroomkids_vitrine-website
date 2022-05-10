@@ -35,6 +35,7 @@
           imageUrl="/img/photography/man_1.png"
           text="vroom s'engage pour une mobilité plus juste avec la commission la plus basse du marché, "
           textHighlight="seulement 15%."
+          colorHighlight="#D176E0"
           subtitle=""
           :isInversed="true"
         />
@@ -49,6 +50,7 @@
           imageUrl="/img/photography/femme_rose.png"
           text="faites comme marie pensez vous aussi à"
           textHighlight="votre planète"
+          colorHighlight="#2CC5C0"
           subtitle="vroom est un acteur eco-responsable"
           :isInversed="false"
         />
