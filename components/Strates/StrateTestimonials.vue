@@ -2,7 +2,7 @@
   <section class="strate-testimonials">
     <base-big-letter text="whaaow" class="z-[0]" />
 
-    <div class="flex flex-col items-center justify-center h-full 6xl:container ">
+    <div class="flex flex-col items-center justify-center h-full mx-auto max-w-container-3xl">
       <div class="container">
         <p
           class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl z-[3]"
