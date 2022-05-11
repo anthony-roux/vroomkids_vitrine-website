@@ -8,7 +8,10 @@
     <!----------/ start main /---------->
     <div class="overflow-hidden">
       <div class="mx-auto">
-        <strate-big-title text="Confiez votre enfant en toute sécurité !" class="md:-mb-20" />
+        <strate-big-title
+          text="Confiez votre enfant en toute sécurité !"
+          class="md:-mb-20"
+        />
         <strate-advantages
           title="Un accompagnement indispensable"
           text="Vromm vous assure un service complet et entièrement sécurisé, nous choisissons rigoureusement nos chauffeurs et vous assure un accompagnement en toute confiance lors des trajets de vos enfants."
@@ -40,11 +43,10 @@
           :isInversed="true"
         />
         <strate-garantee />
-        <client-only>
-          <strate-testimonials>
-
-          </strate-testimonials>
-        </client-only>
+        <strate-text
+          text="Nos chauffeurs sont scrupuleusement séléctionnés par leur qualité de sérvice mais aussi pour leur conduite ! Nous privilégions celles et ceux qui partagent nos valeurs pour le respect de l’environnement."
+          
+        />
         <strate-catchphrase
           backgroundColor="#A6EFED"
           imageUrl="/img/photography/femme_rose.png"
@@ -54,6 +56,10 @@
           subtitle="vroom est un acteur eco-responsable"
           :isInversed="false"
         />
+        <client-only>
+          <strate-testimonials> </strate-testimonials>
+        </client-only>
+        
         <strate-cities />
       </div>
     </div>
