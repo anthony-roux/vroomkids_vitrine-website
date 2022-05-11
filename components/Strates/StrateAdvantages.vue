@@ -5,7 +5,7 @@
   >
     <div class="container grid items-start justify-center grid-cols-12 gap-10">
       <div
-        class="col-span-12 lg:col-span-6 strate-advantages__content"
+        class="col-span-12 lg:col-span-5 strate-advantages__content"
         :class="isInversed != false ? 'lg:order-2' : 'lg:order-1'"
       >
         <p
@@ -15,13 +15,14 @@
         </p>
         <p class="text-md strate-advantages__text lg:w-11/12">{{ text }}</p>
         <a
+          v-if="ctaLabel"
           :href="ctaUrl"
           class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color"
           >{{ ctaLabel }}</a
         >
       </div>
       <div
-        class="col-span-12 lg:col-span-6 strate-advantages__image"
+        class="col-span-12 lg:col-span-7 strate-advantages__image"
         :class="isInversed != false ? 'lg:order-1' : 'lg:order-2'"
       >
         <img alt="Logo Vroom" :src="imageUrl" class="relative rounded" />
@@ -52,7 +53,6 @@ export default {
     ctaLabel: {
       type: String,
       required: false,
-      default: "Notre projet",
     },
     ctaUrl: {
       type: String,
