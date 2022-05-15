@@ -43,7 +43,7 @@
         class="w-full mb-5 lg:w-auto lg:mb-0"
         :variant="this.isSidebar ? 'secondaryWhite' : 'secondaryWhite' "
         @click.native="openTruc"
-        ><span class="text-lg">Devenir chauffeur</span></t-button
+        ><span class="text-lg">Nous rejoindre</span></t-button
       >
     </div>
   </div>
