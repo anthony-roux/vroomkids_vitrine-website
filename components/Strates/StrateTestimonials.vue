@@ -3,12 +3,13 @@
     <base-big-letter text="whaaow" class="z-[0]" />
 
     <div class="flex flex-col items-center justify-center h-full mx-auto max-w-container-3xl">
-      <div class="container">
+      <div class="container text-center">
         <p
           class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl z-[3]"
         >
-          Ils sont ravis !
+        {{title}}
         </p>
+        <p class="text-xl">{{subtitle}}</p>
       </div>
 
       <carousel
@@ -87,12 +88,10 @@ export default {
     title: {
       type: String,
       required: false,
-      default: "Duis esse est adipisicing elit veniam",
     },
-    ctaLabel: {
+    subtitle: {
       type: String,
       required: false,
-      default: "En savoir plus.",
     },
   },
   data: function () {
