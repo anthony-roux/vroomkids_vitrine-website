@@ -55,9 +55,10 @@
           colorHighlight="#2CC5C0"
           subtitle="vroom est un acteur eco-responsable"
           :isInversed="false"
+          class="mb-32 md:mb-60"
         />
         <client-only>
-          <strate-testimonials> </strate-testimonials>
+          <strate-testimonials title="Ils sont ravis !" subtitle="Quelques témoignages de parents qui nous font confiance."> </strate-testimonials>
         </client-only>
         
         <strate-cities />
