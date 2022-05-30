@@ -8,7 +8,10 @@
     <!----------/ start main /---------->
     <div class="overflow-hidden">
       <div class="mx-auto">
-        <strate-big-title text="Confiez votre enfant en toute sécurité !" class="md:-mb-20" />
+        <strate-big-title
+          text="Confiez votre enfant en toute sécurité !"
+          class="md:-mb-20"
+        />
         <strate-advantages
           title="Un accompagnement indispensable"
           text="Vromm vous assure un service complet et entièrement sécurisé, nous choisissons rigoureusement nos chauffeurs et vous assure un accompagnement en toute confiance lors des trajets de vos enfants."
@@ -40,9 +43,7 @@
         />
         <strate-garantee />
         <client-only>
-          <strate-testimonials>
-
-          </strate-testimonials>
+          <strate-testimonials> </strate-testimonials>
         </client-only>
         <strate-catchphrase
           backgroundColor="#A6EFED"
@@ -52,6 +53,7 @@
           subtitle="vroom est un acteur eco-responsable"
           :isInversed="false"
         />
+        <strate-manage-race> </strate-manage-race>
       </div>
     </div>
 
@@ -61,6 +63,7 @@
 
 <script>
 import { mapGetters } from "vuex";
+import StrateManageRace from "../components/Strates/StrateManageRace.vue";
 
 export default {
   name: "Home",
