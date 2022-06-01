@@ -62,6 +62,9 @@
         </client-only>
         
         <strate-cities />
+        <strate-faq title="Les questions qui reviennent souvent." />
+
+
       </div>
     </div>
 

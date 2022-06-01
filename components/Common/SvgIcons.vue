@@ -99,6 +99,23 @@
           d="M24.999 4.167C13.512 4.167 4.166 13.512 4.166 25v8.631c0 2.133 1.869 3.869 4.167 3.869h2.083a2.085 2.085 0 0 0 2.083-2.083V24.702a2.081 2.081 0 0 0-2.083-2.083H8.524C9.683 14.556 16.62 8.333 24.999 8.333c8.379 0 15.317 6.223 16.475 14.285h-1.892a2.085 2.085 0 0 0-2.083 2.083V37.5a4.171 4.171 0 0 1-4.167 4.167h-4.167v-2.083h-8.333v6.25h12.5c4.596 0 8.333-3.737 8.333-8.333 2.298 0 4.167-1.735 4.167-3.869V25c.001-11.488-9.345-20.833-20.833-20.833z"
         />
       </symbol>
+      <symbol id="icon-minus" viewBox="0 0 24 24">
+        <title>icon minus</title>
+        <path
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19.875 11.625H4.125"
+        />
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <title>icon plus</title>
+        <path
+          stroke-width="2"
+          stroke-linecap="round"
+          d="M12 20v-8m0 0V4m0 8h8m-8 0H4"
+        />
+      </symbol>
     </defs>
   </svg>
 </template>
