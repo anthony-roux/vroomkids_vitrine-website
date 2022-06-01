@@ -120,8 +120,8 @@ module.exports = {
         },
         grey: {
           lighter: "#FAFAFA",
-          light: "#C4CDD6",
-          DEFAULT: "#848484",
+          light: "#FDFDFD",
+          DEFAULT: "#E7E7E7",
           dark: "#939393",
           darker: "#0D2339",
         },
@@ -233,6 +233,9 @@ module.exports = {
           "background-position": "bottom center",
         },
       },
+    },
+    transitionProperty: {
+      height: "height",
     },
     linearGradientDirections: {
       // defaults to these values
