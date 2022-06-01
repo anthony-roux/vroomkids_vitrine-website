@@ -18,7 +18,7 @@
       :class="isCollapse ? 'isCollapse text-pink' : ''"
       v-on:click="toggleQuestion"
     >
-      <p class="font-semibold text-md md:text-xl">{{ question }}</p>
+      <p class="pr-6 font-semibold text-md lg:text-lg">{{ question }}</p>
       <div
         class="
           relative
@@ -41,7 +41,7 @@
         :class="isCollapse ? 'max-h-[80rem] pb-8' : ' max-h-0'"
         v-visible="isCollapse"
       >
-        <p class="text-sm font-normal md:text-lg md:pr-16" >
+        <p class="text-sm font-normal md:text-md md:pr-16" >
           {{ answer }}
         </p>
       </div>
