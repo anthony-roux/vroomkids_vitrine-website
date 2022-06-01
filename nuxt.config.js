@@ -77,6 +77,7 @@ export default {
     { src: "~/plugins/html/device.js", mode: "client" },
     { src: "~/plugins/html/fixScroll.js", mode: "client" },
     { src: "~/plugins/vue-carousel.js", mode: "client" },
+    { src: "~/plugins/vue-visible.js", mode: "client" },
     "~/plugins/components",
     "~/plugins/axios.js",
     "~/plugins/global.js",
