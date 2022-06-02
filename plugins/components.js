@@ -1,7 +1,5 @@
 import Vue from "vue";
 
-
-
 // import Page from '~/components/ContentType/Page.vue';
 // Vue.component('page', Page);
 
@@ -18,9 +16,9 @@ Vue.component("base-faq-item", FAQItem);
 
 // CORE
 
-import Slider from '~/components/Core/Slider.vue';
+import Slider from "~/components/Core/Slider.vue";
 
-Vue.component('core-slider', Slider);
+Vue.component("core-slider", Slider);
 
 // COMMON (layout, Header, footer etc..)
 
@@ -49,6 +47,7 @@ import StrateTestimonials from "~/components/Strates/StrateTestimonials.vue";
 import StrateCities from "~/components/Strates/StrateCities.vue";
 import StrateText from "~/components/Strates/StrateText.vue";
 import StrateFAQ from "~/components/Strates/StrateFAQ.vue";
+import StratePartners from "~/components/Strates/StratePartners.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
@@ -61,6 +60,7 @@ Vue.component("strate-testimonials", StrateTestimonials);
 Vue.component("strate-cities", StrateCities);
 Vue.component("strate-text", StrateText);
 Vue.component("strate-faq", StrateFAQ);
+Vue.component("strate-partners", StratePartners);
 
 // COMPONENTS
 
