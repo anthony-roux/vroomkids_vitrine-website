@@ -10,7 +10,7 @@
       <div class="mx-auto">
         <strate-big-title
           text="Confiez votre enfant en toute sécurité !"
-          class="md:-mb-20"
+          class="md:-mb-32"
         />
         <strate-advantages
           title="Un accompagnement indispensable"
