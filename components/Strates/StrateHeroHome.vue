@@ -4,7 +4,6 @@
       strate-hero-home
       w-full
       h-auto
-      md:h-[60vh]
       lg:h-[80vh]
       relative
       mt-[-9.5rem]
@@ -14,8 +13,10 @@
     "
     :style="{ backgroundImage: `url(${backgroundUrl})` }"
   >
-    <div class="container flex items-center justify-start h-full">
-      <div class="py-12 lg:w-3/4">
+    <div class="container grid h-full grid-cols-12 gap-x-8">
+      <div
+        class="flex flex-col justify-center col-span-12 py-12 lg:col-span-8 lg:items-start md:flex-col "
+      >
         <h2
           class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title md:text-5xl"
         >
@@ -23,7 +24,7 @@
           <br /><span v-if="subtitle" class="">{{ subtitle }}</span>
         </h2>
         <div
-          class="flex flex-col items-start justify-start mt-10 md:flex-row strate-hero-home__cta-wrapper"
+          class="flex flex-col items-start justify-start mt-10 lg:flex-col strate-hero-home__cta-wrapper"
         >
           <t-button
             v-if="ctaLabel === true"
@@ -47,6 +48,14 @@
               class="my-3 lg:my-6 w-72 h-[5.6rem]"
             />
           </a>
+        </div>
+      </div>
+      <div class="relative col-span-12 lg:col-span-4">
+        <div class="bottom-0 max-w-2xl mx-auto lg:absolute">
+          <img
+            alt="Logo Vroom"
+            :src="require(`static/img/illustrations/hero_iphone-w-app.png`)"
+          />
         </div>
       </div>
     </div>
