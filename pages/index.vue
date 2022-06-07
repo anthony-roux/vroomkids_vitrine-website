@@ -10,7 +10,7 @@
       <div class="mx-auto">
         <strate-big-title
           text="Confiez votre enfant en toute sécurité !"
-          class="md:-mb-20"
+          class="md:-mb-32"
         />
         <strate-advantages
           title="Un accompagnement indispensable"
@@ -43,10 +43,14 @@
           :isInversed="true"
         />
         <strate-garantee />
+        <client-only>
+          <strate-testimonials> </strate-testimonials>
+        </client-only>
         <strate-text
           text="Nos chauffeurs sont scrupuleusement séléctionnés par leur qualité de sérvice mais aussi pour leur conduite ! Nous privilégions celles et ceux qui partagent nos valeurs pour le respect de l’environnement."
           
         />
+
         <strate-catchphrase
           backgroundColor="#A6EFED"
           imageUrl="/img/photography/femme_rose.png"
@@ -57,12 +61,15 @@
           :isInversed="false"
           class="mb-32 md:mb-60"
         />
+        <strate-manage-race> </strate-manage-race>
+
         <client-only>
           <strate-testimonials title="Ils sont ravis !" subtitle="Quelques témoignages de parents qui nous font confiance."> </strate-testimonials>
         </client-only>
         
         <strate-cities />
         <strate-faq title="Les questions qui reviennent souvent." />
+
 
 
       </div>
@@ -74,6 +81,7 @@
 
 <script>
 import { mapGetters } from "vuex";
+import StrateManageRace from "../components/Strates/StrateManageRace.vue";
 
 export default {
   name: "Home",

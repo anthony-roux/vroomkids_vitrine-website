@@ -1,7 +1,5 @@
 import Vue from "vue";
 
-
-
 // import Page from '~/components/ContentType/Page.vue';
 // Vue.component('page', Page);
 
@@ -18,9 +16,9 @@ Vue.component("base-faq-item", FAQItem);
 
 // CORE
 
-import Slider from '~/components/Core/Slider.vue';
+import Slider from "~/components/Core/Slider.vue";
 
-Vue.component('core-slider', Slider);
+Vue.component("core-slider", Slider);
 
 // COMMON (layout, Header, footer etc..)
 
@@ -46,6 +44,7 @@ import StrateAdvantages from "~/components/Strates/StrateAdvantages.vue";
 import StrateReservations from "~/components/Strates/StrateReservations.vue";
 import StrateGarantee from "~/components/Strates/StrateGarantee.vue";
 import StrateTestimonials from "~/components/Strates/StrateTestimonials.vue";
+import StrateManageRace from "~/components/Strates/StrateManageRace.vue";
 import StrateCities from "~/components/Strates/StrateCities.vue";
 import StrateText from "~/components/Strates/StrateText.vue";
 import StrateFAQ from "~/components/Strates/StrateFAQ.vue";
@@ -58,6 +57,7 @@ Vue.component("strate-advantages", StrateAdvantages);
 Vue.component("strate-reservations", StrateReservations);
 Vue.component("strate-garantee", StrateGarantee);
 Vue.component("strate-testimonials", StrateTestimonials);
+Vue.component("strate-manage-race", StrateManageRace);
 Vue.component("strate-cities", StrateCities);
 Vue.component("strate-text", StrateText);
 Vue.component("strate-faq", StrateFAQ);
