@@ -1,13 +1,16 @@
 <template>
-  <div class="grid h-full grid-cols-12 gap-8 p-8 mx-10 rounded-md shadow-greyDarkerLight base-testimonial bg-grey-lighter">
-    <div class="col-span-2">
+  <div
+    class="grid h-full grid-cols-12 gap-8 p-8 mx-10 rounded-md shadow-greyDarkerLight base-testimonial bg-grey-lighter"
+  >
+    <!-- <div class="col-span-2">
       <img alt="photo d'un humain" :src="imageUrl" class="mx-auto" />
-    </div>
-    <div class="col-span-10 text-md">
-      <p class="font-bold">{{ name }}</p>
-      <p>
+    </div> -->
+    <div class="col-span-12 text-md">
+      <p class="italic">
         {{ text }}
       </p>
+      <p class="text-sm font-bold text-pink">{{ name }}</p>
+      <p class="mt-2 text-xs font-thin text-pink-light">le 02 juin 2022</p>
     </div>
   </div>
 </template>
