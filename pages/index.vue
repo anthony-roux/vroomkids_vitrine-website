@@ -45,7 +45,6 @@
         <strate-garantee />
         <strate-text
           text="Nos chauffeurs sont scrupuleusement séléctionnés par leur qualité de sérvice mais aussi pour leur conduite ! Nous privilégions celles et ceux qui partagent nos valeurs pour le respect de l’environnement."
-          
         />
         <strate-catchphrase
           backgroundColor="#A6EFED"
@@ -58,13 +57,22 @@
           class="mb-32 md:mb-60"
         />
         <client-only>
-          <strate-testimonials title="Ils sont ravis !" subtitle="Quelques témoignages de parents qui nous font confiance."> </strate-testimonials>
+          <strate-testimonials
+            title="Ils sont ravis !"
+            subtitle="Quelques témoignages de parents qui nous font confiance."
+          >
+          </strate-testimonials>
         </client-only>
-        
+
         <strate-cities />
         <strate-faq title="Les questions qui reviennent souvent." />
-
-
+        <client-only>
+          <strate-testimonials-pro
+            title="Qui sont nos chauffeurs ?"
+            subtitle="Nos chauffeurs sont séléctionnés avec rigueur. Ils sont tous en possession d’une lisence VTC et sont pour la plupart père ou mère de famille."
+          >
+          </strate-testimonials-pro>
+        </client-only>
       </div>
     </div>
 
