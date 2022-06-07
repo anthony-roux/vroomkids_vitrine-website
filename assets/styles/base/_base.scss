@@ -8,8 +8,14 @@
   --app-height: 100vh;
 }
 
+
 * {
   box-sizing: border-box;
+
+  &::selection {
+    background-color: #1fc6c1;
+    color: $white;
+  }
 }
 
 *:before,
@@ -24,7 +30,7 @@ $max_font: 16px;
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -38,7 +44,6 @@ body {
   font-family: $poppins !important;
   color: $black;
   @extend %text;
-
 }
 
 code {
@@ -57,7 +62,8 @@ button {
   color: currentColor;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 0;
   margin: 0;
 }
@@ -66,5 +72,3 @@ img,
 picture {
   width: 100%;
 }
-
-

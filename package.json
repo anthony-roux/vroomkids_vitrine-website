@@ -25,7 +25,8 @@
     "unique-slug": "^2.0.2",
     "vue-carousel": "^0.18.0",
     "vue-content-loader": "0.2",
-    "vue-tailwind": "^2.4.2"
+    "vue-tailwind": "^2.4.2",
+    "vue-visible": "^1.0.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.0",

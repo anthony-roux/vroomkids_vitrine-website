@@ -13,11 +13,11 @@
     :style="{ backgroundImage: `url(${backgroundUrl})` }"
   >
     <div class="container flex items-center justify-center h-full">
-      <h1
+      <p
         class="mx-auto text-3xl font-black text-center text-white uppercase strate-hero__title md:text-5xl"
       >
         {{ title }}
-      </h1>
+      </p>
     </div>
   </section>
 </template>

@@ -80,6 +80,7 @@ export default {
     $route() {
       this.$nextTick(() => {
         this.$eventHub.$emit('sidebar:close');
+        this.$eventHub.$emit('question:close');
       })
     }
   }

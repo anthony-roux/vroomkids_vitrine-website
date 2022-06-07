@@ -13,17 +13,17 @@
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
-          to="/service"
+          to="/price"
           class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
         >
-          Notre service
+          Tarif
         </nuxt-link>
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
-          to="/price"
+          to="/aboutUs"
           class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
-          >Tarifs
+          >Qui sommes-nous ?
         </nuxt-link>
       </li>
       <li class="lg:mr-6 l-nav__item">
@@ -43,7 +43,7 @@
         class="w-full mb-5 lg:w-auto lg:mb-0"
         :variant="this.isSidebar ? 'secondaryWhite' : 'secondaryWhite' "
         @click.native="openTruc"
-        ><span class="text-lg">Devenir chauffeur</span></t-button
+        ><span class="text-lg">Nous rejoindre</span></t-button
       >
     </div>
   </div>

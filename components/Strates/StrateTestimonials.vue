@@ -1,13 +1,16 @@
 <template>
   <section class="strate-testimonials">
-    <base-big-letter text="whaaow" />
+    <base-big-letter text="whaaow" class="z-[0]" />
 
-    <div class="container flex flex-col items-center justify-center h-full">
-      <p
-        class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl"
-      >
-        Ils sont ravis !
-      </p>
+    <div class="flex flex-col items-center justify-center h-full mx-auto max-w-container-3xl">
+      <div class="container text-center">
+        <p
+          class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl z-[3]"
+        >
+        {{title}}
+        </p>
+        <p class="text-xl">{{subtitle}}</p>
+      </div>
 
       <carousel
         :autoplay="true"
@@ -16,6 +19,7 @@
           [320, 1],
           [768, 2],
           [1024, 2],
+          [1440, 3],
         ]"
         :loop="true"
         :autoplayTimeout="9000"
@@ -84,12 +88,10 @@ export default {
     title: {
       type: String,
       required: false,
-      default: "Duis esse est adipisicing elit veniam",
     },
-    ctaLabel: {
+    subtitle: {
       type: String,
       required: false,
-      default: "En savoir plus.",
     },
   },
   data: function () {

@@ -120,8 +120,8 @@ module.exports = {
         },
         grey: {
           lighter: "#FAFAFA",
-          light: "#C4CDD6",
-          DEFAULT: "#848484",
+          light: "#FDFDFD",
+          DEFAULT: "#E7E7E7",
           dark: "#939393",
           darker: "#0D2339",
         },
@@ -165,6 +165,10 @@ module.exports = {
       container: {
         center: true,
         padding: "1.5rem",
+        maxWidth: {
+          md: "700px",
+          lg: "1280px",
+        },
       },
       width: {
         icon: "24px",
@@ -185,7 +189,9 @@ module.exports = {
         icon: "24px",
         illu: "440px",
         "illu-xl": "800px",
-        container: "1240px",
+        "container-xl": "1440px",
+        "container-2xl": "1536px",
+        "container-3xl": "1780px",
       },
       minWidth: {},
       screens: {
@@ -227,6 +233,9 @@ module.exports = {
           "background-position": "bottom center",
         },
       },
+    },
+    transitionProperty: {
+      height: "height",
     },
     linearGradientDirections: {
       // defaults to these values

@@ -17,6 +17,7 @@
       <div
         class="flex flex-col justify-center col-span-12 py-12 lg:col-span-8 lg:items-start md:flex-col "
       >
+
         <h2
           class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title md:text-5xl"
         >
@@ -50,6 +51,7 @@
           </a>
         </div>
       </div>
+
       <div class="relative col-span-12 lg:col-span-4">
         <div class="bottom-0 max-w-2xl mx-auto lg:absolute">
           <img
@@ -57,6 +59,12 @@
             :src="require(`static/img/illustrations/hero_iphone-w-app.png`)"
           />
         </div>
+      <div class="items-end hidden col-span-12 lg:flex lg:col-span-4">
+        <img
+          alt="iphone with app"
+          :src="require(`static/img/illustrations/iphone_hero.png`)"
+          class="max-w-[36rem] mx-auto"
+        />
       </div>
     </div>
   </section>

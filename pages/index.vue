@@ -38,6 +38,7 @@
           imageUrl="/img/photography/man_1.png"
           text="vroom s'engage pour une mobilité plus juste avec la commission la plus basse du marché, "
           textHighlight="seulement 15%."
+          colorHighlight="#D176E0"
           subtitle=""
           :isInversed="true"
         />
@@ -45,15 +46,32 @@
         <client-only>
           <strate-testimonials> </strate-testimonials>
         </client-only>
+        <strate-text
+          text="Nos chauffeurs sont scrupuleusement séléctionnés par leur qualité de sérvice mais aussi pour leur conduite ! Nous privilégions celles et ceux qui partagent nos valeurs pour le respect de l’environnement."
+          
+        />
+
         <strate-catchphrase
           backgroundColor="#A6EFED"
           imageUrl="/img/photography/femme_rose.png"
           text="faites comme marie pensez vous aussi à"
           textHighlight="votre planète"
+          colorHighlight="#2CC5C0"
           subtitle="vroom est un acteur eco-responsable"
           :isInversed="false"
+          class="mb-32 md:mb-60"
         />
         <strate-manage-race> </strate-manage-race>
+
+        <client-only>
+          <strate-testimonials title="Ils sont ravis !" subtitle="Quelques témoignages de parents qui nous font confiance."> </strate-testimonials>
+        </client-only>
+        
+        <strate-cities />
+        <strate-faq title="Les questions qui reviennent souvent." />
+
+
+
       </div>
     </div>
 

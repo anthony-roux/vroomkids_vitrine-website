@@ -6,16 +6,49 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "VroomKids",
+    title: "Vroom",
     htmlAttrs: {
       lang: "fr",
     },
+
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Vroom" },
+      {
+        name: "description",
+        content: "Nous accompagnons vos enfants selon leur besoins quotidiens. Notre service vous assure pleine tranquillité et sérénité tout au long de la journée." ,
+      },
+      {
+        name: "og:title",
+        content: "Vroom - La mobilité sur mesure pour vos enfants",
+      },
+      {
+        name: "og:desciption",
+        content: "Nous accompagnons vos enfants selon leur besoins quotidiens. Notre service vous assure pleine tranquillité et sérénité tout au long de la journée.",
+      },
+      {
+        name: "og:locale",
+        content: "fr_FR",
+      },
+      {
+        name: "og:image",
+        content: "",
+      },
+      {
+        property: "og:url",
+        content: `https://vroom-app.netlify.app/`,
+      },
+      {
+        // a modifier avec le bon url : https://search.google.com/search-console/welcome?hl=fr
+        name: "google-site-verification",
+        content: "",
+      },
     ],
+
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   manifest: {
@@ -44,6 +77,7 @@ export default {
     { src: "~/plugins/html/device.js", mode: "client" },
     { src: "~/plugins/html/fixScroll.js", mode: "client" },
     { src: "~/plugins/vue-carousel.js", mode: "client" },
+    { src: "~/plugins/vue-visible.js", mode: "client" },
     "~/plugins/components",
     "~/plugins/axios.js",
     "~/plugins/global.js",
