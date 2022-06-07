@@ -68,15 +68,8 @@
 
         <strate-cities />
         <strate-faq title="Les questions qui reviennent souvent." />
-        <client-only>
-          <strate-testimonials-pro
-            title="Qui sont nos chauffeurs ?"
-            subtitle="Nos chauffeurs sont séléctionnés avec rigueur. Ils sont tous en possession d’une lisence VTC et sont pour la plupart père ou mère de famille."
-          >
-          </strate-testimonials-pro>
-        </client-only>
-        <strate-manage-race/>
 
+        <strate-manage-race />
       </div>
     </div>
 
