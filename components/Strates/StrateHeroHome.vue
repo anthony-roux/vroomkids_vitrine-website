@@ -59,12 +59,6 @@
             :src="require(`static/img/illustrations/hero_iphone-w-app.png`)"
           />
         </div>
-      <div class="items-end hidden col-span-12 lg:flex lg:col-span-4">
-        <img
-          alt="iphone with app"
-          :src="require(`static/img/illustrations/iphone_hero.png`)"
-          class="max-w-[36rem] mx-auto"
-        />
       </div>
     </div>
   </section>

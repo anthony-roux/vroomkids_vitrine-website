@@ -43,9 +43,6 @@
           :isInversed="true"
         />
         <strate-garantee />
-        <client-only>
-          <strate-testimonials> </strate-testimonials>
-        </client-only>
         <strate-text
           text="Nos chauffeurs sont scrupuleusement séléctionnés par leur qualité de sérvice mais aussi pour leur conduite ! Nous privilégions celles et ceux qui partagent nos valeurs pour le respect de l’environnement."
           
@@ -61,7 +58,6 @@
           :isInversed="false"
           class="mb-32 md:mb-60"
         />
-        <strate-manage-race> </strate-manage-race>
 
         <client-only>
           <strate-testimonials title="Ils sont ravis !" subtitle="Quelques témoignages de parents qui nous font confiance."> </strate-testimonials>
@@ -69,8 +65,7 @@
         
         <strate-cities />
         <strate-faq title="Les questions qui reviennent souvent." />
-
-
+        <strate-manage-race/>
 
       </div>
     </div>
