@@ -109,10 +109,10 @@ export default {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    "@nuxtjs/axios",
     "@nuxtjs/auth-next",
     "@nuxt/image",
     "nuxt-svg-loader",
+    '@nuxtjs/axios',
   ],
   // Purge module configuration: https://purgecss.com/guides/nuxt.html
   purgeCSS: {
@@ -127,7 +127,7 @@ export default {
       process.env.NODE_ENV === "production"
         ? false
         : process.env.NODE_ENV !== "staging",
-    baseURL: process.env.BASE_URL || "http://localhost:80",
+    baseURL: process.env.BASE_URL || "http://localhost:3000",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -136,7 +136,7 @@ export default {
   },
   loading: false,
   publicRuntimeConfig: {
-    baseURL: process.env.BASE_URL || "http://localhost:80",
+    baseURL: process.env.BASE_URL || "http://localhost:3000",
     nodeEnv: process.env.NODE_ENV || "development",
   },
 };
