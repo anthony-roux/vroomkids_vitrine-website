@@ -20,7 +20,7 @@
             />
           </div>
           <div class="flex flex-auto c-header__logo">
-            <nuxt-link to="/" class="inline-block mx-auto w-52">
+            <nuxt-link to="/" class="inline-block mx-auto md:mx-0 w-52">
               <base-use-svg
                 id="vroom"
                 size="logo-xl"
