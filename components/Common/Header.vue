@@ -34,7 +34,7 @@
             class="hidden c-header__nav lg:flex"
           />
           <div
-            class="justify-center transition-colors  c-header__container l-nav__item"
+            class="justify-center transition-colors c-header__container l-nav__item"
           >
             <t-button
               tagName="a"
@@ -47,7 +47,6 @@
         </div>
         <div>
           <t-modal
-            @clicked="onClickChild"
             v-model="showModal"
             header="Posez-nous votre question"
           >
@@ -144,7 +143,7 @@
               </p>
 
               <div
-                class="flex justify-between px-8 py-8 mt-8 border-t border-gray-100 rounded-b  md:py-12 md:px-12 bg-grey-light"
+                class="flex justify-between px-8 py-8 mt-8 border-t border-gray-100 rounded-b md:py-12 md:px-12 bg-grey-light"
               >
                 <t-button type="submit" variant="primary" class="w-full">
                   <span>Envoyer</span>
