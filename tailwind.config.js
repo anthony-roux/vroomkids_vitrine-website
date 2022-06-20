@@ -236,6 +236,9 @@ module.exports = {
     },
     transitionProperty: {
       height: "height",
+      variants: {
+        height: ["responsive", "hover", "focus"],
+      },
     },
     linearGradientDirections: {
       // defaults to these values
