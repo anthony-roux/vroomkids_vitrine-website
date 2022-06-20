@@ -127,7 +127,7 @@ export default {
       process.env.NODE_ENV === "production"
         ? false
         : process.env.NODE_ENV !== "staging",
-    baseURL: process.env.BASE_URL || "http://localhost:3000",
+    baseURL: process.env.BASE_URL || "http://localhost:80",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -136,7 +136,7 @@ export default {
   },
   loading: false,
   publicRuntimeConfig: {
-    baseURL: process.env.BASE_URL || "http://localhost:3000",
+    baseURL: process.env.BASE_URL || "http://localhost:80",
     nodeEnv: process.env.NODE_ENV || "development",
   },
 };
