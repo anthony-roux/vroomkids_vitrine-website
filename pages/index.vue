@@ -71,6 +71,7 @@
 
         <strate-manage-race />
       </div>
+
     </div>
 
     <!----------/ end main /---------->
@@ -95,6 +96,7 @@ export default {
     return {
       currentSlug: "home",
       page: this.$route.name,
+      showModal: false,
     };
   },
   head() {
