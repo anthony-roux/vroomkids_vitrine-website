@@ -13,29 +13,14 @@
     "
   >
     <div
-      class="
-        col-span-4
-        md:col-span-3
-        sm:col-span-2
-        flex
-        justify-center
-        items-center
-      "
+      class="flex items-center justify-center col-span-4 md:col-span-3 sm:col-span-2"
     >
       <img alt="photo d'un humain" :src="imageUrl" class="mx-auto" />
     </div>
     <div
-      class="
-        col-span-8
-        md:col-span-9
-        sm:col-span-10
-        flex
-        justify-center
-        flex-col
-        text-xs
-      "
+      class="flex flex-col justify-center col-span-8 text-xs md:col-span-9 sm:col-span-10"
     >
-      <p class="font-bold text-xl">{{ name }}</p>
+      <p class="text-xl font-bold">{{ name }}</p>
       <p class="mt-0 font-medium">{{ date }}</p>
       <br />
       <p class="">{{ text }}</p>
@@ -56,7 +41,6 @@ export default {
     name: {
       type: String,
       required: false,
-      default: "Jessica Alba",
     },
     date: {
       type: String,

@@ -10,14 +10,14 @@
       <br />
       <br />
       <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
           <base-member
-            :name="list_team.name"
             v-for="item in list_team"
+            :name="item.name"
             :key="item.id"
             :value="item.name"
           >
-            <div class="">[[item.name]]</div>
+            <div class="">{{item.name}}</div>
           </base-member>
         </div>
       </div>
