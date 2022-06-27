@@ -15,8 +15,12 @@
         >content
         <template v-slot:footer>
           <div class="flex justify-between">
-            <t-button type="button" variant="secondaryPink"> <span>Cancel</span>  </t-button>
-            <t-button type="button" variant="primary"> <span>ok</span> </t-button>
+            <t-button type="button" variant="secondaryPink">
+              <span>Cancel</span>
+            </t-button>
+            <t-button type="button" variant="primary">
+              <span>ok</span>
+            </t-button>
           </div>
         </template></t-modal
       >

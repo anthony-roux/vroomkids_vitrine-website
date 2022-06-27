@@ -75,6 +75,7 @@
           subtitle="C’est notre équipe qui permet de vous satisfaire au quotidien."
         ></strate-member>
       </div>
+
     </div>
 
     <!----------/ end main /---------->
@@ -102,6 +103,7 @@ export default {
     return {
       currentSlug: "home",
       page: this.$route.name,
+      showModal: false,
     };
   },
   head() {

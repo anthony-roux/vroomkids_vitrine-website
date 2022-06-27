@@ -25,7 +25,7 @@
           <br /><span v-if="subtitle" class="">{{ subtitle }}</span>
         </h2>
         <div
-          class="flex flex-col items-start justify-start mt-10 lg:flex-col strate-hero-home__cta-wrapper"
+          class="flex flex-col items-start justify-start mt-10 lg:flex-row strate-hero-home__cta-wrapper"
         >
           <t-button
             v-if="ctaLabel === true"

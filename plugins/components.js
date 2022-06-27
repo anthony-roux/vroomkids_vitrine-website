@@ -10,6 +10,8 @@ import Testimonial from "~/components/Base/Testimonial.vue";
 import TestimonialPro from "~/components/Base/TestimonialPro.vue";
 import FAQItem from "~/components/Base/FAQItem.vue";
 import Member from "~/components/Base/Member.vue";
+import InputText from "~/components/Base/InputText.vue";
+import TextArea from "~/components/Base/TextArea.vue";
 
 Vue.component("base-use-svg", UseSvg);
 Vue.component("base-big-letter", BigLetter);
@@ -17,6 +19,8 @@ Vue.component("base-testimonial", Testimonial);
 Vue.component("base-faq-item", FAQItem);
 Vue.component("base-testimonial-pro", TestimonialPro);
 Vue.component("base-member", Member);
+Vue.component("base-input-text", InputText);
+Vue.component("base-text-area", TextArea);
 
 // CORE
 
@@ -30,12 +34,16 @@ import Header from "~/components/Common/Header.vue";
 import Nav from "~/components/Common/Nav.vue";
 import Sidebar from "~/components/Common/Sidebar.vue";
 import Footer from "~/components/Common/Footer.vue";
+import Modal from "~/components/Common/Modal.vue";
+import Form from "~/components/Common/Form.vue";
 import SvgIcons from "~/components/Common/SvgIcons.vue";
 
 Vue.component("c-header", Header);
 Vue.component("c-sidebar", Sidebar);
 Vue.component("c-nav-menu", Nav);
 Vue.component("c-footer", Footer);
+Vue.component("c-modal", Modal);
+Vue.component("c-form", Form);
 Vue.component("c-svg-icons", SvgIcons);
 
 // STRATES

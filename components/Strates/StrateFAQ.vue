@@ -24,14 +24,15 @@
         </div>
         <div class="flex items-center">
           <t-button
-            type="submit"
-            value="get-contact"
-            name="member"
+            tagName="a"
             class="font-semibold text-white text-md"
             variant="primary"
+            @click="showModal = true"
           >
             <span>Prendre contact</span>
           </t-button>
+
+          <!-- <c-modal v-model="showModal" title="test" subtitle="test" /> -->
         </div>
       </div>
     </div>
@@ -53,6 +54,7 @@ export default {
   data: function () {
     return {
       isOpen: false,
+      showModal: false,
     };
   },
   methods: {},
