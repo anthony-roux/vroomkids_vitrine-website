@@ -2,10 +2,19 @@
   <section class="relative my-32 md:my-60 strate-member">
     <div class="container">
       <div class="container">
-        <p class="mx-auto mb-16 text-3xl font-bold strate-testimonials__title">
+        <p
+          class="
+            mx-auto
+            mb-16
+            pl-20
+            text-3xl
+            font-bold
+            strate-testimonials__title
+          "
+        >
           {{ title }}
         </p>
-        <p class="text-xl">{{ subtitle }}</p>
+        <p class="text-xl pl-20">{{ subtitle }}</p>
       </div>
       <br />
       <br />
