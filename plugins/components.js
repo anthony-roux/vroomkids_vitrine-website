@@ -76,7 +76,7 @@ Vue.component("strate-cities", StrateCities);
 Vue.component("strate-text", StrateText);
 Vue.component("strate-faq", StrateFAQ);
 Vue.component("strate-testimonials-pro", StrateTestimonialsPro);
-Vue.component("strate-member", Member);
+Vue.component("strate-member", StrateMember);
 
 // COMPONENTS
 
