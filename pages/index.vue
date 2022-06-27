@@ -70,6 +70,10 @@
         <strate-faq title="Les questions qui reviennent souvent." />
 
         <strate-manage-race />
+        <strate-member
+          title="Notre équipe"
+          subtitle="C’est notre équipe qui permet de vous satisfaire au quotidien."
+        ></strate-member>
       </div>
 
     </div>
@@ -80,9 +84,12 @@
 
 <script>
 import { mapGetters } from "vuex";
+import StrateFAQ from "../components/Strates/StrateFAQ.vue";
 import StrateManageRace from "../components/Strates/StrateManageRace.vue";
+import StrateMember from "../components/Strates/StrateMember.vue";
 
 export default {
+  components: { StrateFAQ, StrateMember },
   name: "Home",
   computed: {
     ...mapGetters({

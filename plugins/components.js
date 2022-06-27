@@ -9,6 +9,7 @@ import BigLetter from "~/components/Base/BigLetter.vue";
 import Testimonial from "~/components/Base/Testimonial.vue";
 import TestimonialPro from "~/components/Base/TestimonialPro.vue";
 import FAQItem from "~/components/Base/FAQItem.vue";
+import Member from "~/components/Base/Member.vue";
 import InputText from "~/components/Base/InputText.vue";
 import TextArea from "~/components/Base/TextArea.vue";
 
@@ -17,6 +18,7 @@ Vue.component("base-big-letter", BigLetter);
 Vue.component("base-testimonial", Testimonial);
 Vue.component("base-faq-item", FAQItem);
 Vue.component("base-testimonial-pro", TestimonialPro);
+Vue.component("base-member", Member);
 Vue.component("base-input-text", InputText);
 Vue.component("base-text-area", TextArea);
 
@@ -59,6 +61,7 @@ import StrateCities from "~/components/Strates/StrateCities.vue";
 import StrateText from "~/components/Strates/StrateText.vue";
 import StrateFAQ from "~/components/Strates/StrateFAQ.vue";
 import StrateTestimonialsPro from "~/components/Strates/StrateTestimonialsPro.vue";
+import StrateMember from "~/components/Strates/StrateMember.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
@@ -73,6 +76,7 @@ Vue.component("strate-cities", StrateCities);
 Vue.component("strate-text", StrateText);
 Vue.component("strate-faq", StrateFAQ);
 Vue.component("strate-testimonials-pro", StrateTestimonialsPro);
+Vue.component("strate-member", Member);
 
 // COMPONENTS
 
