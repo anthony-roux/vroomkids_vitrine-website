@@ -2,10 +2,19 @@
   <section class="relative my-32 md:my-60 strate-member">
     <div class="container">
       <div class="container">
-        <p class="mx-auto mb-16 text-3xl font-bold strate-testimonials__title">
+        <p
+          class="
+            mx-auto
+            mb-16
+            pl-20
+            text-3xl
+            font-bold
+            strate-testimonials__title
+          "
+        >
           {{ title }}
         </p>
-        <p class="text-xl">{{ subtitle }}</p>
+        <p class="text-xl pl-20">{{ subtitle }}</p>
       </div>
       <br />
       <br />
@@ -16,8 +25,11 @@
             :name="item.name"
             :key="item.id"
             :value="item.name"
+            :date="item.date"
+            :text="item.text"
           >
-            <div class="">{{item.name}}</div>
+            <div class="">{{ item.name }}</div>
+            <!-- <div>{{ item.date }}</div> -->
           </base-member>
         </div>
       </div>
@@ -51,27 +63,43 @@ export default {
       list_team: [
         {
           name: "Erwan CREPIN",
+          date: "chauffeur depuis  2012",
+          text: "tototo test titit",
         },
         {
           name: "Dorian VIDAL",
+          date: "chauffeur depuis  2013",
+          text: "tototo test titit",
         },
         {
           name: "Prisca SUMAMPOW",
+          date: "chauffeur depuis  2014",
+          text: "tototo test titit",
         },
         {
           name: "Ricardo JUSME",
+          date: "chauffeur depuis  2015",
+          text: "tototo test titit",
         },
         {
           name: "Anthony ROUX",
+          date: "chauffeur depuis  2016",
+          text: "tototo test titit",
         },
         {
           name: "Gregory DJERRADINE",
+          date: "chauffeur depuis  2017",
+          text: "tototo test titit",
         },
         {
           name: "Davy CHEN",
+          date: "chauffeur depuis  2018",
+          text: "tototo test titit",
         },
         {
           name: "Antoine OLIVER",
+          date: "chauffeur depuis  2019",
+          text: "tototo test titit",
         },
       ],
     };
