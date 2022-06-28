@@ -4,8 +4,11 @@
       title="Ici c'est la page price"
       backgroundUrl="/img/photography/hero_others.png"
     />
-    <div class="container p-6 mx-auto">
-      <h3 class="text-center t-title dark:text-white">Price</h3>
+
+    <div class="overflow-hidden">
+      <div class="mx-auto">
+        <strate-tarif />
+      </div>
     </div>
   </section>
 </template>

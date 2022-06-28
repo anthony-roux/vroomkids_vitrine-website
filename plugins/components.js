@@ -12,6 +12,8 @@ import FAQItem from "~/components/Base/FAQItem.vue";
 import Member from "~/components/Base/Member.vue";
 import InputText from "~/components/Base/InputText.vue";
 import TextArea from "~/components/Base/TextArea.vue";
+import TarifItem from "~/components/Base/TarifItem.vue";
+import TarifAdvantage from "~/components/Base/TarifAdvantage.vue";
 
 Vue.component("base-use-svg", UseSvg);
 Vue.component("base-big-letter", BigLetter);
@@ -21,6 +23,9 @@ Vue.component("base-testimonial-pro", TestimonialPro);
 Vue.component("base-member", Member);
 Vue.component("base-input-text", InputText);
 Vue.component("base-text-area", TextArea);
+Vue.component("base-tarif-item", TarifItem);
+Vue.component("base-tarif-advantage", TarifAdvantage);
+
 
 // CORE
 
@@ -62,6 +67,7 @@ import StrateText from "~/components/Strates/StrateText.vue";
 import StrateFAQ from "~/components/Strates/StrateFAQ.vue";
 import StrateTestimonialsPro from "~/components/Strates/StrateTestimonialsPro.vue";
 import StrateMember from "~/components/Strates/StrateMember.vue";
+import StrateTarif from "~/components/Strates/StrateTarif.vue";
 
 Vue.component("strate-hero-home", StrateHeroHome);
 Vue.component("strate-hero", StrateHero);
@@ -77,6 +83,7 @@ Vue.component("strate-text", StrateText);
 Vue.component("strate-faq", StrateFAQ);
 Vue.component("strate-testimonials-pro", StrateTestimonialsPro);
 Vue.component("strate-member", Member);
+Vue.component("strate-tarif", StrateTarif);
 
 // COMPONENTS
 
