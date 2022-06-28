@@ -14,14 +14,11 @@
       max-w-[60rem]
     "
   >
-    <!-- <div class="lg:col-span-4 md:col-span-3 flex justify-center items-center">
-      <img alt="photo d'un humain" :src="imageUrl" class="mx-auto" />
-    </div> -->
-    <div class="col-span-12 flex justify-center flex-col text-xs">
+    <div class="flex flex-col justify-center col-span-12 text-xs">
       <p class="italic">{{ text }}</p>
       <br />
       <p class="font-bold text-pink">{{ name }}</p>
-      <p class="mt-0 text-pink-light font-thin">{{ date }}</p>
+      <p class="mt-0 font-thin text-pink-light">{{ date }}</p>
     </div>
   </div>
 </template>
