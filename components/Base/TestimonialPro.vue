@@ -1,20 +1,31 @@
 <template>
   <div
-    class="grid h-full grid-cols-12 gap-8 p-8 mx-10 rounded-md shadow-greyDarkerLight base-testimonial bg-grey-lighter"
+    class="
+      grid
+      h-full
+      grid-cols-12
+      gap-8
+      p-8
+      mx-10
+      rounded-md
+      shadow-greyDarkerLight
+      base-testimonial
+      bg-grey-lighter
+      max-w-[60rem]
+    "
   >
-    <div class="col-span-12 text-md">
-      <p class="italic">
-        {{ text }}
-      </p>
-      <p class="text-sm font-bold text-pink">{{ name }}</p>
-      <p class="mt-2 text-xs font-thin text-pink-light">le 02 juin 2022</p>
+    <div class="flex flex-col justify-center col-span-12 text-xs">
+      <p class="italic">{{ text }}</p>
+      <br />
+      <p class="font-bold text-pink">{{ name }}</p>
+      <p class="mt-0 font-thin text-pink-light">{{ date }}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Testimonial",
+  name: "TestimonialPro",
   props: {
     imageUrl: {
       type: String,
@@ -25,6 +36,11 @@ export default {
       type: String,
       required: false,
       default: "Jessica Alba",
+    },
+    date: {
+      type: String,
+      required: false,
+      default: "chauffeur depuis 2022",
     },
     text: {
       type: String,

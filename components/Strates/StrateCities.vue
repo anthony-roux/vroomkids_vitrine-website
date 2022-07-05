@@ -32,11 +32,6 @@
             <li class="font-bold text-pink">Nantes</li>
             <li class="font-bold text-pink">Ajaccio</li>
           </ul>
-          <!-- <a
-            @click="isCollapse = !isCollapse"
-            class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color"
-            >{{ isCollapse ? "Voir moins" : "Voir plus" }}</a
-          > -->
         </div>
       </div>
     </div>
@@ -78,10 +73,6 @@ export default {
 <style lang="scss">
 .strate-cities {
   &__list {
-    // height: 8rem;
-    // overflow: hidden;
-    // transition: 600ms ease;
-
     li {
       position: relative;
       margin-left: 1.5rem;
@@ -93,29 +84,6 @@ export default {
       }
     }
 
-    // &:after {
-    //   content: "";
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 50%;
-    //   background: linear-gradient(
-    //     0deg,
-    //     #ffffff 0%,
-    //     rgba(255, 255, 255, 0) 100%
-    //   );
-    // }
-
-    // &.isCollapse {
-    //   transition: 600ms ease;
-    //   height: auto;
-
-    //   &:after {
-    //     height: 0;
-    //     transition: 600ms ease;
-    //   }
-    // }
   }
 }
 </style>

@@ -38,7 +38,11 @@
           backgroundColor="#E9FBFB"
         />
         <client-only>
-          <strate-testimonials> </strate-testimonials>
+          <strate-testimonials-pro
+            title="Qui sont nos chauffeurs ?"
+            subtitle="Nos chauffeurs sont séléctionnés avec rigueur. Ils sont tous en possession d’une lisence VTC et sont pour la plupart père ou mère de famille."
+          >
+          </strate-testimonials-pro>
         </client-only>
         <strate-catchphrase
           backgroundColor="#A6EFED"

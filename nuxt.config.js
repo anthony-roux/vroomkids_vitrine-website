@@ -109,10 +109,10 @@ export default {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    "@nuxtjs/axios",
     "@nuxtjs/auth-next",
     "@nuxt/image",
     "nuxt-svg-loader",
+    '@nuxtjs/axios',
   ],
   // Purge module configuration: https://purgecss.com/guides/nuxt.html
   purgeCSS: {

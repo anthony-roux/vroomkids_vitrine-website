@@ -6,9 +6,34 @@
       </p>
 
       <div class="strate-faq__items">
-        <base-faq-item id="question1"  />
+        <base-faq-item id="question1" />
         <base-faq-item id="question2" />
         <base-faq-item id="question3" />
+      </div>
+      <div class="flex flex-col justify-between w-full my-16 md:flex-row">
+        <div class="w-full md:w-2/3 lg:w-4/5">
+          <p class="mb-8">
+            <span class="font-semibold">
+              Vous ne parvenez toujours pas à trouver de réponse à vos questions
+              ?
+            </span>
+            <br />
+            Prenez-contact avec nous directement, notre service client se fera
+            un plaisir de répondre à votre demande.
+          </p>
+        </div>
+        <div class="flex items-center">
+          <t-button
+            tagName="a"
+            class="font-semibold text-white text-md"
+            variant="primary"
+            @click="showModal = true"
+          >
+            <span>Prendre contact</span>
+          </t-button>
+
+          <!-- <c-modal v-model="showModal" title="test" subtitle="test" /> -->
+        </div>
       </div>
     </div>
   </section>
@@ -29,10 +54,10 @@ export default {
   data: function () {
     return {
       isOpen: false,
+      showModal: false,
     };
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>
 

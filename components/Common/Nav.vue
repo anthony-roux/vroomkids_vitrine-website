@@ -7,14 +7,14 @@
       >
         <nuxt-link
           to="/"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Accueil
         </nuxt-link>
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
           to="/price"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
         >
           Tarif
         </nuxt-link>
@@ -22,14 +22,14 @@
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
           to="/aboutUs"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Qui sommes-nous ?
         </nuxt-link>
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
           to="/contact"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link "
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Contact
         </nuxt-link>
       </li>
@@ -38,11 +38,11 @@
       class="justify-center transition-colors c-header__container l-nav__item"
     >
       <t-button
+        v-if="this.isSidebar ? 'hidden' : '' "
         tagName="a"
-        to="/driver"
-        class="w-full mb-5 lg:w-auto lg:mb-0"
-        :variant="this.isSidebar ? 'secondaryWhite' : 'secondaryWhite' "
-        @click.native="openTruc"
+        class="w-full mb-5 cursor-pointer lg:w-auto lg:mb-0"
+        :variant="this.isSidebar ? 'secondaryWhite' : 'secondaryWhite'"
+        @click="showModal = true"
         ><span class="text-lg">Nous rejoindre</span></t-button
       >
     </div>
@@ -62,6 +62,7 @@ export default {
   },
   data: function () {
     return {
+      showModal: false,
     };
   },
   computed: {
@@ -70,11 +71,8 @@ export default {
       screen: "global/getScreen",
     }),
   },
-  mounted() {
-
-  },
+  mounted() {},
   methods: {
-
     unbindEvents() {
       this.$eventHub.$off("sidebar:close");
     },

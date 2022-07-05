@@ -54,10 +54,11 @@ const settings = {
     component: TInput,
     props: {
       fixedClasses:
-        "block w-full px-3 py-2 transition duration-100 ease-in-out border rounded shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed",
+        "block w-full px-3 pl-0 py-2 transition-all duration-500 ease-in rounded shadow-sm ring-transparent outline-0 focus:ring-0 focus:outline-0 focus:ring-transparent disabled:opacity-50 disabled:cursor-not-allowed  w-full",
       classes:
-        "text-black placeholder-gray-400 bg-white border-gray-300 focus:border-blue-500 ",
+        "text-pink placeholder-grey bg-white text-md",
       variants: {
+        normal: "bg-white rounded-none placeholder-grey text-md text-black-dark  border-t-0 border-r-0 border-l-0 border-b-2 ring-transparent focus:ring-transparent focus:ring-transparent focus:border-pink invalid:text-pink-600 invalid:border-pink-500  focus:invalid:border-pink-500 focus:invalid:ring-pink-500",
         danger: "border-red-300 bg-red-50 placeholder-red-200 text-red-900",
         success:
           "border-green-300 bg-green-50 placeholder-gray-400 text-green-900",
@@ -69,24 +70,24 @@ const settings = {
     props: {
       fixedClasses: {
         overlay:
-          "z-90 overflow-auto scrolling-touch left-0 top-0 bottom-0 right-0 w-full h-full fixed bg-opacity-50",
-        wrapper: "relative mx-auto z-90 max-w-lg px-3 py-12",
-        modal: "overflow-visible relative  rounded",
-        body: "p-3",
-        header: "border-b p-3 rounded-t",
-        footer: " p-3 rounded-b",
+          "z-90 overflow-auto scrolling-touch left-0 top-0 bottom-0 right-0 w-full h-full min-h-[100vh] fixed bg-opacity-50",
+        wrapper: " mx-auto z-90 max-w-6xl px-3 py-3 relative -translate-y-1/2 top-1/2 ",
+        modal: "overflow-visible relative rounded",
+        body: "",
+        header: "border-b pt-10 md:pt-12 pb-8 md:pb-12 md:px-12 px-10 rounded text-lg md:text-xl text-center",
+        footer: "pb-10 md:pb-12 pt-8 px-10 md:px-12 rounded",
         close:
-          "flex items-center justify-center rounded-full absolute right-0 top-0 -m-3 h-8 w-8 transition duration-100 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50",
+          "flex items-center justify-center rounded-full absolute right-0 top-0 -m-3 h-12 w-12 transition duration-100 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50",
       },
       classes: {
         overlay: "bg-black",
         wrapper: "",
         modal: "bg-white shadow",
-        body: "p-3",
-        header: "border-gray-100",
-        footer: "bg-gray-100",
+        body: "",
+        header: "border-gray-100 ",
+        footer: "bg-gray-100 mt-8",
         close: "bg-gray-100 text-gray-600 hover:bg-gray-200",
-        closeIcon: "fill-current h-4 w-4",
+        closeIcon: "fill-current h-8 w-8",
         overlayEnterClass: "opacity-0",
         overlayEnterActiveClass: "transition ease-out duration-100",
         overlayEnterToClass: "opacity-100",
@@ -369,14 +370,30 @@ const settings = {
       },
     },
   },
+  "t-radio-group": {
+    component: TRadioGroup,
+    props: {
+      classes: {
+        groupWrapper: 'flex flex-row mb-10',
+        label: '',
+        input: 'text-primary-vert1 transition duration-300 ease-inborder-grey-lighter shadow-sm focus:border-primary-vert1 focus:ring-2 focus:ring-primary-vert1 focus:outline-none focus:ring-opacity-50 focus:ring-offset-0 disabled:opacity-50 disabled:cursor-not-allowed',
+        inputWrapper: 'inline-flex ',
+        wrapper: 'inline-flex items-center space-x-2 mr-8',
+        labelChecked: 'ml-2 mr-8',
+        inputWrapperChecked: '',
+        wrapperChecked: '',
+      }
+    }
+    // Variants and fixed classes in the same `object` format ...
+  },
   "t-radio": {
     component: TRadio,
     props: {
       fixedClasses:
-        "transition duration-100 ease-in-out shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 focus:ring-offset-0  disabled:opacity-50 disabled:cursor-not-allowed",
+        "transition duration-100 ease-in-out shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 focus:ring-offset-0  disabled:opacity-50 disabled:cursor-not-allowed ",
       classes: "text-blue-500 border-gray-300",
       variants: {
-        error: "text-red-500 border-red-300",
+        error: "text-blue-500 border-blue-300",
         success: "text-green-500 border-green-300",
       },
     },
@@ -385,9 +402,9 @@ const settings = {
     component: TTextarea,
     props: {
       fixedClasses:
-        "block w-full px-3 py-2 transition duration-100 ease-in-out border rounded shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed",
+        "block py-2.5 px-2.5  w-full text-sm text-black-dark bg-transparent border-0 border-b-2 border-grey-dark appearance-none dark:text-white dark:border-grey-dark focus:outline-none focus:ring-0 focus:border-primary-vert1 peer ",
       classes:
-        "text-black placeholder-gray-400 bg-white border-gray-300 focus:border-blue-500 ",
+        "placeholder-grey text-md text-black-dark  border-t-0 border-r-0 border-l-0 border-b-2 ring-transparent focus:ring-0 focus:ring-transparent focus:ring-transparent focus:border-pink placeholder-grey-light bg-white border-grey-light focus:border-pink ",
       variants: {
         danger: "border-red-300 bg-red-50 placeholder-red-200 text-red-900",
         success:

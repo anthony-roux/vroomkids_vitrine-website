@@ -7,7 +7,7 @@
     </transition>
     <c-footer />
     <c-sidebar id="menu">
-      <c-nav-menu :is-sidebar="true" />
+      <c-nav-menu :is-sidebar="false" />
     </c-sidebar>
   </main>
 </template>
