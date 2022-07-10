@@ -2,77 +2,89 @@
   <section class="strate-testimonials">
     <base-big-letter text="whaaow" class="z-[0]" />
 
-    <div class="flex flex-col items-center justify-center h-full mx-auto max-w-container-3xl">
-      <div class="container text-center">
-        <p
-          class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl z-[3]"
-        >
-        {{title}}
-        </p>
-        <p class="text-xl">{{subtitle}}</p>
-      </div>
+    <div
+      class="flex flex-col items-center justify-center h-full mx-auto max-w-container-3xl"
+    >
+      <client-only>
+        <div class="container text-center">
+          <core-aov :delay="250">
+            <p
+              class="mx-auto -mt-8 text-3xl font-black text-center uppercase md:-mt-20 strate-testimonials__title md:text-5xl z-[3] t-translate-down t-fade-in"
+            >
+              {{ title }}
+            </p>
+          </core-aov>
+          <core-aov :delay="350">
+            <p class="text-xl t-translate-down t-fade-in">{{ subtitle }}</p>
+          </core-aov>
+        </div>
+      </client-only>
 
-      <carousel
-        :autoplay="true"
-        :autoplayHoverPause="true"
-        :perPageCustom="[
-          [320, 1],
-          [768, 2],
-          [1024, 2],
-          [1440, 3],
-        ]"
-        :loop="true"
-        :autoplayTimeout="9000"
-        :speed="1000"
-        paginationActiveColor="#AD0EC7"
-        paginationColor="#EBEBEB"
-        :paginationSize="20"
-        :paginationPadding="10"
-        class="max-w-full mt-24 strate-testimonials__slider"
-      >
-        <slide class="">
-          <base-testimonial
-            name="Britney Spears"
-            text='"Ullamco laboris excepteur nulla consectetur consequat et. Sunt pariatur esse non nisi nostrud ea quis.Enim nostrud laborum et consectetur ex sint laborum do aliqua aliquip cillum mollit quis."'
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial
-            name="Elon Musk"
-            text='"Anim pariatur velit esse qui laborum. Velit consectetur ut mollit adipisicing officia laborum ut. Ipsum exercitation culpa dolore pariatur consequat consectetur do excepteur anim ullamco."'
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial
-            name="Ricky Martin"
-            text='"Sit exercitation reprehenderit dolore nisi et occaecat nisi eiusmod anim. Mollit velit consequat sit anim non enim elit cupidatat nisi commodo incididunt fugiat anim. Sint id quis aliqua."'
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial
-            name="Jean Ricardo Jusme"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial
-            name="Johnatan Cohen"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial
-            name="Diziz la Peste"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial
-            name="Melissandre (tu es grosse)"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-          />
-        </slide>
-      </carousel>
+      <client-only>
+        <core-aov :delay="400">
+          <carousel
+            :autoplay="true"
+            :autoplayHoverPause="true"
+            :perPageCustom="[
+              [320, 1],
+              [768, 2],
+              [1024, 2],
+              [1440, 3],
+            ]"
+            :loop="true"
+            :autoplayTimeout="9000"
+            :speed="1000"
+            paginationActiveColor="#AD0EC7"
+            paginationColor="#EBEBEB"
+            :paginationSize="20"
+            :paginationPadding="10"
+            class="max-w-full mt-24 strate-testimonials__slider t-translate-down t-fade-in"
+          >
+            <slide class="">
+              <base-testimonial
+                name="Marie Robert"
+                text="Grâce à Vroom, j'ai redécouvert ce que c'était la vraie vie, je prends du temps pour moi à la maison pour me coiffer et me maquiller ! Mon mari qui est content ..."
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial
+                name="Jean-François Di Rienzo"
+                text="Je suis ravi du service, je n'ai plus besoin d'aller chercher mon fils à ses activités extra-scolaires. J'ai enfin le temps de prendre du temps pour moi et aller au Yoga !"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial
+                name="Françoise Martin"
+                text="J'ai longtemps cherché une solution qui m'apporterait un peu d'autonomie, sans me poser des questions... VROOM MERCI !"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial
+                name="Roberta Jusme"
+                text="Trop contente d'avoir trouvé Vroom qui change notre vie, l'application est très sympa a utiliser. Le Chauffeur qui s'occupe souvent de mes enfants et vraiment un adorable, toujours une petit mars pour mes enfants dans sa voiture."
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial
+                name="Johnatan Cohen"
+                text="Fantastique ! Quel gain de temps dans mes journées ! Mes enfants sont ravis du service, ils ne veulent plus prendre le bus qui n'est pas fiable.. et ils ont raison !"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial
+                name="Constance Perrier"
+                text="Ma fille est ravi du service, et moi aussi ! Merci Vroom quelle superbe application et service.  "
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial
+                name="Melissandre Daube"
+                text="Enfin, un service quali, et sécurisé en qui je peux faire confiance à 100%. Je recommande désormais Vroom à toutes mes copines."
+              />
+            </slide>
+          </carousel>
+        </core-aov>
+      </client-only>
     </div>
   </section>
 </template>

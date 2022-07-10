@@ -1,41 +1,33 @@
 <template>
   <section class="relative my-32 md:my-60 strate-member">
     <div class="container">
-      <div class="container">
-        <p
-          class="
-            mx-auto
-            mb-16
-            pl-20
-            text-3xl
-            font-bold
-            strate-testimonials__title
-          "
-        >
-          {{ title }}
-        </p>
-        <p class="text-xl pl-20">{{ subtitle }}</p>
-      </div>
-      <br />
-      <br />
-      <div class="container mx-auto">
+      <client-only>
+        <core-aov :delay="250">
+          <div class="mb-10 md:mb-14 t-translate-down t-fade-in">
+            <p
+              class="mx-auto text-3xl font-bold mb-9 strate-testimonials__title"
+            >
+              {{ title }}
+            </p>
+            <p class="text-xl ">{{ subtitle }}</p>
+          </div>
+        </core-aov>
+      </client-only>
+
+      <div class="mx-auto">
         <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
           <base-member
             v-for="item in list_team"
             :name="item.name"
             :key="item.id"
             :value="item.name"
-            :date="item.date"
+            :role="item.role"
             :text="item.text"
+            :imageUrl="item.photo"
           >
-            <div class="">{{ item.name }}</div>
-            <!-- <div>{{ item.date }}</div> -->
           </base-member>
         </div>
       </div>
-      <div
-        class="col-span-12 lg:col-span-7 h-80 strate-advantages__image"
-      ></div>
     </div>
   </section>
 </template>
@@ -62,44 +54,53 @@ export default {
       isOpen: false,
       list_team: [
         {
+          photo: "/img/photography/erwan.png",
           name: "Erwan CREPIN",
-          date: "chauffeur depuis  2012",
-          text: "tototo test titit",
+          role: "Infographiste",
+          text: "Spécialiste en UI / UX Design, Erwan crée tous les design Vroom en coopération avec Antoine. Du site vitrine à l’application mobile.",
         },
         {
-          name: "Dorian VIDAL",
-          date: "chauffeur depuis  2013",
-          text: "tototo test titit",
-        },
-        {
-          name: "Prisca SUMAMPOW",
-          date: "chauffeur depuis  2014",
-          text: "tototo test titit",
-        },
-        {
-          name: "Ricardo JUSME",
-          date: "chauffeur depuis  2015",
-          text: "tototo test titit",
-        },
-        {
+          photo: "/img/photography/anthony.png",
           name: "Anthony ROUX",
-          date: "chauffeur depuis  2016",
-          text: "tototo test titit",
+          role: "Développeur Front-End",
+          text: "Responsable du site vitrine, Anthony a développé et veillé à maintenir une bonne gestion du site vitrine. Il a également participé à la partie Front du back-office.",
         },
         {
-          name: "Gregory DJERRADINE",
-          date: "chauffeur depuis  2017",
-          text: "tototo test titit",
+          photo: "/img/photography/dorian.png",
+          name: "Dorian VIDAL",
+          role: "Développeur Front-End",
+          text: "Spécialiste en Front end, Dorian a développé le front du site vitrine au back office en coopération avec Anthony.",
         },
         {
+          photo: "/img/photography/priska.png",
+          name: "Priska SUMAMPOW",
+          role: "Développeuse Fullstack",
+          text: "Responsable de l'application mobile, Priska est chargée du développement de l’application mobile Vroom pour les parents et les chauffeurs accompagnateurs.",
+        },
+        {
+          photo: "/img/photography/ricardo.png",
+          name: "Ricardo JUSME",
+          role: "Développeur Back-end",
+          text: "Responsable de l'application mobile",
+        },
+
+        {
+          photo: "/img/photography/davy.png",
           name: "Davy CHEN",
-          date: "chauffeur depuis  2018",
-          text: "tototo test titit",
+          role: "Développeur Back-end",
+          text: "...",
         },
         {
+          photo: "/img/photography/antoine.png",
           name: "Antoine OLIVER",
-          date: "chauffeur depuis  2019",
-          text: "tototo test titit",
+          role: "Designer graphique",
+          text: "Avec une forte expertise en direction artistique, Antoine s’occupe de la réalisation de l’identité Vroom. Il épaule Erwan dans toutes les réalisations.",
+        },
+        {
+          photo: "/img/photography/gregory.png",
+          name: "Gregory DJERRADINE",
+          role: "Responsable juridique",
+          text: "Grâce à ses nombreuses expériences avec la justice, Greg saura vous accompagner sur la legislation en vigeur. ",
         },
       ],
     };
@@ -107,28 +108,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.strate-advantages {
-  &:before {
-    content: "";
-    width: 67rem;
-    height: 60rem;
-    max-width: 70vw;
-    // height: calc(100% + 5rem);
-    background: $pink;
-    position: absolute;
-    bottom: 0;
-    right: -50%;
-    float: right;
-    transform: translateY(2.5rem);
-    z-index: 0;
-    opacity: 0.15;
-    border-radius: 0.6rem;
-
-    // @include mq($from: desktop) {
-    //   height: calc(100% + 10rem);
-    //   transform: translateY(5rem);
-    // }
-  }
-}
-</style>
+<style lang="scss"></style>

@@ -70,11 +70,11 @@
             class="object-contain mx-auto my-6"
           />
           <img
-            :src="require(`static/img/photography/child+bus_hero-homepage.png`)"
+            :src="require(`static/img/photography/hero_others.png`)"
             alt=""
             class="my-6"
           />
-          <img :src="require(`static/img/giphy.gif`)" alt="" class="my-6" />
+          <img :src="require(`static/img/photography/chauffeur1.png`)" alt="" class="my-6" />
         </div>
       </section>
       <section class="my-14">

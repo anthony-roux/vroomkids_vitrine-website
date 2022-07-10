@@ -46,10 +46,7 @@
           </div>
         </div>
         <div>
-          <t-modal
-            v-model="showModal"
-            header="Posez-nous votre question"
-          >
+          <t-modal v-model="showModal" header="Posez-nous votre question">
             <div class="px-8 py-8 md:px-12 md:py-12">
               Utilisez le formulaire ci-dessous pour nous envoyer rapidement un
               message.
@@ -160,6 +157,7 @@
 <script>
 import { mapGetters } from "vuex";
 import axios from "axios";
+// import APICall from "../../plugins/apiRequest";
 
 export default {
   name: "Header",
@@ -201,7 +199,11 @@ export default {
     this.$nextTick(() => {
       this.onScroll(this.$device.scroll);
     });
+
+    // axios.get("/api/user/get/").then((response) => console.log(response.data));
+    // this.submitForm();
   },
+
   destroyed() {
     this.unbindEvents();
   },
@@ -237,10 +239,14 @@ export default {
       this.$emit("input", value);
     },
 
+    // async addCompany(this.form) {
+    //   await this.$axios.$post("/api/question/create", this.form);
+    //   // Handle response...
+    // },
     // MODAL / FORM
     submitForm() {
       axios
-        .post("/contact", this.form)
+        .post("/question/create", this.form)
         .then((res) => {
           //Perform Success Action
           console.log("res", res);
@@ -260,6 +266,54 @@ export default {
         .finally(() => {
           //Perform action in always
         });
+      // const data = { test: "Hello!" };
+
+      // APICall.requestAPI("submitQuestion", false, data).then((data) =>
+      //   console.log(data)
+      // );
+      // const headers = {
+      //   "Access-Control-Allow-Origin": "*",
+      //   Accept: "application/json",
+      //   "Content-Type": "application/json",
+      //   "access-token": "myTokenXYZ123",
+      // };
+      // const data = { test: "Hello!" };
+      // const options = {
+      //   method: "post",
+      //   mode: "same-origin",
+      //   url: "/api/question/create",
+      //   data: data,
+      //   headers: headers,
+      // };
+
+      // this.$axios(options).then((data) => console.log(data));
+
+      // this.$axios
+      //   .post("/api/question/create", this.form, {
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //   })
+      //   .then((res) => {
+      //     //Perform Success Action
+      //     console.log("res", res);
+      //     this.status = "res";
+      //     this.$router.push("/");
+      //     this.success = true;
+      //     setTimeout(() => {
+      //       this.showModal = false;
+      //     }, 3000);
+      //   })
+      //   .catch((error) => {
+      //     // error.response.status Check status code
+      //     console.log("error", error);
+      //     this.status = "error";
+      //     this.success = false;
+      //     this.error = true;
+      //   })
+      //   .finally(() => {
+      //     //Perform action in always
+      //   });
     },
   },
   watch: {

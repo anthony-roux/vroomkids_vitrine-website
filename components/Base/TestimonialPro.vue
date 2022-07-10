@@ -1,22 +1,13 @@
 <template>
   <div
-    class="
-      grid
-      h-full
-      grid-cols-12
-      gap-8
-      p-8
-      mx-10
-      rounded-md
-      shadow-greyDarkerLight
-      base-testimonial
-      bg-grey-lighter
-      max-w-[60rem]
-    "
+    class="grid h-full grid-cols-12 gap-8 p-8 mx-10 rounded-md shadow-greyDarkerLight base-testimonial bg-grey-lighter max-w-[60rem]"
   >
-    <div class="flex flex-col justify-center col-span-12 text-xs">
+    <div class="flex flex-col justify-center col-span-4 text-xs md:col-span-3">
+      <img alt="photo d'un chauffeur" :src="imageUrl" class="self-start w-full mx-auto" />
+    </div>
+    <div class="flex flex-col justify-center col-span-8 text-xs md:col-span-9">
       <p class="italic">{{ text }}</p>
-      <br />
+
       <p class="font-bold text-pink">{{ name }}</p>
       <p class="mt-0 font-thin text-pink-light">{{ date }}</p>
     </div>
@@ -30,7 +21,7 @@ export default {
     imageUrl: {
       type: String,
       required: false,
-      default: "/img/photography/testimonial1.png",
+      default: "/img/photography/chauffeur1.png",
     },
     name: {
       type: String,

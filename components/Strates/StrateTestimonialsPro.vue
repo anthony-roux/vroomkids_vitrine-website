@@ -1,99 +1,93 @@
 <template>
   <section class="strate-testimonials">
     <div
-      class="
-        flex flex-col
-        items-center
-        justify-center
-        h-full
-        mx-auto
-        max-w-container-3xl
-      "
+      class="flex flex-col items-center justify-center h-full mx-auto max-w-container-3xl"
     >
-      <div class="container text-center">
-        <p
-          class="
-            mx-auto
-            mb-16
-            text-3xl
-            font-bold
-            text-center
-            strate-testimonials__title
-          "
-        >
-          {{ title }}
-        </p>
-        <p class="text-xl">{{ subtitle }}</p>
-      </div>
-
-      <carousel
-        :autoplay="true"
-        :autoplayHoverPause="true"
-        :perPageCustom="[
-          [320, 1],
-          [768, 2],
-          [1024, 2],
-          [1440, 3],
-        ]"
-        :loop="true"
-        :autoplayTimeout="9000"
-        :speed="1000"
-        paginationActiveColor="#AD0EC7"
-        paginationColor="#EBEBEB"
-        :paginationSize="20"
-        :paginationPadding="10"
-        class="max-w-full mt-24 strate-testimonials__slider"
-      >
-        <slide class="">
-          <base-testimonial-pro
-            name="Britney Spears"
-            text='"Ullamco laboris excepteur nulla consectetur consequat et. Sunt pariatur esse non nisi nostrud ea quis.Enim nostrud laborum et consectetur ex sint laborum do aliqua aliquip cillum mollit quis."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial-pro
-            name="Elon Muskkkkk"
-            text='"Anim pariatur velit esse qui laborum. Velit consectetur ut mollit adipisicing officia laborum ut. Ipsum exercitation culpa dolore pariatur consequat consectetur do excepteur anim ullamco."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial-pro
-            name="Ricky Martin"
-            text='"Sit exercitation reprehenderit dolore nisi et occaecat nisi eiusmod anim. Mollit velit consequat sit anim non enim elit cupidatat nisi commodo incididunt fugiat anim. Sint id quis aliqua."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial-pro
-            name="Jean Ricardo Jusme"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial-pro
-            name="Johnatan Cohen"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial-pro
-            name="Diziz la Peste"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-        <slide class="">
-          <base-testimonial-pro
-            name="Melissandre (tu es grosse)"
-            text='"Ipsum qui eu sint ut non incididunt nostrud exercitation quis amet aliquip id. Aute commodo id ex ipsum voluptate duis eiusmod magna pariatur aliqua. Aliqua aute ea consectetur laborum."'
-            date="chauffeur depuis 2021"
-          />
-        </slide>
-      </carousel>
+      <client-only>
+        <div class="container text-center">
+          <core-aov :delay="250">
+            <p
+              class="mx-auto mb-16 text-3xl font-bold text-center strate-testimonials__title t-translate-down t-fade-in"
+            >
+              {{ title }}
+            </p>
+          </core-aov>
+          <core-aov :delay="350">
+            <p class="text-xl t-translate-down t-fade-in">{{ subtitle }}</p>
+          </core-aov>
+        </div>
+      </client-only>
+      <client-only>
+        <core-aov :delay="400">
+          <carousel
+            :autoplay="true"
+            :autoplayHoverPause="true"
+            :perPageCustom="[
+              [320, 1],
+              [768, 2],
+              [1024, 2],
+              [1440, 3],
+            ]"
+            :loop="true"
+            :autoplayTimeout="9000"
+            :speed="1000"
+            paginationActiveColor="#AD0EC7"
+            paginationColor="#EBEBEB"
+            :paginationSize="20"
+            :paginationPadding="10"
+            class="max-w-full mt-24 strate-testimonials__slider t-translate-down t-fade-in"
+          >
+            <slide class="">
+              <base-testimonial-pro
+                name="Francis, 43 ans"
+                text='"C’est une bonne expérience sociale et humaine qui m’as permis d’abord de découvrir les gens mais aussi la ville de Paris."'
+                date="Chauffeur Vroom depuis 2 ans"
+                imageUrl="/img/photography/chauffeur1.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Emma, 29 ans"
+                text='"J’aime beaucoup ce métier car ma passion est de conduire, faire chauffeur pour Vroom m’a permi de rencontrer plein de personne et de découvrir différentes villes."'
+                date="Chauffeuse Vroom depuis 3 ans"
+                imageUrl="/img/photography/chauffeur2.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Junior, 30 ans"
+                text='"Travail très agréable qui permet d’avoir une certaine flexibilité. Etre au contact d’une population jeune est agréable. On se sent utile et je trouve ça très satisfaisant."'
+                date="Chauffeur Vroom depuis 2 ans"
+                imageUrl="/img/photography/chauffeur3.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Sonia"
+                text='"J’adore conduire, alors mon expérience chez Vroom est une réelle passion. Je fais mon métier tout en exercant ma passion pour la conduite. Merci."'
+                date="Chauffeuse Vroom depuis 4 ans"
+                imageUrl="/img/photography/chauffeur4.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Camille, 28 ans"
+                text='"Cela fait maintenant deux ans que je suis chauffeur pour Vroom. Nous sommes écoutés et respectés par la hierarchie et le travail est agréable."'
+                date="Chauffeur Vroom depuis le début"
+                imageUrl="/img/photography/chauffeur5.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Nathalie, 36 ans"
+                text='"J’adore les enfants et je suis passionné par la conduite. Je suis donc très à l’aise dans ce métier et je remercie Vroom de sa confiance. Je recommande."'
+                date="Chauffeuse Vroom depuis 8 mois"
+                imageUrl="/img/photography/chauffeur6.png"
+              />
+            </slide>
+          </carousel>
+        </core-aov>
+      </client-only>
     </div>
   </section>
 </template>

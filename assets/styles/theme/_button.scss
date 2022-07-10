@@ -20,9 +20,9 @@
   &:after {
     right: -1px;
     width: calc(100% + 1px);
-    background: $gradient-green2pink-inverse;
-    background-image: $gradient-green2pink-inverse;
-    border: 1px solid $gradient-green2pink-inverse;
+    background: $pink;
+    // background-image: $gradient-green2pink-inverse;
+    border: 1px solid $pink;
     transition: transform 450ms $ease-in-out-quint;
     transform: scaleY(0) translateZ(0);
     transform-origin: left;

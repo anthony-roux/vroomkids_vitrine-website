@@ -1,52 +1,37 @@
 <template>
-  <div
-    class="
-      pt-8
-      my-8
-      rounded-md
-      px-8
-      md:px-[3.2rem]
-      shadow-greyDarkerLight
-      base-faq-item
-      transition-colors
-      duration-1000
-    "
-    :class="isCollapse ? 'bg-grey-light' : 'bg-grey-lighter'"
-  >
+  <core-aov :delay="500">
     <div
-      class="flex items-start justify-between mb-8 transition-colors duration-500 md:items-center base-faq-item__question hover:text-pink"
-      :class="isCollapse ? 'isCollapse text-pink' : ''"
-      v-on:click="toggleQuestion"
+      class="pt-8 my-8 rounded-md px-8 md:px-[3.2rem] shadow-greyDarkerLight base-faq-item transition-colors duration-1000"
+      :class="
+        isActive ? 'bg-grey-light is-visible' : 'bg-grey-lighter is-visible'
+      "
     >
-      <p class="pr-6 font-semibold text-md lg:text-lg">{{ question }}</p>
       <div
-        class="
-          relative
-          flex
-          items-center
-          p-2
-          w-[3.2rem]
-          h-[3.2rem]
-          rounded-full
-          bg-grey
-        "
+        class="flex items-start justify-between mb-8 transition-colors duration-500 md:items-center base-faq-item__question hover:text-pink"
+        :class="isActive ? 'isCollapse text-pink' : ''"
+        v-on:click="toggleQuestion"
       >
-        <base-use-svg v-if="isCollapse" id="minus" color="pink" size="xl" />
-        <base-use-svg v-if="!isCollapse" id="plus" color="pink" size="xl" />
+        <p class="pr-6 font-semibold text-md lg:text-lg">{{ question }}</p>
+        <div
+          class="relative flex items-center p-2 w-[3.2rem] h-[3.2rem] rounded-full bg-grey"
+        >
+          <base-use-svg v-if="isActive" id="minus" color="pink" size="xl" />
+          <base-use-svg v-if="!isActive" id="plus" color="pink" size="xl" />
+        </div>
       </div>
+      <transition>
+        <div
+          class="transition duration-[350ms] base-faq-item__answer text-md"
+          :class="isActive ? 'max-h-[80rem] pb-8' : ' max-h-0'"
+          v-visible="isActive"
+        >
+          <p class="text-sm font-normal md:text-md md:pr-16">
+            {{ answer }}
+          </p>
+        </div>
+      </transition>
     </div>
-    <transition>
-      <div
-        class="transition duration-[250ms] base-faq-item__answer text-md "
-        :class="isCollapse ? 'max-h-[80rem] pb-8' : ' max-h-0'"
-        v-visible="isCollapse"
-      >
-        <p class="text-sm font-normal md:text-md md:pr-16" >
-          {{ answer }}
-        </p>
-      </div>
-    </transition>
-  </div>
+  </core-aov>
 </template>
 
 <script>
@@ -59,6 +44,11 @@ export default {
     };
   },
   props: {
+    isActive: false,
+    id: {
+      type: String,
+      required: true,
+    },
     question: {
       type: String,
       required: false,
@@ -74,8 +64,11 @@ export default {
   },
   methods: {
     toggleQuestion() {
-      this.isCollapse = !this.isCollapse;
-      
+      this.$emit("emitEventFaq", { id: this.id });
+    },
+
+    emitEventFaq() {
+      this.$emit("emitEventFaq", { id: this.id });
     },
   },
 };
@@ -100,17 +93,6 @@ export default {
   &__answer {
     transform-origin: top;
     overflow: hidden;
-
-    // &[style*="display:none"] {
-    //   transition: all 1s;
-    //   display: block !important;
-    //   opacity: 0;
-    // }
-
-    // &:not([style*="display:none"]) {
-    //   max-height: 80rem;
-    //   opacity: 1;
-    // }
   }
 }
 </style>

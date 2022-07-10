@@ -14,6 +14,7 @@ import InputText from "~/components/Base/InputText.vue";
 import TextArea from "~/components/Base/TextArea.vue";
 import TarifItem from "~/components/Base/TarifItem.vue";
 import TarifAdvantage from "~/components/Base/TarifAdvantage.vue";
+import GaranteeItem from "~/components/Base/GaranteeItem.vue";
 
 Vue.component("base-use-svg", UseSvg);
 Vue.component("base-big-letter", BigLetter);
@@ -25,13 +26,16 @@ Vue.component("base-input-text", InputText);
 Vue.component("base-text-area", TextArea);
 Vue.component("base-tarif-item", TarifItem);
 Vue.component("base-tarif-advantage", TarifAdvantage);
+Vue.component("base-garantee-item", GaranteeItem);
 
 
 // CORE
 
 import Slider from "~/components/Core/Slider.vue";
+import ActiveOnVisible from '~/components/Core/ActiveOnVisible';
 
 Vue.component("core-slider", Slider);
+Vue.component('core-aov', ActiveOnVisible);
 
 // COMMON (layout, Header, footer etc..)
 

@@ -19,7 +19,7 @@ export default {
     imageUrl: {
       type: String,
       required: false,
-      default: "/img/photography/testimonial1.png",
+      default: "/img/photography/chauffeur6.png",
     },
     name: {
       type: String,

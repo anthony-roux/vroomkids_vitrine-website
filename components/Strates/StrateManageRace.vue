@@ -1,11 +1,14 @@
 <template>
   <section class="mt-32 lg:mt-96 strate-manage-race md:mt-60">
-    <div class="container relative z-[0]">
-      <base-big-letter
-        text="VROOM"
-        class="absolute items-start hidden lg:flex lg:-bottom-16"
-      />
-    </div>
+    <client-only>
+      <core-aov :delay="300">
+        <div class="container relative z-[0] t-translate-right t-fade-in t-scale">
+          <base-big-letter
+            text="VROOM"
+            class="absolute items-start hidden lg:flex lg:-bottom-16"
+          />
+        </div> </core-aov
+    ></client-only>
     <div class="relative bg-gradient-r-gradient-green2pink z-[1]">
       <div class="container grid h-full grid-cols-12">
         <div
@@ -21,30 +24,14 @@
               <img
                 alt="Logo Vroom"
                 :src="require(`static/img/illustrations/dl_on_applestore.png`)"
-                class="
-                  my-3
-                  lg:my-6
-                  mr-6
-                  lg:w-72 lg:h-[5.6rem]
-                  md:w-72 md:h-[5.6rem]
-                  w-64
-                  h-[4.6rem]
-                "
+                class="my-3 lg:my-6 mr-6 lg:w-72 lg:h-[5.6rem] md:w-72 md:h-[5.6rem] w-64 h-[4.6rem]"
               />
             </a>
             <a href="">
               <img
                 :src="require(`static/img/illustrations/dl_on_playstore.png`)"
                 alt=""
-                class="
-                  my-3
-                  lg:my-6
-                  mr-6
-                  lg:w-72 lg:h-[5.6rem]
-                  md:w-72 md:h-[5.6rem]
-                  w-64
-                  h-[4.6rem]
-                "
+                class="my-3 lg:my-6 mr-6 lg:w-72 lg:h-[5.6rem] md:w-72 md:h-[5.6rem] w-64 h-[4.6rem]"
               />
             </a>
           </div>
@@ -52,12 +39,17 @@
         <div
           class="relative justify-center hidden h-full col-span-12 py-24 lg:flex lg:col-span-6"
         >
-          <div class="absolute flex flex-row lg:bottom-12">
+        <client-only>
+          <core-aov :delay="500">
+          <div class="absolute flex flex-row lg:bottom-12 t-translate-left t-fade-in">
             <img
               alt="Logo Vroom"
-              :src="require(`static/img/illustrations/Group74.png`)"
+              :src="require(`static/img/illustrations/3iphones-mockup-footer.png`)"
             />
           </div>
+          </core-aov>
+        </client-only>
+          
         </div>
       </div>
     </div>

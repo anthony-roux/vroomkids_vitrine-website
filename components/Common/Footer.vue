@@ -27,48 +27,21 @@
               <li>
                 <nuxt-link
                   to="/price"
-                  class="
-                    inline-flex
-                    font-normal
-                    text-white
-                    transition-colors
-                    t-link t-link--secondary
-                    c-footer__links
-                    lg:text-md
-                    text-md
-                  "
+                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Qui sommes-nous ?
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link
                   to="/price"
-                  class="
-                    inline-flex
-                    font-normal
-                    text-white
-                    transition-colors
-                    t-link t-link--secondary
-                    c-footer__links
-                    lg:text-md
-                    text-md
-                  "
+                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Nos tarifs
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link
-                  to="/price"
-                  class="
-                    inline-flex
-                    font-normal
-                    text-white
-                    transition-colors
-                    t-link t-link--secondary
-                    c-footer__links
-                    lg:text-md
-                    text-md
-                  "
+                  to="/join-us"
+                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Nous contacter
                 </nuxt-link>
               </li>
@@ -81,33 +54,22 @@
             <ul role="list" class="mt-10 space-y-4">
               <li>
                 <nuxt-link
-                  to="/price"
-                  class="
-                    inline-flex
-                    font-normal
-                    text-white
-                    transition-colors
-                    t-link t-link--secondary
-                    c-footer__links
-                    lg:text-md
-                    text-md
-                  "
+                  to="/join-us"
+                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Devenir chauffeur
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link
-                  to="/price"
-                  class="
-                    inline-flex
-                    font-normal
-                    text-white
-                    transition-colors
-                    t-link t-link--secondary
-                    c-footer__links
-                    lg:text-md
-                    text-md
-                  "
+                  to="/join-us"
+                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
+                  >Devenir accompagnateur
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link
+                  to="/"
+                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Plateforme Vroomer
                 </nuxt-link>
               </li>
@@ -148,25 +110,7 @@
                 <div class="flex-1 min-w-0">
                   <input
                     type="email"
-                    class="
-                      block
-                      h-full
-                      px-5
-                      py-3
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      bg-transparent
-                      border border-transparent
-                      rounded
-                      select-none
-                      c-footer__input
-                      focus:
-                      placeholder-grey-light
-                      text-md
-                      focus:border-transparent focus:ring-0
-                    "
+                    class="block h-full px-5 py-3 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded select-none c-footer__input focus: placeholder-grey-light text-md focus:border-transparent focus:ring-0"
                     placeholder="E-mail"
                   />
                 </div>
@@ -190,7 +134,7 @@
     <div class="py-2 bg-primary-vert1">
       <div class="container justify-between lg:flex">
         <div class="my-4 text-xs text-white">
-          © Copyright Vroom 2022. Made with love by HETIC.
+          © Copyright Vroom 2022. Made with love by Anthony Roux, Dorian Vidal.
         </div>
         <div class="my-4 text-xs text-white">Mentions légales</div>
       </div>

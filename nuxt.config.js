@@ -20,7 +20,8 @@ export default {
       { property: "og:site_name", content: "Vroom" },
       {
         name: "description",
-        content: "Nous accompagnons vos enfants selon leur besoins quotidiens. Notre service vous assure pleine tranquillité et sérénité tout au long de la journée." ,
+        content:
+          "Nous accompagnons vos enfants selon leur besoins quotidiens. Notre service vous assure pleine tranquillité et sérénité tout au long de la journée.",
       },
       {
         name: "og:title",
@@ -28,7 +29,8 @@ export default {
       },
       {
         name: "og:desciption",
-        content: "Nous accompagnons vos enfants selon leur besoins quotidiens. Notre service vous assure pleine tranquillité et sérénité tout au long de la journée.",
+        content:
+          "Nous accompagnons vos enfants selon leur besoins quotidiens. Notre service vous assure pleine tranquillité et sérénité tout au long de la journée.",
       },
       {
         name: "og:locale",
@@ -101,7 +103,13 @@ export default {
     "@nuxtjs/style-resources",
     "nuxt-lazysizes",
   ],
-  pageTransition: "fade",
+  pageTransition: {
+    name: "fade",
+    mode: "out-in",
+    beforeEnter(el) {
+      console.log("Before enter...");
+    },
+  },
   lazySizes: {
     plugins: {
       unveilhooks: true,
@@ -112,7 +120,9 @@ export default {
     "@nuxtjs/auth-next",
     "@nuxt/image",
     "nuxt-svg-loader",
-    '@nuxtjs/axios',
+    "@nuxtjs/axios",
+    "@nuxtjs/proxy",
+    
   ],
   // Purge module configuration: https://purgecss.com/guides/nuxt.html
   purgeCSS: {
@@ -122,12 +132,26 @@ export default {
     scss: ["./assets/styles/_all_settings.scss"],
   },
   // Nuxt Axios
+  // axios: {
+
+  //   proxy:
+  //     process.env.NODE_ENV === "production"
+  //       ? false
+  //       : process.env.NODE_ENV !== "staging",
+  //   baseURL: process.env.BASE_URL || "http://localhost:80",
+  // },
   axios: {
-    proxy:
-      process.env.NODE_ENV === "production"
-        ? false
-        : process.env.NODE_ENV !== "staging",
-    baseURL: process.env.BASE_URL || "http://localhost:80",
+    baseURL: "http://localhost:3000/",
+    proxyHeaders: false,
+    credentials: false,
+    proxy: true,
+  },
+  proxy: {
+    "/api/": {
+      target: "https://www.hetic-vroom-api.one-website.com/",
+      pathRewrite: { "^/api/": "" },
+      changeOrigin: true,
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

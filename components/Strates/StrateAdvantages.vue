@@ -3,31 +3,46 @@
     class="relative my-32 md:my-60 strate-advantages"
     :class="isInversed != false ? 'isInversed' : ''"
   >
-    <div class="container grid items-start justify-center grid-cols-12 gap-10">
+    <client-only>
       <div
-        class="col-span-12 lg:col-span-5 strate-advantages__content"
-        :class="isInversed != false ? 'lg:order-2' : 'lg:order-1'"
+        class="container grid items-center justify-center grid-cols-12 gap-10"
       >
-        <p
-          class="mx-auto text-xl font-bold md:text-3xl strate-advantages__title"
+        <div
+          class="col-span-12 lg:col-span-5 strate-advantages__content"
+          :class="isInversed != false ? 'lg:order-2' : 'lg:order-1'"
         >
-          {{ title }}
-        </p>
-        <p class="text-md strate-advantages__text lg:w-11/12">{{ text }}</p>
-        <a
-          v-if="ctaLabel"
-          :href="ctaUrl"
-          class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color"
-          >{{ ctaLabel }}</a
-        >
+          <core-aov>
+            <p
+              class="mx-auto text-xl font-bold md:text-3xl strate-advantages__title t-translate-down t-fade-in"
+            >
+              {{ title }}
+            </p>
+          </core-aov>
+          <core-aov :delay="200">
+            <p
+              class="text-md strate-advantages__text lg:w-11/12 t-translate-down t-fade-in"
+            >
+              {{ text }}
+            </p>
+          </core-aov>
+          <core-aov :delay="250" v-if="ctaLabel">
+            <a
+              :href="ctaUrl"
+              class="inline-flex mb-4 mt-7 text-md lg:text-lg t-link--color t-translate-down t-fade-in"
+              >{{ ctaLabel }}</a
+            >
+          </core-aov>
+        </div>
+        <core-aov :delay="350">
+          <div
+            class="col-span-12 lg:col-span-7 strate-advantages__image t-fade-in "
+            :class="isInversed != false ? 'lg:order-1 t-translate-right' : 'lg:order-2 t-translate-left'"
+          >
+            <img alt="Logo Vroom" :src="imageUrl" class="relative rounded" />
+          </div>
+        </core-aov>
       </div>
-      <div
-        class="col-span-12 lg:col-span-7 strate-advantages__image"
-        :class="isInversed != false ? 'lg:order-1' : 'lg:order-2'"
-      >
-        <img alt="Logo Vroom" :src="imageUrl" class="relative rounded" />
-      </div>
-    </div>
+    </client-only>
   </section>
 </template>
 <script>
