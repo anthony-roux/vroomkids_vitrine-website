@@ -1,7 +1,7 @@
 <template>
   <section class="relative grid my-32 md:my-60 strate-tarif">
     <div class="container">
-      <div class="grid items-start justify-center grid-cols-12 gap-10">
+      <div class="grid items-start justify-center grid-cols-12 gap-y-16 gap-x-10">
         <base-tarif-item
           v-for="elm in listPricesProps"
           @custom-event-name="selectPrice"
@@ -47,24 +47,19 @@ export default {
           isActive: false,
           id: "Starter",
           tarifname: "Starter",
-          tarif: "59 €",
+          tarif: "145 €",
           populary: false,
           description:
-            "Ipsum labore est est ad pariatur excepteur cillum. Id aliqua eiusmod incididunt ex aute reprehenderit. Deserunt tempor pariatur amet enim eu exercitation nulla.",
+            "Les services basics pour gérer vos courses.",
           list_advantages: [
             {
-              bold: "Label bold",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              bold: "15 courses",
+              text: " aller-retour par mois.",
               highlight: false,
             },
             {
-              bold: "Label bold 2",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
-              highlight: false,
-            },
-            {
-              bold: "Label bold 3",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              bold: "Support chatbot",
+              text: " 7j/7 et 24h/24",
               highlight: false,
             },
           ],
@@ -73,24 +68,23 @@ export default {
           isActive: true,
           id: "Smart",
           tarifname: "Smart",
-          tarif: "89 €",
+          tarif: "195 €",
           populary: true,
           description:
-            "Ipsum labore est est ad pariatur excepteur cillum. Id aliqua eiusmod incididunt ex aute reprehenderit. Deserunt tempor pariatur amet enim eu exercitation nulla.",
+            "Une gestion plus facile de vos courses et contact directe avec les équipes.",
           list_advantages: [
             {
-              bold: "Label bold",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              bold: "20 courses",
+              text: "aller-retour par mois",
               highlight: false,
             },
             {
-              bold: "Label bold 2",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              bold: "Support chatbot téléphonique",
+              text: " 7j/7 et 24h/24.",
               highlight: true,
             },
             {
-              bold: "Label bold 3",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              text: "Planification des courses sur le mois à venir",
               highlight: false,
             },
           ],
@@ -99,29 +93,27 @@ export default {
           isActive: false,
           id: "Premium",
           tarifname: "Premium",
-          tarif: "119 €",
+          tarif: "235 €",
           populary: false,
           description:
-            "Ipsum labore est est ad pariatur excepteur cillum. Aliqua nulla dolor commodo irure ea. Eiusmod nisi ad aute duis irure minim proident mollit veniam cillum.",
+            "Le forfait incluant la totalité des fonctionnalités et services ainsi qu’une aide prioritaire.",
           list_advantages: [
             {
-              bold: "Label bold",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              bold: "40 courses",
+              text: "aller-retour par mois",
               highlight: false,
             },
             {
-              bold: "Label bold 2",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              bold: "Support chatbot téléphonique prioritaire",
+              text: " 7j/7 et 24h/24.",
               highlight: false,
             },
             {
-              bold: "Label bold 3",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
-              highlight: true,
+              text: "Planification des courses sur le mois à venir",
+              highlight: false,
             },
             {
-              bold: "Label bold 3",
-              text: "Ad velit quis esse officia aliquip ea consectetur et.",
+              text: "Réservation d'un chauffeur particulier à toute heure de la journée hors frais supplémentaire.",
               highlight: false,
             },
           ],

@@ -13,14 +13,6 @@
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
-          to="/price"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
-        >
-          Tarif
-        </nuxt-link>
-      </li>
-      <li class="lg:mr-6 l-nav__item">
-        <nuxt-link
           to="/aboutUs"
           class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Qui sommes-nous ?
@@ -28,9 +20,18 @@
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
-          to="/contact"
+          to="/price"
           class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
-          >Contact
+        >
+          Tarifs
+        </nuxt-link>
+      </li>
+
+      <li class="lg:mr-6 l-nav__item">
+        <nuxt-link
+          to="/join-us"
+          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
+          >Nous rejoindre 
         </nuxt-link>
       </li>
     </ul>
@@ -38,7 +39,7 @@
       class="justify-center transition-colors c-header__container l-nav__item"
     >
       <t-button
-        v-if="this.isSidebar ? 'hidden' : '' "
+        v-if="this.isSidebar ? 'hidden' : ''"
         tagName="a"
         class="w-full mb-5 cursor-pointer lg:w-auto lg:mb-0"
         :variant="this.isSidebar ? 'secondaryWhite' : 'secondaryWhite'"

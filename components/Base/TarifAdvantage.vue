@@ -1,10 +1,15 @@
 <template>
-  <div class="base-tarif-item__item" :class="highlight ? 'highlight' : ''">
-    <li class="font-bold text-black">
-      {{ listTitre }}
-      <span class="font-normal">{{ listText }}</span>
-    </li>
-  </div>
+  <core-aov :delay="750">
+    <div
+      class="base-tarif-item__item t-translate-down t-fade-in"
+      :class="highlight ? 'highlight' : ''"
+    >
+      <li class="font-bold text-black" :class="listTitre ? 'font-bold' : 'font-normal'">
+        {{ listTitre }}
+        <span class="font-normal">{{ listText }}</span>
+      </li>
+    </div>
+  </core-aov>
 </template>
 
 <script>
@@ -36,7 +41,6 @@ export default {
     listTitre: {
       type: String,
       required: false,
-      default: "Enim culpa",
     },
     listText: {
       type: String,
