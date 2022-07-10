@@ -7,7 +7,7 @@
       <div class="container relative grid items-center grid-cols-12 gap-x-8">
         <div
           :class="isInversed != false ? 'order-2' : 'order-1 w-4/5'"
-          class="z-10 col-span-12 py-16 md:py-20 lg:col-span-8 lg:w-full"
+          class="z-10 col-span-12 py-20 lg:col-span-8 lg:w-full"
         >
           <core-aov :delay="250">
             <div class="flex flex-col items-center t-translate-down t-fade-in">

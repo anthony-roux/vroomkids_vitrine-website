@@ -89,6 +89,7 @@
             :answer="itemFAQ.answer"
           />
         </strate-faq>
+        <strate-partners />
 
         <strate-manage-race />
       </div>
