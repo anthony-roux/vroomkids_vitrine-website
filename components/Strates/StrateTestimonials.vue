@@ -42,8 +42,8 @@
           >
             <slide class="">
               <base-testimonial
-                name="Marie Robert"
-                text="Grâce à Vroom, j'ai redécouvert ce que c'était la vraie vie, je prends du temps pour moi à la maison pour me coiffer et me maquiller ! Mon mari qui est content ..."
+                name="Déborah Hernandez Sekarna"
+                text="Vroom à été une découverte incroyable ! Je ne m'en passe plus du tout pour ma petite fille, le temps que je gagne me permet d'aller manger un grec avec mes copines. "
               />
             </slide>
             <slide class="">
