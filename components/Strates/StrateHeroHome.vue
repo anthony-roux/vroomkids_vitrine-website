@@ -10,7 +10,7 @@
         >
           <core-aov>
             <h2
-              class="mx-auto text-3xl font-black text-white uppercase strate-hero-home__title md:text-5xl t-translate-up t-fade-in"
+              class="pr-6 mx-auto text-4xl font-black text-white uppercase md:pr-0 strate-hero-home__title md:text-5xl t-translate-up t-fade-in"
             >
               {{ title }}
               <br /><span v-if="subtitle" class="">{{ subtitle }}</span>

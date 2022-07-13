@@ -1,7 +1,7 @@
 <template class="home">
   <div id="page-home" class="">
     <strate-hero-home
-      title="Vroom accompagne votre enfant en toute sécurité"
+      title="Le meilleur de la mobilité pour votre enfant"
       subtitle
     />
 

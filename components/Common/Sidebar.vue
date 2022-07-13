@@ -125,7 +125,7 @@ export default {
       @include abs-pseudo(0, 0, 0, 0);
       height: 100%;
       width: 100%;
-      background: $gradient-green;
+      background: $gradient-green2pink120;
       opacity: 0.70;
     }
   }

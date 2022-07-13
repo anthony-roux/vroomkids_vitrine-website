@@ -157,7 +157,6 @@
 <script>
 import { mapGetters } from "vuex";
 import axios from "axios";
-// import APICall from "../../plugins/apiRequest";
 
 export default {
   name: "Header",
@@ -239,14 +238,21 @@ export default {
       this.$emit("input", value);
     },
 
-    // async addCompany(this.form) {
-    //   await this.$axios.$post("/api/question/create", this.form);
-    //   // Handle response...
-    // },
     // MODAL / FORM
+
     submitForm() {
+      console.log(this.form);
+      // return
       axios
-        .post("/question/create", this.form)
+        // .post("/api/question/create", this.form)
+        .post("/api/questions/create", {
+          name: this.form.name,
+          lastname: this.form.lastname,
+          phone: this.form.phone,
+          mail: this.form.mail,
+          profil: this.form.profil,
+          text: this.form.text,
+        })
         .then((res) => {
           //Perform Success Action
           console.log("res", res);
@@ -255,6 +261,8 @@ export default {
           this.success = true;
           setTimeout(() => {
             this.showModal = false;
+            this.form = {};
+            this.success = false;
           }, 3000);
         })
         .catch((error) => {
@@ -266,54 +274,8 @@ export default {
         .finally(() => {
           //Perform action in always
         });
-      // const data = { test: "Hello!" };
+      
 
-      // APICall.requestAPI("submitQuestion", false, data).then((data) =>
-      //   console.log(data)
-      // );
-      // const headers = {
-      //   "Access-Control-Allow-Origin": "*",
-      //   Accept: "application/json",
-      //   "Content-Type": "application/json",
-      //   "access-token": "myTokenXYZ123",
-      // };
-      // const data = { test: "Hello!" };
-      // const options = {
-      //   method: "post",
-      //   mode: "same-origin",
-      //   url: "/api/question/create",
-      //   data: data,
-      //   headers: headers,
-      // };
-
-      // this.$axios(options).then((data) => console.log(data));
-
-      // this.$axios
-      //   .post("/api/question/create", this.form, {
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //   })
-      //   .then((res) => {
-      //     //Perform Success Action
-      //     console.log("res", res);
-      //     this.status = "res";
-      //     this.$router.push("/");
-      //     this.success = true;
-      //     setTimeout(() => {
-      //       this.showModal = false;
-      //     }, 3000);
-      //   })
-      //   .catch((error) => {
-      //     // error.response.status Check status code
-      //     console.log("error", error);
-      //     this.status = "error";
-      //     this.success = false;
-      //     this.error = true;
-      //   })
-      //   .finally(() => {
-      //     //Perform action in always
-      //   });
     },
   },
   watch: {

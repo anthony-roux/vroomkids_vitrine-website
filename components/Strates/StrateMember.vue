@@ -80,10 +80,9 @@ export default {
         {
           photo: "/img/photography/ricardo.png",
           name: "Ricardo JUSME",
-          role: "Développeur Back-end",
-          text: "Responsable de l'application mobile",
+          role: "Développeur Fullstack",
+          text: "Leader des développeurs back-end, Ricardo est fort d'une expertise très pointue en terme d'infrastructure technique, il a pensé et réalisé au mieux la partie back-end et api rest du projet.",
         },
-
         {
           photo: "/img/photography/davy.png",
           name: "Davy CHEN",

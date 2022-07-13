@@ -7,21 +7,21 @@
       >
         <nuxt-link
           to="/"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
+          class="flex py-1 mx-6 text-xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Accueil
         </nuxt-link>
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
           to="/aboutUs"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
+          class="flex py-1 mx-6 text-xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Qui sommes-nous ?
         </nuxt-link>
       </li>
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
           to="/price"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
+          class="flex py-1 mx-6 text-xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
         >
           Tarifs
         </nuxt-link>
@@ -30,7 +30,7 @@
       <li class="lg:mr-6 l-nav__item">
         <nuxt-link
           to="/join-us"
-          class="flex py-1 mx-6 text-2xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
+          class="flex py-1 mx-6 text-xl font-semibold text-white transition-colors md:text-4xl lg:text-md t-link"
           >Nous rejoindre 
         </nuxt-link>
       </li>

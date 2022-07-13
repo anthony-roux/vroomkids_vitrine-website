@@ -37,54 +37,8 @@
             :paginationPadding="10"
             class="max-w-full mt-24 strate-testimonials__slider t-translate-down t-fade-in"
           >
-            <slide class="">
-              <base-testimonial-pro
-                name="Francis, 43 ans"
-                text='"C’est une bonne expérience sociale et humaine qui m’as permis d’abord de découvrir les gens mais aussi la ville de Paris."'
-                date="Chauffeur Vroom depuis 2 ans"
-                imageUrl="/img/photography/chauffeur1.png"
-              />
-            </slide>
-            <slide class="">
-              <base-testimonial-pro
-                name="Emma, 29 ans"
-                text='"J’aime beaucoup ce métier car ma passion est de conduire, faire chauffeur pour Vroom m’a permi de rencontrer plein de personne et de découvrir différentes villes."'
-                date="Chauffeuse Vroom depuis 3 ans"
-                imageUrl="/img/photography/chauffeur2.png"
-              />
-            </slide>
-            <slide class="">
-              <base-testimonial-pro
-                name="Junior, 30 ans"
-                text='"Travail très agréable qui permet d’avoir une certaine flexibilité. Etre au contact d’une population jeune est agréable. On se sent utile et je trouve ça très satisfaisant."'
-                date="Chauffeur Vroom depuis 2 ans"
-                imageUrl="/img/photography/chauffeur3.png"
-              />
-            </slide>
-            <slide class="">
-              <base-testimonial-pro
-                name="Sonia"
-                text='"J’adore conduire, alors mon expérience chez Vroom est une réelle passion. Je fais mon métier tout en exercant ma passion pour la conduite. Merci."'
-                date="Chauffeuse Vroom depuis 4 ans"
-                imageUrl="/img/photography/chauffeur4.png"
-              />
-            </slide>
-            <slide class="">
-              <base-testimonial-pro
-                name="Camille, 28 ans"
-                text='"Cela fait maintenant deux ans que je suis chauffeur pour Vroom. Nous sommes écoutés et respectés par la hierarchie et le travail est agréable."'
-                date="Chauffeur Vroom depuis le début"
-                imageUrl="/img/photography/chauffeur5.png"
-              />
-            </slide>
-            <slide class="">
-              <base-testimonial-pro
-                name="Nathalie, 36 ans"
-                text='"J’adore les enfants et je suis passionné par la conduite. Je suis donc très à l’aise dans ce métier et je remercie Vroom de sa confiance. Je recommande."'
-                date="Chauffeuse Vroom depuis 8 mois"
-                imageUrl="/img/photography/chauffeur6.png"
-              />
-            </slide>
+            <slot />
+
           </carousel>
         </core-aov>
       </client-only>

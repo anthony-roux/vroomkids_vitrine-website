@@ -37,21 +37,21 @@ export default {
           id: "question1",
           question: "Quels moyens de paiement proposez vous ?",
           answer:
-            "Vroom est un service de chauffeur qui s’occupe de votre enfant. Ce dernier pourra aller à son cours de sport, de théâtre ou à l’école sans encombre avec un service de qualité. ",
+            "Nous acceptons une grande partie des modes de paiements : Carte Bancaire ; Visa, MasterCard, American Express, Visa Electron, Carte Bleue, PayPal, Virement bancaire, Apple Pay, Google Pay Vous avez la possibilité d’associer différents moyens de paiements à votre compte.",
         },
         {
           isActive: false,
           id: "question2",
           question: "Quel est la durée d'engagement ? ",
           answer:
-            "Le service est utilisable dans toute la France, à la fois dans les grandes, moyennes et petites villes. Lancez l’application pour voir les chauffeurs disponibles pour votre course. ",
+            "Les forfaits STARTER et SMART vous engagent sur 1 an d’utilisation. Le forfait Premium vous engage sur 6 mois d’utilisation. Au dela de cet engagement, vous êtes libres de résilier le service Vroom à tout moment. Malgré tout, notre objectif est de toujours vous apporter la meilleure satisfaction et que vous restiez client Vroom le plus longtemps possible.",
         },
         {
           isActive: false,
           id: "question3",
           question: "Comment je choisis le tarif qui me convient ?",
           answer:
-            "Grace à son application complète, Vroom vous permet de composer une ou plusieurs courses sur différentes dates et lieux. Le système de programmation se fait via un calendrier vous permettant une meilleure utilisation et visibilité de vos courses.",
+            "Afin de vous proposer un forfait adapté, vous avez le choix entre 3 offres. STARTER, SMART et PREMIUM. Si vous avez besoin de conseils pour choisir le forfait qui correspond au mieux à votre besoin, notre équipe Vromm est à disposition pour répondre à vos questions.",
         },
       ],
     };

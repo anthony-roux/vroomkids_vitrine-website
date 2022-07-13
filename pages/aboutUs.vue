@@ -63,6 +63,54 @@
             title="Nos chauffeurs témoignent"
             subtitle="Nos chauffeurs sont séléctionnés avec rigueur. Ils sont tous en possession d’une lisence VTC et sont pour la plupart père ou mère de famille."
           >
+            <slide class="">
+              <base-testimonial-pro
+                name="Francis, 43 ans"
+                text='"C’est une bonne expérience sociale et humaine qui m’as permis d’abord de découvrir les gens mais aussi la ville de Paris."'
+                date="Chauffeur Vroom depuis 2 ans"
+                imageUrl="/img/photography/chauffeur1.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Emma, 29 ans"
+                text='"J’aime beaucoup ce métier car ma passion est de conduire, faire chauffeur pour Vroom m’a permi de rencontrer plein de personne et de découvrir différentes villes."'
+                date="Chauffeuse Vroom depuis 3 ans"
+                imageUrl="/img/photography/chauffeur2.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Junior, 30 ans"
+                text='"Travail très agréable qui permet d’avoir une certaine flexibilité. Etre au contact d’une population jeune est agréable. On se sent utile et je trouve ça très satisfaisant."'
+                date="Chauffeur Vroom depuis 2 ans"
+                imageUrl="/img/photography/chauffeur3.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Sonia"
+                text='"J’adore conduire, alors mon expérience chez Vroom est une réelle passion. Je fais mon métier tout en exercant ma passion pour la conduite. Merci."'
+                date="Chauffeuse Vroom depuis 4 ans"
+                imageUrl="/img/photography/chauffeur4.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Camille, 28 ans"
+                text='"Cela fait maintenant deux ans que je suis chauffeur pour Vroom. Nous sommes écoutés et respectés par la hierarchie et le travail est agréable."'
+                date="Chauffeur Vroom depuis le début"
+                imageUrl="/img/photography/chauffeur5.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Nathalie, 36 ans"
+                text='"J’adore les enfants et je suis passionné par la conduite. Je suis donc très à l’aise dans ce métier et je remercie Vroom de sa confiance. Je recommande."'
+                date="Chauffeuse Vroom depuis 8 mois"
+                imageUrl="/img/photography/chauffeur6.png"
+              />
+            </slide>
           </strate-testimonials-pro>
         </client-only>
         <strate-text
@@ -77,6 +125,38 @@
             title="Nos accompagnateurs témoignent"
             subtitle="Nos accompagnateurs sont aussi séléctionnés avec choix. Tous diplomés d'un CAP accompagnants educatif petite enfance, ils savent y faire avec les morveux."
           >
+            <slide class="">
+              <base-testimonial-pro
+                name="Gazo, 30 ans"
+                text='"Je suis content de travailler pour Vroom et d’être au contact des plus jeunes. Voir qu’ils sont content du service qu’on leur apporte est très satisfaisant."'
+                date="Accompagnateur Vroom depuis 2 ans"
+                imageUrl="/img/photography/accompagnateur1.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Emma, 29 ans"
+                text='"En venant travailler pour Vroom je savais que j’allais aider beaucoup de familles car le service proposé est vraiment très pratique. Je l’ai moi même utilisé pour mon enfant. C’est génial."'
+                date="Chauffeuse Vroom depuis 3 ans"
+                imageUrl="/img/photography/accompagnateur2.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Celine, 30 ans"
+                text='"Etant moi même maman je sais que Vroom est une réelle source de soulagement pour les parents. Me rendre utile à cet effet est un véritable épanouissement."'
+                date="Chauffeur Vroom depuis 2 ans"
+                imageUrl="/img/photography/accompagnateur3.png"
+              />
+            </slide>
+            <slide class="">
+              <base-testimonial-pro
+                name="Christophe, 32 ans"
+                text='"Je suis content de travailler dans de bonnes conditions avec un public jeune et agréable. Il y a beaucoup d’avantages à travailler pour Vroom. Je recommande."'
+                date="Chauffeuse Vroom depuis 4 ans"
+                imageUrl="/img/photography/accompagnateur4.png"
+              />
+            </slide>
           </strate-testimonials-pro>
         </client-only>
         <strate-catchphrase
@@ -139,7 +219,7 @@ export default {
         {
           isActive: false,
           id: "question4",
-          question: "question 4 ?",
+          question: "Comment je peux reserver une course ?",
           answer:
             "Vroom est un service de chauffeur qui s’occupe de votre enfant. Ce dernier pourra aller à son cours de sport, de théâtre ou à l’école sans encombre avec un service de qualité. ",
         },

@@ -132,23 +132,21 @@ export default {
     scss: ["./assets/styles/_all_settings.scss"],
   },
   // Nuxt Axios
-  // axios: {
 
-  //   proxy:
-  //     process.env.NODE_ENV === "production"
-  //       ? false
-  //       : process.env.NODE_ENV !== "staging",
-  //   baseURL: process.env.BASE_URL || "http://localhost:80",
-  // },
   axios: {
     baseURL: "http://localhost:3000/",
     proxyHeaders: false,
     credentials: false,
     proxy: true,
+    // proxy:
+    //   process.env.NODE_ENV === "production"
+    //     ? false
+    //     : process.env.NODE_ENV !== "staging",
+    // baseURL: process.env.BASE_URL || "http://localhost:30",
   },
   proxy: {
     "/api/": {
-      target: "https://www.hetic-vroom-api.one-website.com/",
+      target: "https://hetic-vroom-api.one-website.com/",
       pathRewrite: { "^/api/": "" },
       changeOrigin: true,
     },
