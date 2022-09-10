@@ -21,7 +21,7 @@
           title="Gagnez du temps dans votre journée."
           text="Vous êtes un parent avec un emploi du temps très chargé et vous courrez tout les jours pour emmener votre enfant à ses défférentes activités ? Prenez votre temps et ne renversez plus votre café sur votre chemise en le buvant trop vite, faites confiance à Vroom pour plus de sérénité."
           imageUrl="/img/photography/strate_advantage2.png"
-          ctaLabel="Télécharger l'application"
+          ctaLabel=""
           ctaUrl="#"
           :isInversed="true"
         />
