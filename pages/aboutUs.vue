@@ -200,28 +200,28 @@ export default {
           id: "question1",
           question: "Comment rejoindre notre super team ?",
           answer:
-            "Vroom est un service de chauffeur qui s’occupe de votre enfant. Ce dernier pourra aller à son cours de sport, de théâtre ou à l’école sans encombre avec un service de qualité. ",
+            "Il suffit d'aller sur la page 'Nous rejoindre' et remplir le formulaire. Un membre de notre équipe vous contactera sous peu afin de fixer un rendez-vous.",
         },
         {
           isActive: false,
           id: "question2",
           question: "Je peux vous confier mon bébé de 10 mois ?",
           answer:
-            "Vroom est un service de chauffeur qui s’occupe de votre enfant. Ce dernier pourra aller à son cours de sport, de théâtre ou à l’école sans encombre avec un service de qualité. ",
+            "Non, nous prenons en charge les enfants à partir de 10 ans.",
         },
         {
           isActive: false,
           id: "question3",
           question: "C'est quoi un accompagnateur ? ",
           answer:
-            "Vroom est un service de chauffeur qui s’occupe de votre enfant. Ce dernier pourra aller à son cours de sport, de théâtre ou à l’école sans encombre avec un service de qualité. ",
+            "Un accompagnateur est le coéquipier du chauffeur, il s'assure que la course se déroule bien en surveillant les passagers. Ce dernier accompagne si nécéssaire l'enfant jusqu'au point de rendez-vous afin d'assurer une sécurité et une prise en charge optimale. ",
         },
         {
           isActive: false,
           id: "question4",
           question: "Comment je peux reserver une course ?",
           answer:
-            "Vroom est un service de chauffeur qui s’occupe de votre enfant. Ce dernier pourra aller à son cours de sport, de théâtre ou à l’école sans encombre avec un service de qualité. ",
+            "En téléchargeant notre application Vroom, sur toutes les plateformes d'applications mobile. Il suffit ensuite de créer un compte.",
         },
       ],
     };
