@@ -152,13 +152,20 @@ export default {
     },
   },
 
+  env: {
+    baseUrl:
+      process.env.BASE_URL ||
+      "https://hetic-vroom-api.one-website.com",
+  },
+
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ["epic-spinners"],
   },
   loading: false,
-  publicRuntimeConfig: {
-    baseURL: process.env.BASE_URL || "http://localhost:80",
-    nodeEnv: process.env.NODE_ENV || "development",
-  },
+  // publicRuntimeConfig: {
+  //   baseURL: process.env.BASE_URL || "http://localhost:80",
+  //   nodeEnv: process.env.NODE_ENV || "development",
+  // },
 };
