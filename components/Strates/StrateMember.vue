@@ -87,7 +87,7 @@ export default {
           photo: "/img/photography/davy.png",
           name: "Davy CHEN",
           role: "Développeur Back-end",
-          text: "...",
+          text: "Developpeur d'api, Davy a aussi travaillé sur le back office.",
         },
         {
           photo: "/img/photography/antoine.png",

@@ -26,7 +26,7 @@
             <ul role="list" class="mt-10 space-y-4">
               <li>
                 <nuxt-link
-                  to="/price"
+                  to="/aboutUs"
                   class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Qui sommes-nous ?
                 </nuxt-link>
@@ -42,7 +42,7 @@
                 <nuxt-link
                   to="/join-us"
                   class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
-                  >Nous contacter
+                  >Nous rejoindre
                 </nuxt-link>
               </li>
             </ul>
@@ -64,13 +64,6 @@
                   to="/join-us"
                   class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
                   >Devenir accompagnateur
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link
-                  to="/"
-                  class="inline-flex font-normal text-white transition-colors t-link t-link--secondary c-footer__links lg:text-md text-md"
-                  >Plateforme Vroomer
                 </nuxt-link>
               </li>
             </ul>

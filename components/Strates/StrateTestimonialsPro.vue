@@ -12,13 +12,13 @@
               {{ title }}
             </p>
           </core-aov>
-          <core-aov :delay="350">
+          <core-aov :delay="300">
             <p class="text-xl t-translate-down t-fade-in">{{ subtitle }}</p>
           </core-aov>
         </div>
       </client-only>
       <client-only>
-        <core-aov :delay="400">
+        <core-aov :delay="350">
           <carousel
             :autoplay="true"
             :autoplayHoverPause="true"

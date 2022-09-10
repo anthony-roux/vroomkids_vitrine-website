@@ -53,45 +53,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="flex justify-around">
-      <div class="">
-        <img
-          alt="Femme rose"
-          src="../../static/img/illustrations/partenaire__tennis.png"
-        />
-      </div>
-      <div class="">
-        <img
-          alt="Femme rose"
-          src="../../static/img/illustrations/partenaire__cartune.png"
-        />
-      </div>
-      <div class="">
-        <img
-          alt="Femme rose"
-          src="../../static/img/illustrations/partenaire__maisson-bleue.png"
-        />
-      </div>
-      <div class="">
-        <img
-          alt="Femme rose"
-          src="../../static/img/illustrations/partenaire__france.png"
-        />
-      </div>
-      <div class="">
-        <img
-          alt="Femme rose"
-          src="../../static/img/illustrations/partenaire__ministere.png"
-        />
-      </div>
-      <div class="">
-        <img
-          alt="Femme rose"
-          src="../../static/img/illustrations/partenaire__W.png"
-        />
-      </div>
-    </div> -->
   </section>
 </template>
 <script>

@@ -13,7 +13,7 @@
         <div class="strate-faq__items">
           <slot />
         </div>
-        <core-aov :delay="500">
+        <core-aov :delay="300">
           <div
             class="flex flex-col justify-between w-full my-16 md:flex-row t-translate-down t-fade-in"
           >

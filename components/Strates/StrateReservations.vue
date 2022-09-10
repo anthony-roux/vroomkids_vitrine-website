@@ -53,7 +53,7 @@
             v-if="text3"
             class="relative flex justify-center py-12 mx-auto mt-24 text-sm 4xl:mt-0 max-w-[28rem]"
           >
-            <core-aov :delay="300">
+            <core-aov :delay="250">
               <div class="absolute top-[-6rem] t-translate-up t-fade-in t-scale">
                 <slot name="text3"></slot>
               </div>
@@ -71,7 +71,7 @@
             v-if="text4"
             class="relative flex justify-center py-12 mx-auto mt-24 text-sm 4xl:mt-0 max-w-[28rem]"
           >
-            <core-aov :delay="400">
+            <core-aov :delay="300">
               <div class="absolute top-[-6rem] t-translate-up t-fade-in t-scale">
                 <slot name="text4"></slot>
               </div>

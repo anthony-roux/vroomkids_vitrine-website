@@ -33,7 +33,7 @@
             >
           </core-aov>
         </div>
-        <core-aov :delay="350">
+        <core-aov :delay="300">
           <div
             class="col-span-12 lg:col-span-7 strate-advantages__image t-fade-in "
             :class="isInversed != false ? 'lg:order-1 t-translate-right' : 'lg:order-2 t-translate-left'"

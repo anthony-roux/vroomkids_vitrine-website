@@ -7,7 +7,7 @@
         <div
           class="order-2 col-span-12 lg:order-1 lg:col-span-7 strate-cities__image"
         >
-          <core-aov :delay="250">
+          <core-aov :delay="200">
             <img
               alt="iphone with app"
               :src="require(`static/img/illustrations/camion+map_entier.png`)"
@@ -18,14 +18,14 @@
         <div
           class="order-1 col-span-12 lg:order-2 strate-cities__content lg:col-span-4"
         >
-          <core-aov :delay="300">
+          <core-aov :delay="250">
             <p
               class="mx-auto text-xl font-bold strate-cities__title md:text-3xl t-translate-down t-fade-in"
             >
               {{ title }}
             </p>
           </core-aov>
-          <core-aov :delay="350">
+          <core-aov :delay="300">
             <p
               class="mx-auto my-6 text-md strate-cities__paragraph t-translate-down t-fade-in"
             >
@@ -39,24 +39,14 @@
               class="relative grid grid-cols-3 gap-4 strate-cities__list"
               :class="{ isCollapse: isCollapse }"
             >
-              <core-aov :delay="400">
+              <core-aov :delay="350">
                 <li class="font-bold text-pink t-translate-down t-fade-in">
                   Paris
                 </li>
               </core-aov>
-              <core-aov :delay="450">
+              <core-aov :delay="400">
                 <li class="font-bold text-pink t-translate-down t-fade-in">
                   Lyon
-                </li>
-              </core-aov>
-              <core-aov :delay="500">
-                <li class="font-bold text-pink t-translate-down t-fade-in">
-                  Nice
-                </li>
-              </core-aov>
-              <core-aov :delay="550">
-                <li class="font-bold text-pink t-translate-down t-fade-in">
-                  Montpellier
                 </li>
               </core-aov>
             </ul>

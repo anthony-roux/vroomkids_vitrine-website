@@ -14,7 +14,7 @@
               {{ title }}
             </p>
           </core-aov>
-          <core-aov :delay="350">
+          <core-aov :delay="300">
             <p
               class="pt-2 text-lg text-center strate-text__text t-translate-down t-fade-in"
               v-if="text"

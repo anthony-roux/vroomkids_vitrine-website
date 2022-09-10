@@ -14,7 +14,7 @@
       <div
         class="transition-colors duration-500 md:items-center base-tarif-item__name"
       >
-        <core-aov :delay="350">
+        <core-aov :delay="250">
           <p
             :class="isSelected ? 'text-pink' : 'text-black'"
             class="my-10 text-2xl font-semibold text-center transition-colors duration-1000 md:text-3xl t-translate-down t-fade-in"
@@ -24,7 +24,7 @@
         </core-aov>
 
         <div class="relative flex flex-col base-tarif-item__content">
-          <core-aov :delay="450">
+          <core-aov :delay="300">
             <div
               class="absolute top-0 p-6 text-lg font-semibold text-left text-white -left-8 rounded-tr-md rounded-br-md bg-pink lg:text-2xl t-translate-down t-fade-in"
             >
@@ -33,19 +33,19 @@
           </core-aov>
 
           <div class="mt-36">
-            <core-aov :delay="550">
+            <core-aov :delay="350">
               <p class="t-translate-down t-fade-in">
                 {{ description }}
               </p>
             </core-aov>
-            <core-aov :delay="550">
+            <core-aov :delay="450">
               <p
                 class="mt-10 text-xs font-light text-gray-400 t-translate-down t-fade-in"
               >
                 30 jours d'essai gratuit
               </p>
             </core-aov>
-            <core-aov :delay="650">
+            <core-aov :delay="550">
               <t-button
                 v-on:click="emitCustomEvent"
                 variant="primary"

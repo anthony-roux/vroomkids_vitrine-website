@@ -1,5 +1,5 @@
 <template>
-  <core-aov :delay="750">
+  <core-aov :delay="350">
     <div
       class="base-tarif-item__item t-translate-down t-fade-in"
       :class="highlight ? 'highlight' : ''"

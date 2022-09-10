@@ -14,7 +14,7 @@
           </p>
         </div>
       </core-aov>
-      <core-aov :delay="300">
+      <core-aov :delay="250">
         <p
           class="w-11/12 text-sm md:w-2/3 lg:w-11/12 strate-garantee__text md:text-center lg:text-left t-translate-down t-fade-in"
         >
